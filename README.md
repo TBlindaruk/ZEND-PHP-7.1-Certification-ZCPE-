@@ -65,4 +65,45 @@
  - Email Injection
  - Filter Input
  - Escape Output
- - 
+ - Encryption, Hashing algorithms
+ - File uploads
+ - PHP Configuration
+ - Password hashing API 
+ 
+### I/O
+ - Files
+ - Reading
+ - Writing
+ - File System Functions
+ - Streams
+ - Contexts
+
+### Strings & Patterns
+ - Quoting
+ - Matching
+ - Extracting
+ - Searching
+ - Replacing
+ - Formatting
+ - PCRE
+ - NOWDOC
+ - Encodings
+ 
+### Databases & SQL
+ - SQL
+ - Joins
+ - Prepared Statements
+ - Transactions
+ - PDO
+
+### Arrays
+ - Associative Arrays
+ - Array Iteration
+ - Array Functions
+ - SPL, Objects as arrays 
+ - Casting
+
+### Error Handling
+ - Handling Exceptions
+ - Errors
+ - Throwables
