@@ -1,13 +1,19 @@
 # PHP-Certification-preparing
 
-
 ### PHP Basics
- - Syntax
- - Operators
+http://php.net/manual/ru/langref.php
+ - Syntax - DONE
+ - Operators:
+    - http://php.net/manual/ru/language.operators.php
  - Variables
+    - http://php.net/manual/ru/language.variables.php
  - Control Structures
+    - http://php.net/manual/ru/language.control-structures.php
  - Language Constructs and Functions
+    - http://php.net/manual/ru/language.functions.php
+    - 
  - Namespaces 
+    - http://php.net/manual/ru/language.namespaces.php
  - Extensions
  - Config
  - Performance/bytecode caching
