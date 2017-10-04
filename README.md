@@ -2,8 +2,8 @@
 
 ### PHP Basics
 http://php.net/manual/ru/langref.php
- - Syntax - DONE
- - Operators:
+ - Syntax
+ - Operators
     - http://php.net/manual/ru/language.operators.php
  - Variables
     - http://php.net/manual/ru/language.variables.php
@@ -15,6 +15,7 @@ http://php.net/manual/ru/langref.php
  - Namespaces 
     - http://php.net/manual/ru/language.namespaces.php
  - Extensions
+    - http://php.net/manual/en/extensions.php
  - Config
  - Performance/bytecode caching
 
