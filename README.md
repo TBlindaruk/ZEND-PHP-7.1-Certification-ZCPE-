@@ -2,7 +2,7 @@
 
 ### PHP Basics
 http://php.net/manual/ru/langref.php
- - Syntax
+ - [Syntax](./1 - PHP Basics/index.md)
  - Operators
     - http://php.net/manual/ru/language.operators.php
  - Variables
