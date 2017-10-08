@@ -1,10 +1,8 @@
 # PHP-Certification-preparing
 
-### PHP Basics
-http://php.net/manual/ru/langref.php
- - [Syntax](./1-PHP-Basics/index.md)
- - Operators
-    - http://php.net/manual/ru/language.operators.php
+### [PHP Basics](./1-PHP-Basics/index.md)
+ - [Syntax](./1-PHP-Basics/1-syntax/index.md)
+ - [Operators](./1-PHP-Basics/2-operators/index.md)
  - Variables
     - http://php.net/manual/ru/language.variables.php
  - Control Structures
