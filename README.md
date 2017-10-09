@@ -3,8 +3,7 @@
 ### [PHP Basics](./1-PHP-Basics/index.md)
  - [Syntax](./1-PHP-Basics/1-syntax/index.md)
  - [Operators](./1-PHP-Basics/2-operators/index.md)
- - Variables
-    - http://php.net/manual/ru/language.variables.php
+ - [Variables](./1-PHP-Basics/3-variables/index.md)
  - Control Structures
     - http://php.net/manual/ru/language.control-structures.php
  - Language Constructs and Functions
