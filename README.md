@@ -5,9 +5,7 @@
  - [Operators](./1-PHP-Basics/2-operators/index.md)
  - [Variables](./1-PHP-Basics/3-variables/index.md)
  - [Control Structures](./1-PHP-Basics/4-control-structures/index.md)
- - Language Constructs and Functions
-    - http://php.net/manual/ru/language.functions.php
-    - 
+ - [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md)
  - Namespaces 
     - http://php.net/manual/ru/language.namespaces.php
  - Extensions
