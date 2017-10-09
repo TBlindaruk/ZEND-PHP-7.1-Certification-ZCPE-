@@ -94,3 +94,7 @@ echo 2 <=> 1; // 1
 
 echo (false <=> 0); //0
 ```
+
+
+###### Links
+ - http://php.net/manual/en/language.operators.comparison.php
