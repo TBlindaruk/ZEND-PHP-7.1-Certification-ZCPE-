@@ -1,4 +1,4 @@
-#Array Operators
+### Array Operators
 
 <table class="doctable table">
 <caption><strong>Array Operators</strong></caption>
