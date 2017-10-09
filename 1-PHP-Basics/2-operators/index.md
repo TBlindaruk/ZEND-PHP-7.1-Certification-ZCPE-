@@ -48,8 +48,6 @@ var_dump((int)(100 / (2**3))); //int(12)
 ```
 ##### Comparison Operators 
 <table class="doctable table">
-<caption><strong>Comparison Operators</strong></caption>
-
  <thead>
   <tr>
    <th>Example</th>
@@ -124,7 +122,7 @@ var_dump((int)(100 / (2**3))); //int(12)
    <td>$a &lt;=&gt; $b</td>
    <td>Spaceship</td>
    <td>
-    An <span class="type"><a href="language.types.integer.php" class="type integer">integer</a></span> less than, equal to, or greater than zero when
+    An <span class="type">integer</span> less than, equal to, or greater than zero when
     <var class="varname"><var class="varname">$a</var></var> is respectively less than, equal to, or greater
     than <var class="varname"><var class="varname">$b</var></var>. Available as of PHP 7.
    </td>
