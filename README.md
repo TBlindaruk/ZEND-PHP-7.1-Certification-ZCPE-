@@ -4,8 +4,7 @@
  - [Syntax](./1-PHP-Basics/1-syntax/index.md)
  - [Operators](./1-PHP-Basics/2-operators/index.md)
  - [Variables](./1-PHP-Basics/3-variables/index.md)
- - Control Structures
-    - http://php.net/manual/ru/language.control-structures.php
+ - [Control Structures](./1-PHP-Basics/4-control-structures/index.md)
  - Language Constructs and Functions
     - http://php.net/manual/ru/language.functions.php
     - 
