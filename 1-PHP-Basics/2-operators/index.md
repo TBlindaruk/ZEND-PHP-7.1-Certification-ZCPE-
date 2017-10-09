@@ -1,4 +1,6 @@
-###### Bitwise Operators
+##### Bitwise Operators
+
+###### `<<`, `>>` - operators
 ```PHP
 <?php
 var_dump(5*(2**3)); //int(40)
@@ -8,10 +10,23 @@ var_dump(100>>3); //int(12)
 var_dump((int)(100 / (2**3))); //int(12)
 ```
 
-###### Links
+
+###### `&` - operator
+```PHP
+    <?php
+    echo (40&10); //8
+```
+
+0 0 0 0 1 0 1 0 <br/>
+0 0 1 0 1 0 0 0 <br/>
+<hr/>
+0 0 0 0 1 0 0 0
+
+
+##### Links
 - http://php.net/manual/en/language.operators.php
 
-###### Example
+##### Example
 ```PHP
     <?php
     
