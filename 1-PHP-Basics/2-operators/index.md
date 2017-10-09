@@ -29,6 +29,9 @@
 
 ```PHP
 <?php
-var_dump(5*(2**3));  #int(40)
-var_dump((5 << 3)); #int(40)
+var_dump(5*(2**3)); //int(40)
+var_dump((5 << 3)); //int(40)
+
+var_dump(100>>3); //int(12)
+var_dump((int)(100 / (2**3))); //int(12)
 ```
