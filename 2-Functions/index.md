@@ -4,6 +4,7 @@
  - Variables
  - References
  - Returns
+    - http://php.net/manual/en/functions.returning-values.php
  - Variable Scope
  - Anonymous Functions, closures
  - Type Declarations
