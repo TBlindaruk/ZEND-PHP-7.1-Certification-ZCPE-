@@ -3,6 +3,10 @@
 3. [Variables](./3-variables/index.md)
 4. [Control Structures](./4-control-structures/index.md)
 5. [Language Constructs and Functions](./5-language-constructs-and-functions/index.md)
+6. [Namespaces](./6-namespaces/index.md)
+7. Extensions
+8. Config
+9. Performance/bytecode caching
 
 ###### Links
 - http://php.net/manual/ru/langref.php
