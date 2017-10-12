@@ -1,8 +1,8 @@
 # PHP-Certification-preparing
 
-### [PHP Basics](./1-PHP-Basics/index.md)
+### 1. [PHP Basics](./1-PHP-Basics/index.md)
 
-### Functions
+### 2. Functions
  - Arguments
  - Variables
  - References
@@ -11,7 +11,49 @@
  - Anonymous Functions, closures
  - Type Declarations
  
-### Data Format & Types
+### 3. Strings & Patterns
+ - Quoting
+ - Matching
+ - Extracting
+ - Searching
+ - Replacing
+ - Formatting
+ - PCRE
+ - NOWDOC
+ - Encodings
+ 
+### 4. [Arrays](./Arrays/index.md) 
+ - Associative Arrays
+ - Array Iteration
+ - Array Functions
+ - SPL, Objects as arrays 
+ - Casting
+ 
+### 5. Web Features
+ - Sessions
+ - Forms
+ - GET and POST data
+ - Cookies
+ - HTTP Headers
+ - HTTP Authentication
+ - HTTP Status Codes 
+ 
+### 6. I/O
+ - Files
+ - Reading
+ - Writing
+ - File System Functions
+ - Streams
+ - Contexts
+ 
+### 7. Databases & SQL
+ - SQL
+ - Joins
+ - Prepared Statements
+ - Transactions
+ - PDO
+ 
+### 8. Data Format & Types
  - XML Basics
  - SimpleXML
  - XML Extension
@@ -21,16 +63,7 @@
  - DateTime 
  - DOMDocument
  
-### Web Features
- - Sessions
- - Forms
- - GET and POST data
- - Cookies
- - HTTP Headers
- - HTTP Authentication
- - HTTP Status Codes 
- 
-### Object Oriented Programming
+### 9. Object Oriented Programming
  - Instantiation
  - Modifiers/Inheritance
  - Interfaces
@@ -45,7 +78,7 @@
  - SPL
  - Traits
 
-### Security
+### 10. Security
  - Configuration
  - Session Security
  - Cross-Site Scripting
@@ -59,41 +92,8 @@
  - File uploads
  - PHP Configuration
  - Password hashing API 
- 
-### I/O
- - Files
- - Reading
- - Writing
- - File System Functions
- - Streams
- - Contexts
 
-### Strings & Patterns
- - Quoting
- - Matching
- - Extracting
- - Searching
- - Replacing
- - Formatting
- - PCRE
- - NOWDOC
- - Encodings
- 
-### Databases & SQL
- - SQL
- - Joins
- - Prepared Statements
- - Transactions
- - PDO
-
-### [Arrays](./Arrays/index.md) 
- - Associative Arrays
- - Array Iteration
- - Array Functions
- - SPL, Objects as arrays 
- - Casting
-
-### Error Handling
+### 11. Error Handling
  - Handling Exceptions
  - Errors
  - Throwables
