@@ -2,14 +2,7 @@
 
 ### 1. [PHP Basics](./1-PHP-Basics/index.md)
 
-### 2. Functions
- - Arguments
- - Variables
- - References
- - Returns
- - Variable Scope
- - Anonymous Functions, closures
- - Type Declarations
+### 2. [Functions](./2-Functions/index.md)
  
 ### 3. Strings & Patterns
  - Quoting
