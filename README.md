@@ -90,3 +90,7 @@
  - Handling Exceptions
  - Errors
  - Throwables
+ 
+ 
+### PHP 7
+ - http://php.net/manual/ru/migration70.new-features.php
