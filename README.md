@@ -86,7 +86,7 @@
  - Transactions
  - PDO
 
-### Arrays
+### [Arrays](./Arrays/index.md) 
  - Associative Arrays
  - Array Iteration
  - Array Functions
