@@ -47,7 +47,7 @@
  - PDO
  
 ### 8. Data Format & Types
- - XML Basics
+ - [XML Basics](./8-Data-Format-Types/1-xml-basics/index.md)
  - SimpleXML
  - XML Extension
  - Webservices Basics
