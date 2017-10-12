@@ -1,17 +1,17 @@
 ### 2. Functions
- - Arguments
+1. Arguments
     - http://php.net/manual/en/functions.arguments.php
- - Variables
- - References
+2. Variables
+3. References
     - http://php.net/manual/en/language.references.php
- - Returns
+4. Returns
     - http://php.net/manual/en/functions.returning-values.php
- - Variable Scope
+5. Variable Scope
     - http://php.net/manual/en/language.variables.scope.php
- - Anonymous Functions, closures
+6. Anonymous Functions, closures
     - http://php.net/manual/en/functions.anonymous.php
     - http://php.net/manual/en/class.closure.php
- - Type Declarations
+7. Type Declarations
  
 #### Links
  - http://php.net/manual/en/language.functions.php
