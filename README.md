@@ -54,7 +54,7 @@
  - File System Functions
  - Streams
  - Contexts
- 
+ asdasdsadasdasв
 ### 7. Databases & SQL
  - SQL
  - Joins
@@ -64,7 +64,7 @@
  
 ### 8. Data Format & Types
  - [XML Basics](./8-Data-Format-Types/1-xml-basics/index.md)
- - SimpleXML
+ - [SimpleXML](./8-Data-Format-Types/2-simple-xml/index.md)
  - XML Extension
  - Webservices Basics
  - SOAP
