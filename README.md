@@ -1,15 +1,15 @@
 # PHP-Certification-preparing
 
-### 1. [PHP Basics](./1-PHP-Basics/index.md)
-1. [Syntax](./1-PHP-Basics/1-syntax/index.md)
-2. [Operators](./1-PHP-Basics/2-operators/index.md)
-3. [Variables](./1-PHP-Basics/3-variables/index.md)
-4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md)
-5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md)
-6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md)
-7. [Extensions](./1-PHP-Basics/7-extensions/index.md)
-8. Config
-9. Performance/bytecode caching
+### 1. [PHP Basics](./1-PHP-Basics/index.md) - <p style="color:red">@TODO 1</p>
+1. [Syntax](./1-PHP-Basics/1-syntax/index.md) - @TODO 2
+2. [Operators](./1-PHP-Basics/2-operators/index.md) - @TODO 3
+3. [Variables](./1-PHP-Basics/3-variables/index.md) - @TODO 4
+4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md) - @TODO 5
+5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md) - @TODO 6
+6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md) - @TODO 7
+7. [Extensions](./1-PHP-Basics/7-extensions/index.md) - @TODO 8
+8. Config - @TODO 9
+9. Performance/bytecode caching - @TODO 9
 
 ### 2. [Functions](./2-Functions/index.md)
 1. Arguments
