@@ -62,15 +62,15 @@
  - Transactions
  - PDO
  
-### 8. Data Format & Types
- - [XML Basics](./8-Data-Format-Types/1-xml-basics/index.md)
- - [SimpleXML](./8-Data-Format-Types/2-simple-xml/index.md)
- - XML Extension
- - Webservices Basics
- - SOAP
- - JSON 
- - DateTime 
- - DOMDocument
+### 8. [Data Format & Types](./8-Data-Format-Types/index.md)
+1. [XML Basics](./8-Data-Format-Types/1-xml-basics/index.md)
+2. [SimpleXML](./8-Data-Format-Types/2-simple-xml/index.md)
+3. [XML Extension](http://php.net/manual/en/refs.xml.php)
+4. [Webservices Basics](http://php.net/manual/ru/refs.webservice.php)
+5. [SOAP](http://php.net/manual/ru/book.soap.php)
+6. [JSON](http://php.net/manual/ru/book.json.php) 
+7. [DateTime](http://php.net/manual/ru/class.datetime.php) 
+8. [DOMDocument](http://php.net/manual/ru/class.domdocument.php)
  
 ### 9. Object Oriented Programming
  - Instantiation
