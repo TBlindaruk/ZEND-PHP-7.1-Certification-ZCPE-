@@ -87,7 +87,7 @@
  - SPL - #TODO 77
  - Traits - #TODO 78
 
-### 10. Security -#TODO 79
+### 10. [Security](./10-Security/index.md) -#TODO 79
  - Configuration - #TODO 80
  - Session Security - #TODO 81
  - Cross-Site Scripting - #TODO 82
@@ -98,14 +98,14 @@
  - Filter Input - #TODO 87
  - Escape Output - #TODO 88
  - Encryption, Hashing algorithms - #TODO 89
- - File uploads - #TODO 90
- - PHP Configuration - #TODO 91
- - Password hashing API - #TODO 92
+11. [File uploads](./10-Security/11-file-uploads/index.md) - @DONE 1
+ - PHP Configuration - #TODO 90
+ - Password hashing API - #TODO 91
 
-### 11. Error Handling - #TODO 93
- - Handling Exceptions - #TODO 94
- - Errors - #TODO 95
- - Throwables - #TODO 96
+### 11. Error Handling - #TODO 92
+ - Handling Exceptions - #TODO 93
+ - Errors - #TODO 94
+ - Throwables - #TODO 95
  
  
 ### PHP 7
