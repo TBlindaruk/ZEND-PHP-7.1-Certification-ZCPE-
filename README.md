@@ -81,7 +81,7 @@
  - Reflection - #TODO 70
  - Type Hinting - #TODO 71
  - Class Constants - #TODO 72
- - Late Static Binding - #IN_PROGRESS 1
+9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md) - #IN_PROGRESS 1
  - Magic (_*) Methods - #TODO 74
  - Instance Methods & Properties - #TODO 75
  - SPL - #TODO 76
