@@ -75,38 +75,45 @@
 ### 9. Object Oriented Programming - #TODO 65
  - Instantiation - #TODO 66
  - Modifiers/Inheritance - #TODO 67
- - Interfaces - #TODO 68
- - Return Types - #TODO 69
- - Autoload - #TODO 70
- - Reflection - #TODO 71
- - Type Hinting - #TODO 72
- - Class Constants - #TODO 73
- - Late Static Binding - #TODO 74
- - Magic (_*) Methods - #TODO 75
- - Instance Methods & Properties - #TODO 76
- - SPL - #TODO 77
- - Traits - #TODO 78
+3. [Interfaces](./9-Object-Oriented-Programming/3-interfaces/index.md) - @DONE 2
+ - Return Types - #TODO 68
+ - Autoload - #TODO 69
+ - Reflection - #TODO 70
+ - Type Hinting - #TODO 71
+ - Class Constants - #TODO 72
+ - Late Static Binding - #TODO 73
+ - Magic (_*) Methods - #TODO 74
+ - Instance Methods & Properties - #TODO 75
+ - SPL - #TODO 76
+ - Traits - #TODO 77
 
-### 10. [Security](./10-Security/index.md) -#TODO 79
- - Configuration - #TODO 80
- - Session Security - #TODO 81
- - Cross-Site Scripting - #TODO 82
- - Cross-Site Request Forgeries - #TODO 83
- - SQL Injection - #TODO 84
- - Remote Code Injection - #TODO 85
- - Email Injection - #TODO 86
- - Filter Input - #TODO 87
- - Escape Output - #TODO 88
- - Encryption, Hashing algorithms - #TODO 89
+### 10. [Security](./10-Security/index.md) -#TODO 78
+ - Configuration - #TODO 79
+ - Session Security - #TODO 80
+ - Cross-Site Scripting - #TODO 81
+ - Cross-Site Request Forgeries - #TODO 82
+ - SQL Injection - #TODO 83
+ - Remote Code Injection - #TODO 84
+ - Email Injection - #TODO 85
+ - Filter Input - #TODO 86
+ - Escape Output - #TODO 87
+ - Encryption, Hashing algorithms - #TODO 88
 11. [File uploads](./10-Security/11-file-uploads/index.md) - @DONE 1
- - PHP Configuration - #TODO 90
- - Password hashing API - #TODO 91
+ - PHP Configuration - #TODO 89
+ - Password hashing API - #TODO 90
 
-### 11. Error Handling - #TODO 92
- - Handling Exceptions - #TODO 93
- - Errors - #TODO 94
- - Throwables - #TODO 95
+### 11. Error Handling - #TODO 91
+ - Handling Exceptions - #TODO 92
+ - Errors - #TODO 93
+ - Throwables - #TODO 94
  
  
 ### PHP 7
  - http://php.net/manual/ru/migration70.new-features.php
+
+
+1. IN_PROGRESS 0
+
+2. DONE 2
+
+3. TODO 94
