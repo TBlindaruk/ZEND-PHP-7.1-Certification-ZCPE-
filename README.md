@@ -81,7 +81,7 @@
  - Reflection - #TODO 70
  - Type Hinting - #TODO 71
  - Class Constants - #TODO 72
-9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md) - #IN_PROGRESS 1
+9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md) - @DONE 3
  - Magic (_*) Methods - #TODO 74
  - Instance Methods & Properties - #TODO 75
  - SPL - #TODO 76
@@ -112,8 +112,8 @@
  - http://php.net/manual/ru/migration70.new-features.php
 
 
-1. IN_PROGRESS 1
+1. IN_PROGRESS 0
 
-2. DONE 2
+2. DONE 3
 
 3. TODO 93
