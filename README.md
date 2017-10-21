@@ -81,7 +81,7 @@
  - Reflection - #TODO 70
  - Type Hinting - #TODO 71
  - Class Constants - #TODO 72
- - Late Static Binding - #TODO 73
+ - Late Static Binding - #IN_PROGRESS 1
  - Magic (_*) Methods - #TODO 74
  - Instance Methods & Properties - #TODO 75
  - SPL - #TODO 76
@@ -105,15 +105,15 @@
 ### 11. Error Handling - #TODO 91
  - Handling Exceptions - #TODO 92
  - Errors - #TODO 93
- - Throwables - #TODO 94
+ - Throwables - #TODO 73
  
  
 ### PHP 7
  - http://php.net/manual/ru/migration70.new-features.php
 
 
-1. IN_PROGRESS 0
+1. IN_PROGRESS 1
 
 2. DONE 2
 
-3. TODO 94
+3. TODO 93
