@@ -1,7 +1,7 @@
 # PHP-Certification-preparing
 
 ### 1. [PHP Basics](./1-PHP-Basics/index.md) - #TODO 1
-1. [Syntax](./1-PHP-Basics/1-syntax/index.md) - #TODO 2
+1. [Syntax](./1-PHP-Basics/1-syntax/index.md) - #IN_PROGRESS 1
 2. [Operators](./1-PHP-Basics/2-operators/index.md) - #TODO 3
 3. [Variables](./1-PHP-Basics/3-variables/index.md) - #TODO 4
 4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md) - #TODO 5
@@ -103,7 +103,7 @@
  - Password hashing API - #TODO 90
 
 ### 11. Error Handling - #TODO 91
- - Handling Exceptions - #TODO 92
+ - Handling Exceptions - #TODO 2
  - Errors - #TODO 20
  - Throwables - #TODO 73
  
@@ -112,8 +112,8 @@
  - http://php.net/manual/ru/migration70.new-features.php
 
 
-1. IN_PROGRESS 0
+1. IN_PROGRESS 1
 
 2. DONE 4
 
-3. TODO 92
+3. TODO 91
