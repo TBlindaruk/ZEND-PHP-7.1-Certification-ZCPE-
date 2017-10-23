@@ -79,7 +79,7 @@
  - Return Types - #TODO 68
  - Autoload - #TODO 69
  - Reflection - #TODO 70
- - Type Hinting - #TODO 71
+7. [Type Hinting](./9-Object-Oriented-Programming/7-type-hinting/index.md) - @DONE 6
  - Class Constants - #TODO 72
 9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md) - @DONE 3
  - Magic (_*) Methods - #TODO 74
@@ -102,7 +102,7 @@
  - PHP Configuration - #TODO 89
  - Password hashing API - #TODO 90
 
-### 11. Error Handling - #TODO 91
+### 11. Error Handling - #TODO 71
  - Handling Exceptions - #TODO 2
  - Errors - #TODO 20
  - Throwables - #TODO 73
@@ -110,10 +110,10 @@
  
 ### PHP 7
  - http://php.net/manual/ru/migration70.new-features.php
-
+ - http://blog.teamtreehouse.com/5-new-features-php-7
 
 1. IN_PROGRESS 0
 
-2. DONE 5
+2. DONE 6
 
-3. TODO 91
+3. TODO 90
