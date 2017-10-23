@@ -21,7 +21,7 @@
 7. Type Declarations - #TODO 18
 
 ### 3. Strings & Patterns - #TODO 19
- - Quoting - #TODO 20
+1. [Quoting](http://php.net/manual/en/language.types.string.php) - @DONE 4
  - Matching - #TODO 21
  - Extracting - #TODO 22
  - Searching - #TODO 23
@@ -104,7 +104,7 @@
 
 ### 11. Error Handling - #TODO 91
  - Handling Exceptions - #TODO 92
- - Errors - #TODO 93
+ - Errors - #TODO 20
  - Throwables - #TODO 73
  
  
@@ -114,6 +114,6 @@
 
 1. IN_PROGRESS 0
 
-2. DONE 3
+2. DONE 4
 
-3. TODO 93
+3. TODO 92
