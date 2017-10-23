@@ -1,7 +1,7 @@
 # PHP-Certification-preparing
 
 ### 1. [PHP Basics](./1-PHP-Basics/index.md) - #TODO 1
-1. [Syntax](./1-PHP-Basics/1-syntax/index.md) - #IN_PROGRESS 1
+1. [Syntax](./1-PHP-Basics/1-syntax/index.md) - #DONE 5
 2. [Operators](./1-PHP-Basics/2-operators/index.md) - #TODO 3
 3. [Variables](./1-PHP-Basics/3-variables/index.md) - #TODO 4
 4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md) - #TODO 5
@@ -112,8 +112,8 @@
  - http://php.net/manual/ru/migration70.new-features.php
 
 
-1. IN_PROGRESS 1
+1. IN_PROGRESS 0
 
-2. DONE 4
+2. DONE 5
 
 3. TODO 91
