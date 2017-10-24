@@ -1,8 +1,12 @@
 ### SPL, Objects as arrays
 http://php.net/manual/en/book.spl.php
 
+<hr/>
+
 #### Datastructures
 http://php.net/manual/en/spl.datastructures.php
+
+--------------------------------------
 
 ##### SplDoublyLinkedList
 
@@ -194,5 +198,14 @@ http://php.net/manual/en/class.splmaxheap.php
 
 - SplMaxHeap::compare — Compare elements in order to place them correctly in the heap while sifting up.
 
+-------------------------------------------------------
 
+##### SplMinHeap
+http://php.net/manual/en/class.splminheap.php
+
+<p>The SplMinHeap class provides the main functionalities of a heap, keeping the minimum on the top. </p>
+
+----------------------------------------------------
+
+<hr/>
 
