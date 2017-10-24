@@ -66,6 +66,8 @@ The default mode is: <strong><code>SplDoublyLinkedList::IT_MODE_FIFO</code></str
 </p>
 </dd>
 
+---------------------------------
+
 ##### SplStack
 http://php.net/manual/en/class.splstack.php
 
@@ -99,6 +101,8 @@ Trying to do so will result in a <a href="class.runtimeexception.php" class="cla
 </div>
 </dd>
 
+--------------------------------------------------
+
 ##### SplQueue
 http://php.net/manual/en/class.splqueue.php
 
@@ -124,6 +128,8 @@ http://php.net/manual/en/class.splqueue.php
          — Sets the mode of iteration
      </li>
 </ul>
+
+---------------------------------------------
 
 ##### SplHeap
 <p>The SplHeap class provides the main functionalities of a Heap.</p>
@@ -178,5 +184,15 @@ http://php.net/manual/en/class.splqueue.php
          — Check whether the heap contains more nodes
      </li>
 </ul>
+
+------------------------------------------------------
+
+##### SplMaxHeap
+http://php.net/manual/en/class.splmaxheap.php
+
+<p>The SplMaxHeap class provides the main functionalities of a heap, keeping the maximum on the top.</p>
+
+- SplMaxHeap::compare — Compare elements in order to place them correctly in the heap while sifting up.
+
 
 
