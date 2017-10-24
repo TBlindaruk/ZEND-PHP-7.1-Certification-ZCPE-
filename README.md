@@ -35,7 +35,7 @@
  - Associative Arrays - #TODO 30
  - Array Iteration - #TODO 31
  - Array Functions - #TODO 32
-4. [SPL, Objects as arrays](./4-Arrays/4-SPL-objects-as-arrays/index.md) - @IN_PROGRESS 1
+4. SPL, Objects as arrays - #TODO 76
  - Casting - #TODO 34
  
 ### 5. Web Features - #TODO 35
@@ -84,7 +84,7 @@
 9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md) - @DONE 3
  - Magic (_*) Methods - #TODO 74
  - Instance Methods & Properties - #TODO 75
- - SPL - #TODO 76
+12. [SPL](./9-Object-Oriented-Programming/12-SPL/index.md) - @IN_PROGRESS 1
  - Traits - #TODO 77
 
 ### 10. [Security](./10-Security/index.md) -#TODO 78
