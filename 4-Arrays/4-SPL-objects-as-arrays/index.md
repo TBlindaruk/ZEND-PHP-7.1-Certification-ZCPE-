@@ -67,3 +67,34 @@ The default mode is: <strong><code>SplDoublyLinkedList::IT_MODE_FIFO</code></str
 </dd>
 
 ##### SplStack
+http://php.net/manual/en/class.splstack.php
+
+<p>The SplStack class provides the main functionalities of a stack implemented using a doubly linked list.</p>
+
+`SplStack extends SplDoublyLinkedList implements Iterator , ArrayAccess , Countable`
+
+<dd>
+<p class="para">
+There is only one iteration parameter you can modify.
+</p>
+<ul class="itemizedlist">
+<li class="listitem">
+<span class="simpara">The behavior of the iterator (either one or the other):</span>
+<ul class="itemizedlist">
+ <li class="listitem"><span class="simpara">SplDoublyLinkedList::IT_MODE_DELETE (Elements are deleted by the iterator)</span></li>
+ <li class="listitem"><span class="simpara">SplDoublyLinkedList::IT_MODE_KEEP (Elements are traversed by the iterator)</span></li>
+</ul>
+</li>
+</ul>
+
+<p class="para">
+The default mode is 0x2 : SplDoublyLinkedList::IT_MODE_LIFO | SplDoublyLinkedList::IT_MODE_KEEP
+</p>
+
+<div class="warning"><strong class="warning">Warning</strong>
+<p class="para">
+The direction of iteration can no longer be changed for SplStacks. 
+Trying to do so will result in a <a href="class.runtimeexception.php" class="classname">RuntimeException</a> being thrown.
+</p>
+</div>
+</dd>
