@@ -1,12 +1,12 @@
 # PHP-Certification-preparing
 
 ### 1. [PHP Basics](./1-PHP-Basics/index.md) - #TODO 1
-1. [Syntax](./1-PHP-Basics/1-syntax/index.md) - #TODO 2
+1. [Syntax](./1-PHP-Basics/1-syntax/index.md) - #DONE 5
 2. [Operators](./1-PHP-Basics/2-operators/index.md) - #TODO 3
 3. [Variables](./1-PHP-Basics/3-variables/index.md) - #TODO 4
 4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md) - #TODO 5
 5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md) - #TODO 6
-6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md) - @IN_PROGRESS 1
+6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md) - #TODO 7
 7. [Extensions](./1-PHP-Basics/7-extensions/index.md) - #TODO 8
 8. Config - #TODO 9
 9. Performance/bytecode caching - #TODO 10
@@ -21,7 +21,7 @@
 7. Type Declarations - #TODO 18
 
 ### 3. Strings & Patterns - #TODO 19
- - Quoting - #TODO 20
+1. [Quoting](http://php.net/manual/en/language.types.string.php) - @DONE 4
  - Matching - #TODO 21
  - Extracting - #TODO 22
  - Searching - #TODO 23
@@ -31,11 +31,11 @@
  - NOWDOC - #TODO 27
  - Encodings - #TODO 28
  
-### 4. [Arrays](./Arrays/index.md) - #TODO 29
+### 4. [Arrays](4-Arrays/index.md) - #TODO 29
  - Associative Arrays - #TODO 30
  - Array Iteration - #TODO 31
  - Array Functions - #TODO 32
- - SPL, Objects as arrays - #TODO 33
+4. [SPL, Objects as arrays](./4-Arrays/4-SPL-objects-as-arrays/index.md) - @IN_PROGRESS 1
  - Casting - #TODO 34
  
 ### 5. Web Features - #TODO 35
@@ -79,7 +79,7 @@
  - Return Types - #TODO 68
  - Autoload - #TODO 69
  - Reflection - #TODO 70
- - Type Hinting - #TODO 71
+7. [Type Hinting](./9-Object-Oriented-Programming/7-type-hinting/index.md) - @DONE 6
  - Class Constants - #TODO 72
 9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md) - @DONE 3
  - Magic (_*) Methods - #TODO 74
@@ -100,20 +100,20 @@
  - Encryption, Hashing algorithms - #TODO 88
 11. [File uploads](./10-Security/11-file-uploads/index.md) - @DONE 1
  - PHP Configuration - #TODO 89
- - Password hashing API - #TODO 90
+ - Password hashing API - #TODO 33
 
-### 11. Error Handling - #TODO 91
- - Handling Exceptions - #TODO 92
- - Errors - #TODO 7
+### 11. Error Handling - #TODO 71
+ - Handling Exceptions - #TODO 2
+ - Errors - #TODO 20
  - Throwables - #TODO 73
  
  
 ### PHP 7
  - http://php.net/manual/ru/migration70.new-features.php
-
+ - http://blog.teamtreehouse.com/5-new-features-php-7
 
 1. IN_PROGRESS 1
 
-2. DONE 3
+2. DONE 6
 
-3. TODO 92
+3. TODO 89
