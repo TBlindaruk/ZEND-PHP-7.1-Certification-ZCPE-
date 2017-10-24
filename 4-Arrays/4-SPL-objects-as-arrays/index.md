@@ -285,6 +285,9 @@ The default mode is `SplPriorityQueue::EXTR_DATA`.
 
 ---------------------------------------
 
+##### SplFixedArray
+http://php.net/manual/en/class.splfixedarray.php
+
 
 <hr/>
 
