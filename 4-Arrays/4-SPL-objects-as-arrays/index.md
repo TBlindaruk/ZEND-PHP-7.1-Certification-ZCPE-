@@ -125,4 +125,58 @@ http://php.net/manual/en/class.splqueue.php
      </li>
 </ul>
 
+##### SplHeap
+<p>The SplHeap class provides the main functionalities of a Heap.</p>
+
+<ul class="chunklist chunklist_reference">
+    <li>
+        <strong>abstract</strong> - <span>SplHeap::compare</span>
+        — Compare elements in order to place them correctly in the heap while sifting up.</li>
+    <li>
+        <span>SplHeap::__construct</span> 
+        — Constructs a new empty heap
+    </li>
+    <li>
+        <span>SplHeap::count</span> 
+        — Counts the number of elements in the heap.</li>
+    <li>
+        <span>SplHeap::current</span> 
+        — Return current node pointed by the iterator</li>
+    <li>
+        <span>SplHeap::extract</span> 
+        — Extracts a node from top of the heap and sift up.
+    </li>
+    <li>
+        <span>SplHeap::insert</span> 
+        — Inserts an element in the heap by sifting it up.</li>
+    <li>
+        <span>SplHeap::isEmpty</span> 
+        — Checks whether the heap is empty.
+    </li>
+    <li>
+        <span>SplHeap::key</span> 
+        — Return current node index
+    </li>
+    <li>
+        <span>SplHeap::next</span> 
+        — Move to the next node
+    </li>
+    <li>
+        <span>SplHeap::recoverFromCorruption</span> 
+        — Recover from the corrupted state and allow further actions on the heap.
+    </li>
+    <li>
+        <span>SplHeap::rewind</span> 
+        — Rewind iterator back to the start (no-op)
+    </li>
+    <li>
+        <span>SplHeap::top</span> 
+        — Peeks at the node from the top of the heap
+    </li>
+    <li>
+        <span>SplHeap::valid</span>
+         — Check whether the heap contains more nodes
+     </li>
+</ul>
+
 
