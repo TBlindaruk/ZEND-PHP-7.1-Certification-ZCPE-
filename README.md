@@ -31,11 +31,11 @@
  - NOWDOC - #TODO 27
  - Encodings - #TODO 28
  
-### 4. [Arrays](./Arrays/index.md) - #TODO 29
+### 4. [Arrays](4-Arrays/index.md) - #TODO 29
  - Associative Arrays - #TODO 30
  - Array Iteration - #TODO 31
  - Array Functions - #TODO 32
- - SPL, Objects as arrays - #TODO 33
+4. [SPL, Objects as arrays](./4-Arrays/4-SPL-objects-as-arrays/index.md) - @IN_PROGRESS 1
  - Casting - #TODO 34
  
 ### 5. Web Features - #TODO 35
@@ -100,7 +100,7 @@
  - Encryption, Hashing algorithms - #TODO 88
 11. [File uploads](./10-Security/11-file-uploads/index.md) - @DONE 1
  - PHP Configuration - #TODO 89
- - Password hashing API - #TODO 90
+ - Password hashing API - #TODO 33
 
 ### 11. Error Handling - #TODO 71
  - Handling Exceptions - #TODO 2
@@ -112,8 +112,8 @@
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
 
-1. IN_PROGRESS 0
+1. IN_PROGRESS 1
 
 2. DONE 6
 
-3. TODO 90
+3. TODO 89
