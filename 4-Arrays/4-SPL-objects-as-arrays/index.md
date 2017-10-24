@@ -38,3 +38,32 @@ SplDoublyLinkedList implements Iterator , ArrayAccess , Countable
 - SplDoublyLinkedList::unserialize — Unserializes the storage
 - SplDoublyLinkedList::unshift — Prepends the doubly linked list with an element
 - SplDoublyLinkedList::valid — Check whether the doubly linked list contains more nodes
+
+<dd>
+
+<p class="para">
+There are two orthogonal sets of modes that can be set:
+</p>
+<ul class="itemizedlist">
+<li class="listitem">
+<span class="simpara">The direction of the iteration (either one or the other):</span>
+<ul class="itemizedlist">
+ <li class="listitem"><span class="simpara"><strong><code>SplDoublyLinkedList::IT_MODE_LIFO</code></strong> (Stack style)</span></li>
+ <li class="listitem"><span class="simpara"><strong><code>SplDoublyLinkedList::IT_MODE_FIFO</code></strong> (Queue style)</span></li>
+</ul>
+</li>
+<li class="listitem">
+<span class="simpara">The behavior of the iterator (either one or the other):</span>
+<ul class="itemizedlist">
+ <li class="listitem"><span class="simpara"><strong><code>SplDoublyLinkedList::IT_MODE_DELETE</code></strong> (Elements are deleted by the iterator)</span></li>
+ <li class="listitem"><span class="simpara"><strong><code>SplDoublyLinkedList::IT_MODE_KEEP</code></strong> (Elements are traversed by the iterator)</span></li>
+</ul>
+</li>
+</ul>
+
+<p class="para">
+The default mode is: <strong><code>SplDoublyLinkedList::IT_MODE_FIFO</code></strong> | <strong><code>SplDoublyLinkedList::IT_MODE_KEEP</code></strong>
+</p>
+</dd>
+
+##### SplStack
