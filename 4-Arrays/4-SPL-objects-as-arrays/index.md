@@ -98,3 +98,14 @@ Trying to do so will result in a <a href="class.runtimeexception.php" class="cla
 </p>
 </div>
 </dd>
+
+##### SplQueue
+http://php.net/manual/en/class.splqueue.php
+
+<p>The SplQueue class provides the main functionalities of a queue implemented using a doubly linked list.</p>
+
+`SplQueue extends SplDoublyLinkedList implements Iterator , ArrayAccess , Countable`
+
+<ul class="chunklist chunklist_reference"><li><a href="splqueue.construct.php">SplQueue::__construct</a> — Constructs a new queue implemented using a doubly linked list</li><li><a href="splqueue.dequeue.php">SplQueue::dequeue</a> — Dequeues a node from the queue</li><li><a href="splqueue.enqueue.php">SplQueue::enqueue</a> — Adds an element to the queue.</li><li><a href="splqueue.setiteratormode.php">SplQueue::setIteratorMode</a> — Sets the mode of iteration</li></ul>
+
+
