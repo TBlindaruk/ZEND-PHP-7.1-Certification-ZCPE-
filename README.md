@@ -6,7 +6,7 @@
 3. [Variables](./1-PHP-Basics/3-variables/index.md) - #TODO 4
 4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md) - #TODO 5
 5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md) - #TODO 6
-6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md) - #TODO 7
+6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md) - @IN_PROGRESS 1
 7. [Extensions](./1-PHP-Basics/7-extensions/index.md) - #TODO 8
 8. Config - #TODO 9
 9. Performance/bytecode caching - #TODO 10
@@ -104,7 +104,7 @@
 
 ### 11. Error Handling - #TODO 91
  - Handling Exceptions - #TODO 92
- - Errors - #TODO 93
+ - Errors - #TODO 7
  - Throwables - #TODO 73
  
  
@@ -112,8 +112,8 @@
  - http://php.net/manual/ru/migration70.new-features.php
 
 
-1. IN_PROGRESS 0
+1. IN_PROGRESS 1
 
 2. DONE 3
 
-3. TODO 93
+3. TODO 92
