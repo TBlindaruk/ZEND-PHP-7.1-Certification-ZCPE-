@@ -207,5 +207,84 @@ http://php.net/manual/en/class.splminheap.php
 
 ----------------------------------------------------
 
+##### SplPriorityQueue
+http://php.net/manual/en/class.splpriorityqueue.php
+
+<p>The SplPriorityQueue class provides the main functionalities of a prioritized queue, implemented using a max heap</p>
+
+`SplPriorityQueue implements Iterator , Countable`
+
+<ul class="chunklist chunklist_reference">
+    <li>
+        <span>SplPriorityQueue::compare</span> 
+        — Compare priorities in order to place elements correctly in the heap while sifting up.
+    </li>
+    <li>
+        <span>SplPriorityQueue::__construct</span> 
+        — Constructs a new empty queue
+    </li>
+    <li>
+        <span>SplPriorityQueue::count</span>
+         — Counts the number of elements in the queue.
+     </li>
+     <li>
+        <span>SplPriorityQueue::current</span> 
+        — Return current node pointed by the iterator
+    </li>
+    <li>
+        <span>SplPriorityQueue::extract</span> 
+        — Extracts a node from top of the heap and shift up.
+    </li>
+    <li>
+        <span>SplPriorityQueue::insert</span> 
+        — Inserts an element in the queue by sifting it up.
+    </li>
+    <li>
+        <span>SplPriorityQueue::isEmpty</span> 
+        — Checks whether the queue is empty.
+    </li>
+    <li>
+        <span>SplPriorityQueue::key</span> 
+        — Return current node index
+    </li>
+    <li>
+        <span>SplPriorityQueue::next</span> 
+        — Move to the next node
+    </li>
+    <li>
+        <span>SplPriorityQueue::recoverFromCorruption</span> 
+        — Recover from the corrupted state and allow further actions on the queue.
+    </li>
+    <li>
+        <span>SplPriorityQueue::rewind</span> 
+        — Rewind iterator back to the start (no-op)
+    </li>
+    <li>
+        <span>SplPriorityQueue::setExtractFlags</span> 
+        — Sets the mode of extraction
+    </li>
+    <li>
+        <span>SplPriorityQueue::top</span> 
+        — Peeks at the node from the top of the queue
+    </li>
+    <li>
+        <span>SplPriorityQueue::valid</span> 
+        — Check whether the queue contains more nodes
+    </li>
+</ul>
+    
+`public void SplPriorityQueue::setExtractFlags ( int $flags )`    
+
+<ul class="itemizedlist">
+<li class="listitem"><span class="simpara"><strong><code>SplPriorityQueue::EXTR_DATA</code></strong> (0x00000001): Extract the data</span></li>
+<li class="listitem"><span class="simpara"><strong><code>SplPriorityQueue::EXTR_PRIORITY</code></strong> (0x00000002): Extract the priority</span></li>
+<li class="listitem"><span class="simpara"><strong><code>SplPriorityQueue::EXTR_BOTH</code></strong> (0x00000003): Extract an array containing both</span></li>
+</ul>
+
+The default mode is `SplPriorityQueue::EXTR_DATA`.
+
+---------------------------------------
+
+
 <hr/>
 
