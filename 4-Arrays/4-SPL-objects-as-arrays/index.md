@@ -106,6 +106,23 @@ http://php.net/manual/en/class.splqueue.php
 
 `SplQueue extends SplDoublyLinkedList implements Iterator , ArrayAccess , Countable`
 
-<ul class="chunklist chunklist_reference"><li><a href="splqueue.construct.php">SplQueue::__construct</a> — Constructs a new queue implemented using a doubly linked list</li><li><a href="splqueue.dequeue.php">SplQueue::dequeue</a> — Dequeues a node from the queue</li><li><a href="splqueue.enqueue.php">SplQueue::enqueue</a> — Adds an element to the queue.</li><li><a href="splqueue.setiteratormode.php">SplQueue::setIteratorMode</a> — Sets the mode of iteration</li></ul>
+<ul class="chunklist chunklist_reference">
+    <li>
+        <span>SplQueue::__construct</span>
+         — Constructs a new queue implemented using a doubly linked list
+     </li>
+     <li>
+        <span>SplQueue::dequeue</span> 
+        — Dequeues a node from the queue
+    </li>
+    <li>
+        <span>SplQueue::enqueue</span> 
+        — Adds an element to the queue.
+    </li>
+    <li>
+        <span>SplQueue::setIteratorMode</span>
+         — Sets the mode of iteration
+     </li>
+</ul>
 
 
