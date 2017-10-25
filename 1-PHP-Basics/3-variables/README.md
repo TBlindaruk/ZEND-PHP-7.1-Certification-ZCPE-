@@ -1,3 +1,7 @@
+### Variables
+
+http://php.net/manual/en/language.variables.php
+
 1. Basics
     - http://php.net/manual/en/language.variables.basics.php
 2. Predefined Variables
@@ -9,5 +13,15 @@
 5. Variables From External Sources 
     - http://php.net/manual/en/language.variables.external.php
     
-#### Links
-- http://php.net/manual/en/language.variables.php
+
+```PHP
+<?php
+
+define('IA','I Can have a diferance case',true);
+define('NOT_CLEAR','I have a strong case');
+
+echo IA . PHP_EOL;
+echo Ia . PHP_EOL;
+echo NOT_CLEAR . PHP_EOL;
+echo Not_clear . PHP_EOL; // EROR
+```
