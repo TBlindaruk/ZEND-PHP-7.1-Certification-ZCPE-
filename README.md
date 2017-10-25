@@ -32,7 +32,7 @@
  - Encodings - #TODO 28
  
 ### 4. [Arrays](4-Arrays/index.md) - #TODO 29
- - Associative Arrays - #TODO 30
+1. [Associative Arrays](./4-Arrays/1-Associative-Arrays/README.md) - @DONE 8
  - Array Iteration - #TODO 31
  - Array Functions - #TODO 32
 4. SPL, Objects as arrays - #TODO 76
@@ -92,7 +92,7 @@
     - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 94
     - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md) - @REMOVE @TODO 95
     - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md) - @REMOVE @TODO 96
-    - [SPL. SPL Types](./9-Object-Oriented-Programming/12-SPL/10-SPL-Type/README.md) - @REMOVE @TODO 97
+    - [SPL. SPL Types](./9-Object-Oriented-Programming/12-SPL/10-SPL-Type/README.md) - @REMOVE @TODO 30
  - Traits - #TODO 77
 
 ### 10. [Security](./10-Security/index.md) -#TODO 78
@@ -122,6 +122,6 @@
 
 1. IN_PROGRESS 0
 
-2. DONE 7
+2. DONE 8
 
-3. TODO 97
+3. TODO 96
