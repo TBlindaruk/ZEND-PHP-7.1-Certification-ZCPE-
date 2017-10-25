@@ -84,7 +84,7 @@
 9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md) - @DONE 3
  - Magic (_*) Methods - #TODO 74
  - Instance Methods & Properties - #TODO 75
-12. [SPL](./9-Object-Oriented-Programming/12-SPL/index.md) - @IN_PROGRESS 1
+12. [SPL](./9-Object-Oriented-Programming/12-SPL/index.md) - @DONE 7
     - [SPL. Iterators](./9-Object-Oriented-Programming/12-SPL/2-Iterators/readme.md) - @REMOVE @TODO 90
     - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md) - @REMOVE @TODO 91
     - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) - @REMOVE @TODO 92
@@ -92,6 +92,7 @@
     - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 94
     - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md) - @REMOVE @TODO 95
     - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md) - @REMOVE @TODO 96
+    - [SPL. SPL Types](./9-Object-Oriented-Programming/12-SPL/10-SPL-Type/README.md) - @REMOVE @TODO 97
  - Traits - #TODO 77
 
 ### 10. [Security](./10-Security/index.md) -#TODO 78
@@ -119,8 +120,8 @@
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
 
-1. IN_PROGRESS 1
+1. IN_PROGRESS 0
 
-2. DONE 6
+2. DONE 7
 
-3. TODO 96
+3. TODO 97
