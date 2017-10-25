@@ -23,6 +23,8 @@ interface Traversable extends iterable {
 #### Iterator
 http://php.net/manual/en/class.iterator.php
 
+[example](./example/1-Iterator.php)
+
 <p>Interface for external iterators or objects that can be iterated themselves internally.</p>
 
 P/s: Used in foreach
@@ -101,3 +103,29 @@ interface iterable {}
 
 ---------------------------------------------
 
+#### IteratorAggregate interface
+
+[Example](./example/2-IteratorAggregate.php)
+
+<p>Interface to create an external Iterato</p>
+
+```PHP
+<?php
+/**
+ * Interface to create an external Iterator.
+ * @link http://php.net/manual/en/class.iteratoraggregate.php
+ */
+interface IteratorAggregate extends Traversable {
+
+    /**
+     * Retrieve an external iterator
+     * @link http://php.net/manual/en/iteratoraggregate.getiterator.php
+     * @return Traversable An instance of an object implementing <b>Iterator</b> or
+     * <b>Traversable</b>
+     * @since 5.0.0
+     */
+    public function getIterator();
+}
+```
+
+------------------------------------
