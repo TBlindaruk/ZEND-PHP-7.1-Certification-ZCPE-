@@ -8,5 +8,6 @@ http://php.net/manual/ru/book.spl-types.php
 4. [Predefined Classes](./3-Predefined-Interfaces/readme.md) TODO
 5. [Interfaces](./5-Interfaces/readme.md)
 6. [Exceptions](./6-Exceptions/README.md)
+7. [SPL Functions](./7-SPL-Functions/README.md)
 #### LINK 
 

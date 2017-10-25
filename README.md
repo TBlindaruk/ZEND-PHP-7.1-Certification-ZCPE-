@@ -89,6 +89,7 @@
     - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md) - @REMOVE @TODO 91
     - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) - @REMOVE @TODO 92
     - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md) - @REMOVE @TODO 93
+    - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 94
  - Traits - #TODO 77
 
 ### 10. [Security](./10-Security/index.md) -#TODO 78
@@ -120,4 +121,4 @@
 
 2. DONE 6
 
-3. TODO 93
+3. TODO 94
