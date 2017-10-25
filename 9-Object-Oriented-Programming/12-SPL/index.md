@@ -291,6 +291,32 @@ http://php.net/manual/en/class.splfixedarray.php
 ##### SplObjectStorage
 http://php.net/manual/en/class.splobjectstorage.php
 
-Треба розібратися ще
+<p>The SplObjectStorage class provides a map from objects to data or, by ignoring data, an object set. This dual purpose can be useful in many cases involving the need to uniquely identify objects.</p>
+SplObjectStorage::addAll — Добавляет все объекты из другого контейнера
+SplObjectStorage::attach — Добавляет объект в контейнер
+SplObjectStorage::contains — Проверяет, содержит ли контейнер заданный объект
+SplObjectStorage::count — Возвращает количество объектов в контейнере
+SplObjectStorage::current — Возвращает текущий объект
+SplObjectStorage::detach — Удаляет объект object из контейнера
+SplObjectStorage::getHash — Вычисляет уникальный идентификатор для объектов контейнера
+SplObjectStorage::getInfo — Возвращает данные ассоциированные с текущим объектом
+SplObjectStorage::key — Возвращает индекс текущего положения итератора
+SplObjectStorage::next — Переход к следующему объекту
+SplObjectStorage::offsetExists — Проверяет, существует ли объект в контейнере
+SplObjectStorage::offsetGet — Возвращает данные ассоциированные с объектом object
+SplObjectStorage::offsetSet — Ассоциирует данные с объектом в контейнере
+SplObjectStorage::offsetUnset — Удаляет объект из контейнера
+SplObjectStorage::removeAll — Удаляет из текущего контейнера объекты, которые есть в другом контейнере
+SplObjectStorage::removeAllExcept — Удаляет из текущего контейнера все объекты, которых нет в другом контейнере
+SplObjectStorage::rewind — Переводит итератор на первый элемент контейнера
+SplObjectStorage::serialize — Сериализует контейнер
+SplObjectStorage::setInfo — Ассоциирует данные с текущим объектом контейнера
+SplObjectStorage::unserialize — Восстанавливает сериализованый контейнер из строки
+SplObjectStorage::valid — Определяет, допустимо ли текущее значение итератора
+
 <hr/>
 
+
+
+#### LINK 
+http://php.net/manual/ru/book.spl-types.php
