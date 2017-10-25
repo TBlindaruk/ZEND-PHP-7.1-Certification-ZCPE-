@@ -68,7 +68,7 @@
 3. [XML Extension](http://php.net/manual/en/refs.xml.php) - #TODO 59
 4. [Webservices Basics](http://php.net/manual/ru/refs.webservice.php) - #TODO 60
 5. [SOAP](http://php.net/manual/ru/book.soap.php) - #TODO 61
-6. [JSON](http://php.net/manual/ru/book.json.php) - #TODO 62
+6. [JSON](./8-Data-Format-Types/6-JSON/README.md) - @DONE 9
 7. [DateTime](http://php.net/manual/ru/class.datetime.php) - #TODO 63
 8. [DOMDocument](http://php.net/manual/ru/class.domdocument.php) - #TODO 64
  
@@ -91,7 +91,7 @@
     - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md) - @REMOVE @TODO 93
     - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 94
     - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md) - @REMOVE @TODO 95
-    - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md) - @REMOVE @TODO 96
+    - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md) - @REMOVE @TODO 62
     - [SPL. SPL Types](./9-Object-Oriented-Programming/12-SPL/10-SPL-Type/README.md) - @REMOVE @TODO 30
  - Traits - #TODO 77
 
@@ -122,6 +122,6 @@
 
 1. IN_PROGRESS 0
 
-2. DONE 8
+2. DONE 9
 
-3. TODO 96
+3. TODO 95
