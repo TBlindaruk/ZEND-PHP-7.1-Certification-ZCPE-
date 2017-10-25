@@ -6,7 +6,7 @@
 3. [Variables](1-PHP-Basics/3-variables/README.md)
 4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md)
 5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md)
-6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md) - #TODO 7
+6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md)
 7. [Extensions](./1-PHP-Basics/7-extensions/index.md) - #TODO 8
 8. Config - #TODO 9
 9. Performance/bytecode caching - #TODO 10
@@ -92,7 +92,7 @@
     - [SPL. Iterators](./9-Object-Oriented-Programming/12-SPL/2-Iterators/readme.md) - @REMOVE @TODO 90
     - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md) - @REMOVE @TODO 91
     - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) - @REMOVE @DONE 10
-        - [SPL. Interfaces. OuterIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 95
+        - [SPL. Interfaces. OuterIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 7
         - [SPL. Interfaces. RecursiveIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 26
     - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md) - @REMOVE @TODO 93
     - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 94
@@ -128,4 +128,4 @@
 
 1. IN_PROGRESS 0
 
-3. TODO 96
+3. TODO 94
