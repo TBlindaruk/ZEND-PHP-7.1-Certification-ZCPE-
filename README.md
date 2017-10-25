@@ -91,6 +91,7 @@
     - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md) - @REMOVE @TODO 93
     - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 94
     - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md) - @REMOVE @TODO 95
+    - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md) - @REMOVE @TODO 96
  - Traits - #TODO 77
 
 ### 10. [Security](./10-Security/index.md) -#TODO 78
@@ -122,4 +123,4 @@
 
 2. DONE 6
 
-3. TODO 95
+3. TODO 96

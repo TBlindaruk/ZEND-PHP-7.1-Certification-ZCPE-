@@ -10,5 +10,6 @@ http://php.net/manual/ru/book.spl-types.php
 6. [Exceptions](./6-Exceptions/README.md)
 7. [SPL Functions](./7-SPL-Functions/README.md)
 8. [File Handling](./8-File-Handling/README.md)
+9. [Miscellaneous Classes and Interfaces](./9-Miscellaneous-Classes-and-Interfaces/README.md)
 #### LINK 
 
