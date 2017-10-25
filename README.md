@@ -27,7 +27,8 @@
  - Searching - #TODO 23
  - Replacing - #TODO 24
  - Formatting - #TODO 25
- - PCRE - #TODO 26
+7. [PCRE](./3-String/7-PCRE/README.md) - @IN_PROGRESS
+    - [PCRE. Predefined Constants](3-String/7-PCRE/README.md) @REMOVE @TODO 97
  - NOWDOC - #TODO 27
  - Encodings - #TODO 28
  
@@ -89,7 +90,7 @@
     - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md) - @REMOVE @TODO 91
     - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) - @REMOVE @DONE 10
         - [SPL. Interfaces. OuterIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 95
-        - [SPL. Interfaces. RecursiveIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 96
+        - [SPL. Interfaces. RecursiveIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 26
     - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md) - @REMOVE @TODO 93
     - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 94
     - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md) - @REMOVE @TODO 92
@@ -122,8 +123,8 @@
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
 
-1. IN_PROGRESS 0
+1. IN_PROGRESS 1
 
 2. DONE 10
 
-3. TODO 96
+3. TODO 97
