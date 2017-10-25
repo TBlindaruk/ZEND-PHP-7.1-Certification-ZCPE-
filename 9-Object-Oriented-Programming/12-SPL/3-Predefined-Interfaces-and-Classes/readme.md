@@ -1,34 +1,24 @@
-### Interfaces
-http://php.net/manual/en/spl.interfaces.php
+### Predefined Interfaces and Classes
 http://php.net/manual/en/reserved.interfaces.php
 
+------------------------------------
 
-#### Countable
-http://php.net/manual/en/class.countable.php
+#### Traversable interface
+http://php.net/manual/en/class.traversable.php
+
+<p>Interface to detect if a class is traversable using foreach.</p>
+<p>Abstract base interface that cannot be implemented alone. Instead it must be implemented by either IteratorAggregate or Iterator.</p>
 
 ```PHP
-<?php 
-
+<?php
 /**
- * Classes implementing <b>Countable</b> can be used with the
- * <b>count</b> function.
- * @link http://php.net/manual/en/class.countable.php
+ * Interface to detect if a class is traversable using &foreach;.
+ * @link http://php.net/manual/en/class.traversable.php
  */
-interface Countable {
-
-    /**
-     * Count elements of an object
-     * @link http://php.net/manual/en/countable.count.php
-     * @return int The custom count as an integer.
-     * </p>
-     * <p>
-     * The return value is cast to an integer.
-     * @since 5.1.0
-     */
-    public function count();
+interface Traversable extends iterable {
 }
 ```
-
+----------------------------------------
 
 #### Iterator
 http://php.net/manual/en/class.iterator.php
@@ -108,4 +98,6 @@ interface Traversable extends iterable {
  */
 interface iterable {}
 ```
+
+---------------------------------------------
 
