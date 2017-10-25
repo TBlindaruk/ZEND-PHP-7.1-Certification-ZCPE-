@@ -199,6 +199,8 @@ interface ArrayAccess {
 
 ```
 
+-------------------------------------------
+
 #### Serializable interface
 
 http://php.net/manual/en/class.serializable.php
@@ -234,3 +236,7 @@ interface Serializable {
     public function unserialize($serialized);
 }
 ```
+
+-------------------------------------------------
+
+
