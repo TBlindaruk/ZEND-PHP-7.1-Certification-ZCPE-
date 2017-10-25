@@ -1,5 +1,10 @@
 ### Array Operators
 
+http://php.net/manual/en/language.operators.array.php
+
+[examples](./example/array-operators.php)
+--------------------------
+
 <table class="doctable table">
 <caption><strong>Array Operators</strong></caption>
 
@@ -53,6 +58,3 @@
  </tbody>
 
 </table>
-
-###### Links
- - http://php.net/manual/en/language.operators.array.php

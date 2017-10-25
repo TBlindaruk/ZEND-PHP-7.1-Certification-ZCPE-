@@ -1,8 +1,9 @@
 # PHP-Certification-preparing
 
 ### 1. [PHP Basics](./1-PHP-Basics/index.md) - #TODO 1
-1. [Syntax](./1-PHP-Basics/1-syntax/index.md) - #DONE 5
-2. [Operators](./1-PHP-Basics/2-operators/index.md) - #TODO 3
+1. [Syntax](./1-PHP-Basics/1-syntax/index.md)
+2. [Operators](./1-PHP-Basics/2-operators/index.md) - @IN_PROGRESS 1
+    - [Operators. echo (-5 % -3)."\n"; // prints -2] Why is it? @TODO 100
 3. [Variables](./1-PHP-Basics/3-variables/index.md) - #TODO 4
 4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md) - #TODO 5
 5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md) - #TODO 6
@@ -31,7 +32,7 @@
     - [PCRE. Predefined Constants](3-String/7-PCRE/README.md) @REMOVE @TODO 97
     - [PCRE. PCRE Patterns](./3-String/7-PCRE/1-PCRE-Patterns/README.md) @REMOVE @TODO 98
     - [PCRE. PCRE Functions](./3-String/7-PCRE/2-PCRE-Functions/README.md) @REMOVE @TODO 99
-    - [PCRE. Practice](./3-String/7-PCRE/example/README.md) @PRACTICE @REMOVE @TODO 100
+    - [PCRE. Practice](./3-String/7-PCRE/example/README.md) @PRACTICE @REMOVE @TODO 3
  - NOWDOC - #TODO 27
  - Encodings - #TODO 28
  
@@ -126,7 +127,7 @@
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
 
-1. IN_PROGRESS 0
+1. IN_PROGRESS 1
 
 2. DONE 11
 
