@@ -27,8 +27,11 @@
  - Searching - #TODO 23
  - Replacing - #TODO 24
  - Formatting - #TODO 25
-7. [PCRE](./3-String/7-PCRE/README.md) - @IN_PROGRESS
+7. [PCRE](./3-String/7-PCRE/README.md) - @DONE 11
     - [PCRE. Predefined Constants](3-String/7-PCRE/README.md) @REMOVE @TODO 97
+    - [PCRE. PCRE Patterns](./3-String/7-PCRE/1-PCRE-Patterns/README.md) @REMOVE @TODO 98
+    - [PCRE. PCRE Functions](./3-String/7-PCRE/2-PCRE-Functions/README.md) @REMOVE @TODO 99
+    - [PCRE. Practice](./3-String/7-PCRE/example/README.md) @PRACTICE @REMOVE @TODO 100
  - NOWDOC - #TODO 27
  - Encodings - #TODO 28
  
@@ -123,8 +126,8 @@
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
 
-1. IN_PROGRESS 1
+1. IN_PROGRESS 0
 
-2. DONE 10
+2. DONE 11
 
-3. TODO 97
+3. TODO 100
