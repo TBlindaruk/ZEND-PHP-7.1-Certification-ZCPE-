@@ -18,3 +18,13 @@ $array[$i] = $i++; // may set either index 1 or 2
 */
 var_dump($array);
 ```
+
+
+```PHP
+<?php
+
+$c = -5 % -4; //c = -1 (- because first operator)
+$c = -5 % 4; //c = -1 (- because first operator)
+$c = 5 % -4; //c = 1 (+ because first operator)
+$c = 5 % 4; //c = 1 (+ because first operator)
+```

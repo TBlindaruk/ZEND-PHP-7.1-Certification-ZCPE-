@@ -3,7 +3,6 @@
 ### 1. [PHP Basics](./1-PHP-Basics/index.md) - #TODO 1
 1. [Syntax](./1-PHP-Basics/1-syntax/index.md)
 2. [Operators](./1-PHP-Basics/2-operators/index.md)
-    - [Operators. echo (-5 % -3)."\n"; // prints -2] Why is it? @TODO 100
 3. [Variables](./1-PHP-Basics/3-variables/index.md) - #TODO 4
 4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md) - #TODO 5
 5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md) - #TODO 6
@@ -129,4 +128,4 @@
 
 1. IN_PROGRESS 1
 
-3. TODO 100
+3. TODO 99
