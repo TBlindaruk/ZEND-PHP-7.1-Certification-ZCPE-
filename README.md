@@ -4,7 +4,7 @@
 1. [Syntax](./1-PHP-Basics/1-syntax/index.md)
 2. [Operators](./1-PHP-Basics/2-operators/index.md)
 3. [Variables](1-PHP-Basics/3-variables/README.md)
-4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md) - #TODO 5
+4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md)
 5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md) - #TODO 6
 6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md) - #TODO 7
 7. [Extensions](./1-PHP-Basics/7-extensions/index.md) - #TODO 8
@@ -29,7 +29,7 @@
  - Formatting - #TODO 25
 7. [PCRE](./3-String/7-PCRE/README.md) - @DONE 11
     - [PCRE. Predefined Constants](3-String/7-PCRE/README.md) @REMOVE @TODO 97
-    - [PCRE. PCRE Patterns](./3-String/7-PCRE/1-PCRE-Patterns/README.md) @REMOVE @TODO 98
+    - [PCRE. PCRE Patterns](./3-String/7-PCRE/1-PCRE-Patterns/README.md) @REMOVE @TODO 5
     - [PCRE. PCRE Functions](./3-String/7-PCRE/2-PCRE-Functions/README.md) @REMOVE @TODO 4
     - [PCRE. Practice](./3-String/7-PCRE/example/README.md) @PRACTICE @REMOVE @TODO 3
  - NOWDOC - #TODO 27

@@ -1,5 +1,4 @@
 ### Control Structures
 
-    - Declare (http://php.net/manual/ru/control-structures.declare.php)
-#### Links
-- http://php.net/manual/en/language.control-structures.php
+1. [Control Structure](http://php.net/manual/en/language.control-structures.php)
+2. [Declare](./2-declare.md)
