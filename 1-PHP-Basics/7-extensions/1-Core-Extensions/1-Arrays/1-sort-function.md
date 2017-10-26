@@ -2,6 +2,8 @@
  
 http://php.net/manual/en/array.sorting.php
 
+---------------------------------------
+
 <table class="doctable table">
 <caption><strong>Sorting function attributes</strong></caption>
 
@@ -125,6 +127,8 @@ http://php.net/manual/en/array.sorting.php
 
 </table>
 
+------------------------------------
+
 ##### array_multisort
 
 http://php.net/manual/en/function.array-multisort.php
@@ -158,14 +162,37 @@ function array_multisort (array &$arr, $arg = null, $arg = null, $_ = null) {}
 ```
 `bool array_multisort ( array &$array1 [, mixed $array1_sort_order = SORT_ASC [, mixed $array1_sort_flags = SORT_REGULAR [, mixed $... ]]] )`
 
+----------------------------
+
 ##### asort
 
 http://php.net/manual/en/function.asort.php
 
 Sort an array and maintain index association
 
+-------------------------------------
 
 ##### arsort
+
+http://php.net/manual/en/function.arsort.php
+
+<p> Sort an array in reverse order and maintain index association</p>
+
+```PHP
+<?php
+$fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
+arsort($fruits);
+foreach ($fruits as $key => $val) {
+    echo "$key = $val\n";
+}
+/**
+ * a = orange
+ * d = lemon
+ * b = banana
+ * c = apple
+ */
+
+```
 
 ##### krsort
 
