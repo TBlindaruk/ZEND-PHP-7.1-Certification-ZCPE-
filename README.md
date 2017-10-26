@@ -7,7 +7,37 @@
 4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md)
 5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md)
 6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md)
-7. [Extensions](./1-PHP-Basics/7-extensions/index.md) - #TODO 8
+7. [Extensions](1-PHP-Basics/7-extensions/README.md)
+     - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md) - @REMOVE 
+         - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md) - @TODO 94
+         - [Extensions. Class/Object Information](./1-PHP-Basics/7-extensions/README.md) - @TODO 95
+         - [Extensions. Date and Time](./1-PHP-Basics/7-extensions/README.md) - @TODO 96
+         - [Extensions. Directories](./1-PHP-Basics/7-extensions/README.md) - @TODO 97
+         - [Extensions. Error Handling and Logging](./1-PHP-Basics/7-extensions/README.md) - @TODO 98
+         - [Extensions. System program execution](./1-PHP-Basics/7-extensions/README.md) - @TODO 99
+         - [Extensions. Filesystem](./1-PHP-Basics/7-extensions/README.md) - @TODO 100
+         - [Extensions. Data Filtering](./1-PHP-Basics/7-extensions/README.md) - @TODO 101
+         - [Extensions. Function Handling](./1-PHP-Basics/7-extensions/README.md) - @TODO 102
+         - [Extensions. HASH Message Digest Framework](./1-PHP-Basics/7-extensions/README.md) - @TODO 103
+         - [Extensions. PHP Options and Information](./1-PHP-Basics/7-extensions/README.md) - @TODO 104
+         - [Extensions. Mail](./1-PHP-Basics/7-extensions/README.md) - @TODO 105
+         - [Extensions. Mathematical Functions](./1-PHP-Basics/7-extensions/README.md) - @TODO 106
+         - [Extensions. Miscellaneous Functions](./1-PHP-Basics/7-extensions/README.md) - @TODO 107
+         - [Extensions. Network](./1-PHP-Basics/7-extensions/README.md) - @TODO 108
+         - [Extensions. Output Buffering Control](./1-PHP-Basics/7-extensions/README.md) - @TODO 109
+         - [Extensions. Password Hashing](./1-PHP-Basics/7-extensions/README.md) - @TODO 110
+         - [Extensions. Phar](./1-PHP-Basics/7-extensions/README.md) - @TODO 111
+         - [Extensions. Reflection](./1-PHP-Basics/7-extensions/README.md) - @TODO 112
+         - [Extensions. Regular Expression (POSIX Extended)](./1-PHP-Basics/7-extensions/README.md) - @TODO 113
+         - [Extensions. Standard PHP Library (SPL)](./1-PHP-Basics/7-extensions/README.md) - @TODO 114
+         - [Extensions. Streams](./1-PHP-Basics/7-extensions/README.md) - @TODO 115
+         - [Extensions. Strings](./1-PHP-Basics/7-extensions/README.md) - @TODO 116
+         - [Extensions. Tokenizer](./1-PHP-Basics/7-extensions/README.md) - @TODO 117
+         - [Extensions. URLs](./1-PHP-Basics/7-extensions/README.md) - @TODO 118
+         - [Extensions. Variable handling](./1-PHP-Basics/7-extensions/README.md) - @TODO 119
+     - [Extensions. Bundled Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 120
+     - [Extensions. External Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 121
+     - [Extensions. PECL Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 122
 8. Config - #TODO 9
 9. Performance/bytecode caching - #TODO 10
 
@@ -95,7 +125,7 @@
         - [SPL. Interfaces. OuterIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 7
         - [SPL. Interfaces. RecursiveIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 26
     - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md) - @REMOVE @TODO 93
-    - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 94
+    - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 8
     - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md) - @REMOVE @TODO 92
     - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md) - @REMOVE @TODO 62
     - [SPL. SPL Types](./9-Object-Oriented-Programming/12-SPL/10-SPL-Type/README.md) - @REMOVE @TODO 30
@@ -126,6 +156,6 @@
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
 
-1. IN_PROGRESS 0
+1. IN_PROGRESS 1
 
-3. TODO 94
+3. TODO 122
