@@ -188,11 +188,143 @@ echo $str;
 
 --------------------
 
-chunk_split — Split a string into smaller chunks
-convert_cyr_string — Convert from one Cyrillic character set to another
-convert_uudecode — Decode a uuencoded string
-convert_uuencode — Uuencode a string
-count_chars — Return information about characters used in a string
+#### chunk_split — Split a string into smaller chunks
+
+http://php.net/manual/en/function.chunk-split.php
+
+```PHP
+<?php
+/**
+ * Split a string into smaller chunks
+ * @link http://php.net/manual/en/function.chunk-split.php
+ * @param string $body <p>
+ * The string to be chunked.
+ * </p>
+ * @param int $chunklen [optional] <p>
+ * The chunk length.
+ * </p>
+ * @param string $end [optional] <p>
+ * The line ending sequence.
+ * </p>
+ * @return string the chunked string.
+ * @since 4.0
+ * @since 5.0
+ */
+function chunk_split ($body, $chunklen = null, $end = null) {}
+```
+
+```PHP
+<?php
+$lorem = <<<TEXT
+Lorem ipsum dolor sit amet, consectetur adipiscing e
+TEXT;
+
+/**
+ * string(64) "Lorem ipsu
+ * m dolor si
+ * t amet, co
+ * nsectetur 
+ * adipiscing
+ *  e
+ * "
+ */
+var_dump(chunk_split($lorem,10));
+```
+
+----------------------------
+
+#### convert_cyr_string — Convert from one Cyrillic character set to another
+
+http://php.net/manual/en/function.convert-cyr-string.php
+
+<strong>I do not know how it is work ;) </strong>
+
+```PHP
+<?php
+
+/**
+ * Convert from one Cyrillic character set to another
+ * @link http://php.net/manual/en/function.convert-cyr-string.php
+ * @param string $str <p>
+ * The string to be converted.
+ * </p>
+ * @param string $from <p>
+ * The source Cyrillic character set, as a single character.
+ * </p>
+ * @param string $to <p>
+ * The target Cyrillic character set, as a single character.
+ * </p>
+ * @return string the converted string.
+ * @since 4.0
+ * @since 5.0
+ */
+function convert_cyr_string ($str, $from, $to) {}
+```
+
+------------------
+
+#### convert_uudecode — Decode a uuencoded string
+
+http://php.net/manual/en/function.convert-uudecode.php
+
+```PHP
+<?php
+/**
+ * Decode a uuencoded string
+ * @link http://php.net/manual/en/function.convert-uudecode.php
+ * @param string $data <p>
+ * The uuencoded data.
+ * </p>
+ * @return string the decoded data as a string.
+ * @since 5.0
+ */
+function convert_uudecode ($data) {}
+```
+
+```PHP
+<?php
+/* Can you imagine what this will print? :) */
+echo convert_uudecode("+22!L;W9E(%!(4\"$`\n`"); // I love PHP!
+```
+-----------------------------
+
+#### convert_uuencode — Uuencode a string
+
+http://php.net/manual/en/function.convert-uuencode.php
+
+```PHP
+<?php
+/**
+ * Uuencode a string
+ * @link http://php.net/manual/en/function.convert-uuencode.php
+ * @param string $data <p>
+ * The data to be encoded.
+ * </p>
+ * @return string the uuencoded data.
+ * @since 5.0
+ */
+function convert_uuencode ($data) {}
+```
+
+```PHP
+<?php
+
+$data = 'I Love PHP';
+
+$encodeData = convert_uuencode($data);
+$decodeData = convert_uudecode($encodeData);
+
+echo "CLEAR: $data" . PHP_EOL; // CLEAR: I Love PHP
+echo "ENCODE: $encodeData" . PHP_EOL; // ENCODE: *22!,;W9E(%!(4```
+echo "DECODE: $decodeData" . PHP_EOL; //DECODE: I Love PHP
+```
+
+-----------------------------
+
+#### count_chars — Return information about characters used in a string
+
+-----------------------------
+
 crc32 — Calculates the crc32 polynomial of a string
 crypt — One-way string hashing
 echo — Output one or more strings
