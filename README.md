@@ -11,51 +11,51 @@
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
          - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md)
             - [Extensions. Arrays. Sorting Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md)
-                - [Extensions. Arrays. Sorting Functions. shuffle](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 130
-                - [Extensions. Arrays. Sorting Functions. sort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 131
-                - [Extensions. Arrays. Sorting Functions. uasort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 125
-                - [Extensions. Arrays. Sorting Functions. uksort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 124
-                - [Extensions. Arrays. Sorting Functions. usort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 123
-            - [Extensions. Arrays. Array Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/2-Array-Functions.md) - @TODO 122
-         - [Extensions. Class/Object Information](./1-PHP-Basics/7-extensions/README.md) - @TODO 95
-         - [Extensions. Date and Time](./1-PHP-Basics/7-extensions/README.md) - @TODO 96
-         - [Extensions. Directories](./1-PHP-Basics/7-extensions/README.md) - @TODO 97
-         - [Extensions. Error Handling and Logging](./1-PHP-Basics/7-extensions/README.md) - @TODO 98
-         - [Extensions. System program execution](./1-PHP-Basics/7-extensions/README.md) - @TODO 99
-         - [Extensions. Filesystem](./1-PHP-Basics/7-extensions/README.md) - @TODO 100
-         - [Extensions. Data Filtering](./1-PHP-Basics/7-extensions/README.md) - @TODO 101
-         - [Extensions. Function Handling](./1-PHP-Basics/7-extensions/README.md) - @TODO 102
-         - [Extensions. HASH Message Digest Framework](./1-PHP-Basics/7-extensions/README.md) - @TODO 103
-         - [Extensions. PHP Options and Information](./1-PHP-Basics/7-extensions/README.md) - @TODO 104
-         - [Extensions. Mail](./1-PHP-Basics/7-extensions/README.md) - @TODO 105
-         - [Extensions. Mathematical Functions](./1-PHP-Basics/7-extensions/README.md) - @TODO 106
-         - [Extensions. Miscellaneous Functions](./1-PHP-Basics/7-extensions/README.md) - @TODO 107
-         - [Extensions. Network](./1-PHP-Basics/7-extensions/README.md) - @TODO 108
-         - [Extensions. Output Buffering Control](./1-PHP-Basics/7-extensions/README.md) - @TODO 109
-         - [Extensions. Password Hashing](./1-PHP-Basics/7-extensions/README.md) - @TODO 110
-         - [Extensions. Phar](./1-PHP-Basics/7-extensions/README.md) - @TODO 111
-         - [Extensions. Reflection](./1-PHP-Basics/7-extensions/README.md) - @TODO 112
-         - [Extensions. Regular Expression (POSIX Extended)](./1-PHP-Basics/7-extensions/README.md) - @TODO 113
-         - [Extensions. Standard PHP Library (SPL)](./1-PHP-Basics/7-extensions/README.md) - @TODO 114
-         - [Extensions. Streams](./1-PHP-Basics/7-extensions/README.md) - @TODO 115
-         - [Extensions. Strings](./1-PHP-Basics/7-extensions/README.md) - @TODO 116
-         - [Extensions. Tokenizer](./1-PHP-Basics/7-extensions/README.md) - @TODO 117
-         - [Extensions. URLs](./1-PHP-Basics/7-extensions/README.md) - @TODO 118
-         - [Extensions. Variable handling](./1-PHP-Basics/7-extensions/README.md) - @TODO 119
-     - [Extensions. Bundled Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 120
-     - [Extensions. External Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 121
-     - [Extensions. PECL Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 94
-8. Config - #TODO 9
-9. Performance/bytecode caching - #TODO 10
+                - [Extensions. Arrays. Sorting Functions. shuffle](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @Skip 
+                - [Extensions. Arrays. Sorting Functions. sort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @Skip 
+                - [Extensions. Arrays. Sorting Functions. uasort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @Skip 
+                - [Extensions. Arrays. Sorting Functions. uksort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @Skip 
+                - [Extensions. Arrays. Sorting Functions. usort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @Skip 
+            - [Extensions. Arrays. Array Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/2-Array-Functions.md) - @Skip 
+         - [Extensions. Class/Object Information](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Date and Time](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Directories](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Error Handling and Logging](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. System program execution](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Filesystem](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Data Filtering](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Function Handling](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. HASH Message Digest Framework](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. PHP Options and Information](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Mail](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Mathematical Functions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Miscellaneous Functions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Network](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Output Buffering Control](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Password Hashing](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Phar](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Reflection](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Regular Expression (POSIX Extended)](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Standard PHP Library (SPL)](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Streams](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Strings](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Tokenizer](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. URLs](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Variable handling](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+     - [Extensions. Bundled Extensions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+     - [Extensions. External Extensions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+     - [Extensions. PECL Extensions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+8. Config - @Skip
+9. Performance/bytecode caching - @Skip
 
-### 2. [Functions](./2-Functions/index.md) - #TODO 11
-1. Arguments - #TODO 12
-2. Variables - #TODO 13
-3. References - #TODO 14
-4. Returns - #TODO 15
-5. Variable Scope - #TODO 16
-6. Anonymous Functions, closures - #TODO 17
-7. Type Declarations - #TODO 18
+### 2. [Functions](2-Functions/README.md)
+1. Arguments
+2. Variables 
+3. References
+4. Returns
+5. Variable Scope
+6. Anonymous Functions, closures
+7. Type Declarations
 
 ### 3. Strings & Patterns - #TODO 19
 1. [Quoting](http://php.net/manual/en/language.types.string.php) - @DONE 4
