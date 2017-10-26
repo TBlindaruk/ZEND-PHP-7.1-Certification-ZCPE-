@@ -219,6 +219,27 @@ foreach ($fruits as $key => $val) {
 
 ##### ksort
 
+http://php.net/manual/en/function.ksort.php
+
+<p> Sort an array by key</p>
+
+```PHP
+<?php
+$fruits = array("d"=>"lemon", "a"=>"orange", "b"=>"banana", "c"=>"apple");
+ksort($fruits);
+foreach ($fruits as $key => $val) {
+    echo "$key = $val\n";
+}
+/**
+ * a = orange
+ * b = banana
+ * c = apple
+ * d = lemon
+ */
+```
+
+-----------------------------
+
 ##### natcasesort
 
 ##### natsort

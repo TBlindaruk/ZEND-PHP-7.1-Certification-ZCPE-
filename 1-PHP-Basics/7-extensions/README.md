@@ -4,7 +4,7 @@
  
 #### Core Extensions
 
-1. [Arrays](./1-Core-Extensions/1-Arrays/REAME.md)
+1. [Arrays](1-Core-Extensions/1-Arrays/README.md)
 2. [Class/Object Information](http://php.net/manual/en/book.classobj.php)
 3. [Date and Time](http://php.net/manual/en/book.datetime.php)
 4. [Directories](http://php.net/manual/en/book.dir.php)
