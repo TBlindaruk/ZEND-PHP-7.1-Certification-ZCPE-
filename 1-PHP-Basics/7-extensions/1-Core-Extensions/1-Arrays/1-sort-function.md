@@ -160,6 +160,11 @@ function array_multisort (array &$arr, $arg = null, $arg = null, $_ = null) {}
 
 ##### asort
 
+http://php.net/manual/en/function.asort.php
+
+Sort an array and maintain index association
+
+
 ##### arsort
 
 ##### krsort
