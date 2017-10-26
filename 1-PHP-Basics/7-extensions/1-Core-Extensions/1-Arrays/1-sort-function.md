@@ -346,6 +346,10 @@ foreach ($fruits as $key => $val) {
 
 ##### shuffle
 
+http://php.net/manual/en/function.shuffle.php
+
+<p>Shuffle an array</p>
+
 ##### sort
 
 ##### uasort
