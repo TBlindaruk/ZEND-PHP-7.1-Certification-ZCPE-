@@ -11,7 +11,6 @@
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
          - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md)
             - [Extensions. Arrays. Sorting Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md)
-                - [Extensions. Arrays. Sorting Functions. arsort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 124
                 - [Extensions. Arrays. Sorting Functions. krsort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 125
                 - [Extensions. Arrays. Sorting Functions. ksort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 126
                 - [Extensions. Arrays. Sorting Functions. natcasesort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 127
@@ -20,7 +19,7 @@
                 - [Extensions. Arrays. Sorting Functions. shuffle](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 130
                 - [Extensions. Arrays. Sorting Functions. sort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 131
                 - [Extensions. Arrays. Sorting Functions. uasort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 132
-                - [Extensions. Arrays. Sorting Functions. uksort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 133
+                - [Extensions. Arrays. Sorting Functions. uksort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 124
                 - [Extensions. Arrays. Sorting Functions. usort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 123
             - [Extensions. Arrays. Array Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/2-Array-Functions.md) - @TODO 122
          - [Extensions. Class/Object Information](./1-PHP-Basics/7-extensions/README.md) - @TODO 95
@@ -171,4 +170,4 @@
 
 1. IN_PROGRESS 0
 
-3. TODO 133
+3. TODO 132
