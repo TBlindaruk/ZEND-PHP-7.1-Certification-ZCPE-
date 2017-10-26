@@ -11,7 +11,6 @@
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
          - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md)
             - [Extensions. Arrays. Sorting Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md)
-                - [Extensions. Arrays. Sorting Functions. natcasesort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 127
                 - [Extensions. Arrays. Sorting Functions. natsort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 128
                 - [Extensions. Arrays. Sorting Functions. rsort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 129
                 - [Extensions. Arrays. Sorting Functions. shuffle](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 130
