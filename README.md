@@ -8,8 +8,22 @@
 5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md)
 6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md)
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
-     - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md) - @REMOVE 
-         - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md) - @TODO 94
+     - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
+         - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md)
+            - [Extensions. Arrays. Sorting Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md)
+                - [Extensions. Arrays. Sorting Functions. asort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 123
+                - [Extensions. Arrays. Sorting Functions. arsort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 124
+                - [Extensions. Arrays. Sorting Functions. krsort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 125
+                - [Extensions. Arrays. Sorting Functions. ksort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 126
+                - [Extensions. Arrays. Sorting Functions. natcasesort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 127
+                - [Extensions. Arrays. Sorting Functions. natsort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 128
+                - [Extensions. Arrays. Sorting Functions. rsort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 129
+                - [Extensions. Arrays. Sorting Functions. shuffle](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 130
+                - [Extensions. Arrays. Sorting Functions. sort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 131
+                - [Extensions. Arrays. Sorting Functions. uasort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 132
+                - [Extensions. Arrays. Sorting Functions. uksort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 133
+                - [Extensions. Arrays. Sorting Functions. usort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @TODO 134
+            - [Extensions. Arrays. Array Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/2-Array-Functions.md) - @TODO 122
          - [Extensions. Class/Object Information](./1-PHP-Basics/7-extensions/README.md) - @TODO 95
          - [Extensions. Date and Time](./1-PHP-Basics/7-extensions/README.md) - @TODO 96
          - [Extensions. Directories](./1-PHP-Basics/7-extensions/README.md) - @TODO 97
@@ -37,7 +51,7 @@
          - [Extensions. Variable handling](./1-PHP-Basics/7-extensions/README.md) - @TODO 119
      - [Extensions. Bundled Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 120
      - [Extensions. External Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 121
-     - [Extensions. PECL Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 122
+     - [Extensions. PECL Extensions](./1-PHP-Basics/7-extensions/README.md) - @TODO 94
 8. Config - #TODO 9
 9. Performance/bytecode caching - #TODO 10
 
@@ -156,6 +170,6 @@
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
 
-1. IN_PROGRESS 1
+1. IN_PROGRESS 0
 
-3. TODO 122
+3. TODO 134
