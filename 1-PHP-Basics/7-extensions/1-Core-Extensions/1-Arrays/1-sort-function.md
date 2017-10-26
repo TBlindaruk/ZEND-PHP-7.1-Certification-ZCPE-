@@ -193,8 +193,29 @@ foreach ($fruits as $key => $val) {
  */
 
 ```
+-----------------------
 
 ##### krsort
+
+http://php.net/manual/en/function.krsort.php
+
+<p>krsort — Sort an array by key in reverse order</p>
+
+```PHP
+<?php
+$fruits = array("d"=>"lemon", "a"=>"orange", "b"=>"banana", "c"=>"apple");
+krsort($fruits);
+foreach ($fruits as $key => $val) {
+    echo "$key = $val\n";
+}
+/**
+ * d = lemon
+ * c = apple
+ * b = banana
+ * a = orange
+ */
+```
+-----------------------------
 
 ##### ksort
 
