@@ -58,12 +58,12 @@
 7. Type Declarations
 
 ### 3. Strings & Patterns - #TODO 19
-1. [Quoting](http://php.net/manual/en/language.types.string.php) - @DONE 4
- - Matching - #TODO 21
- - Extracting - #TODO 22
- - Searching - #TODO 23
- - Replacing - #TODO 24
- - Formatting - #TODO 25
+1. [Quoting](http://php.net/manual/en/language.types.string.php)
+2. [Matching (String Functions)](./3-String/functions/README.md) - @IN_PROGRESS
+3. [Extracting (String Functions)](./3-String/functions/README.md) - @IN_PROGRESS
+4. [Searching (String Functions)](./3-String/functions/README.md) - @IN_PROGRESS
+5. [Replacing (String Functions)](./3-String/functions/README.md) - @IN_PROGRESS
+6. [Formatting (String Functions)](./3-String/functions/README.md) - @IN_PROGRESS
 7. [PCRE](./3-String/7-PCRE/README.md) - @DONE 11
     - [PCRE. Predefined Constants](3-String/7-PCRE/README.md) @REMOVE @TODO 6
     - [PCRE. PCRE Patterns](./3-String/7-PCRE/1-PCRE-Patterns/README.md) @REMOVE @TODO 5
