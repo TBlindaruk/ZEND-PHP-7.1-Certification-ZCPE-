@@ -170,13 +170,13 @@
 5. Casting
  
 ### 5. Web Features - #TODO 35
-1. [Sessions](http://php.net/manual/ru/book.session.php)
-2. [Forms](http://php.net/manual/ru/tutorial.forms.php)
-3. [GET and POST data](http://php.net/manual/ru/reserved.variables.php)
-4. [Cookies](http://php.net/manual/ru/features.cookies.php)
-5. [HTTP Headers](http://php.net/manual/ru/function.header.php)
-6. [HTTP Authentication](http://php.net/manual/ru/features.http-auth.php)
-7. [HTTP Status Codes](http://php.net/manual/ru/function.http-response-code.php)
+1. [Sessions](http://php.net/manual/ru/book.session.php) - @TODO
+2. [Forms](http://php.net/manual/ru/tutorial.forms.php) - @TODO
+3. [GET and POST data](http://php.net/manual/ru/reserved.variables.php) - @TODO
+4. [Cookies](http://php.net/manual/ru/features.cookies.php) - @TODO
+5. [HTTP Headers](http://php.net/manual/ru/function.header.php) - @TODO
+6. [HTTP Authentication](http://php.net/manual/ru/features.http-auth.php) - @TODO
+7. [HTTP Status Codes](http://php.net/manual/ru/function.http-response-code.php) - @TODO
  
 ### 6. I/O - #TODO 43
  - Files - #TODO 44
