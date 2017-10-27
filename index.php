@@ -7,3 +7,10 @@
  */
 
 echo 1;
+
+function a(?string $a)
+{
+    var_dump($a);
+}
+
+a(null);
