@@ -57,7 +57,7 @@
 6. Anonymous Functions, closures
 7. Type Declarations
 
-### 3. Strings & Patterns - #TODO 19
+### 3. Strings & Patterns
 1. [Quoting](http://php.net/manual/en/language.types.string.php)
 2. [Matching (String Functions)](./3-String/functions/README.md)
 3. [Extracting (String Functions)](./3-String/functions/README.md)
@@ -159,24 +159,24 @@
     - [PCRE. PCRE Patterns](./3-String/7-PCRE/1-PCRE-Patterns/README.md) @REMOVE @TODO 5
     - [PCRE. PCRE Functions](./3-String/7-PCRE/2-PCRE-Functions/README.md) @REMOVE @TODO 4
     - [PCRE. Practice](./3-String/7-PCRE/example/README.md) @PRACTICE @REMOVE @TODO 3
- - NOWDOC - #TODO 27
- - Encodings - #TODO 28
+8. NOWDOC
+9. Encodings
  
-### 4. [Arrays](4-Arrays/index.md) - #TODO 29
+### 4. [Arrays](4-Arrays/index.md)
 1. [Associative Arrays](./4-Arrays/1-Associative-Arrays/README.md)
- - Array Iteration - #TODO 31
- - Array Functions - #TODO 32
-4. SPL, Objects as arrays - #TODO 76
- - Casting - #TODO 34
+2. Array Iteration
+3. [Array Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/README.md)
+4. [SPL, Objects as arrays](9-Object-Oriented-Programming/12-SPL/README.md)
+5. Casting
  
 ### 5. Web Features - #TODO 35
-1. [Sessions](http://php.net/manual/ru/book.session.php) - #TODO 36
-2. [Forms](http://php.net/manual/ru/tutorial.forms.php) - #TODO 37
-3. [GET and POST data](http://php.net/manual/ru/reserved.variables.php) - #TODO 38
-4. [Cookies](http://php.net/manual/ru/features.cookies.php) - #TODO 39
-5. [HTTP Headers](http://php.net/manual/ru/function.header.php) - #TODO 40
-6. [HTTP Authentication](http://php.net/manual/ru/features.http-auth.php) - #TODO 41
-7. [HTTP Status Codes](http://php.net/manual/ru/function.http-response-code.php) - #TODO 42
+1. [Sessions](http://php.net/manual/ru/book.session.php)
+2. [Forms](http://php.net/manual/ru/tutorial.forms.php)
+3. [GET and POST data](http://php.net/manual/ru/reserved.variables.php)
+4. [Cookies](http://php.net/manual/ru/features.cookies.php)
+5. [HTTP Headers](http://php.net/manual/ru/function.header.php)
+6. [HTTP Authentication](http://php.net/manual/ru/features.http-auth.php)
+7. [HTTP Status Codes](http://php.net/manual/ru/function.http-response-code.php)
  
 ### 6. I/O - #TODO 43
  - Files - #TODO 44
@@ -215,7 +215,7 @@
 9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md)
  - Magic (_*) Methods - #TODO 74
  - Instance Methods & Properties - #TODO 75
-12. [SPL](./9-Object-Oriented-Programming/12-SPL/index.md)
+12. [SPL](9-Object-Oriented-Programming/12-SPL/README.md)
     - [SPL. Iterators](./9-Object-Oriented-Programming/12-SPL/2-Iterators/readme.md) - @REMOVE @TODO 90
     - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md) - @REMOVE @TODO 91
     - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md)
