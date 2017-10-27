@@ -42,9 +42,6 @@
          - [Extensions. Tokenizer](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. URLs](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Variable handling](./1-PHP-Basics/7-extensions/README.md) - @Skip 
-     - [Extensions. Bundled Extensions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
-     - [Extensions. External Extensions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
-     - [Extensions. PECL Extensions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
 8. Config - @Skip
 9. Performance/bytecode caching - @Skip
 
