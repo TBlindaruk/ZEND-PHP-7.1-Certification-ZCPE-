@@ -154,7 +154,7 @@
     - [String Functions. vprintf](./3-String/functions/README.md) @Skip
     - [String Functions. vsprintf](./3-String/functions/README.md) @Skip
     - [String Functions. wordwrap](./3-String/functions/README.md) @Skip
-7. [PCRE](./3-String/7-PCRE/README.md) - @DONE 11
+7. [PCRE](./3-String/7-PCRE/README.md)
     - [PCRE. Predefined Constants](3-String/7-PCRE/README.md) @REMOVE @TODO 6
     - [PCRE. PCRE Patterns](./3-String/7-PCRE/1-PCRE-Patterns/README.md) @REMOVE @TODO 5
     - [PCRE. PCRE Functions](./3-String/7-PCRE/2-PCRE-Functions/README.md) @REMOVE @TODO 4
@@ -163,7 +163,7 @@
  - Encodings - #TODO 28
  
 ### 4. [Arrays](4-Arrays/index.md) - #TODO 29
-1. [Associative Arrays](./4-Arrays/1-Associative-Arrays/README.md) - @DONE 8
+1. [Associative Arrays](./4-Arrays/1-Associative-Arrays/README.md)
  - Array Iteration - #TODO 31
  - Array Functions - #TODO 32
 4. SPL, Objects as arrays - #TODO 76
@@ -199,26 +199,26 @@
 3. [XML Extension](http://php.net/manual/en/refs.xml.php) - #TODO 59
 4. [Webservices Basics](http://php.net/manual/ru/refs.webservice.php) - #TODO 60
 5. [SOAP](http://php.net/manual/ru/book.soap.php) - #TODO 61
-6. [JSON](./8-Data-Format-Types/6-JSON/README.md) - @DONE 9
+6. [JSON](./8-Data-Format-Types/6-JSON/README.md)
 7. [DateTime](http://php.net/manual/ru/class.datetime.php) - #TODO 63
 8. [DOMDocument](http://php.net/manual/ru/class.domdocument.php) - #TODO 64
  
 ### 9. Object Oriented Programming - #TODO 65
  - Instantiation - #TODO 66
  - Modifiers/Inheritance - #TODO 67
-3. [Interfaces](./9-Object-Oriented-Programming/3-interfaces/index.md) - @DONE 2
+3. [Interfaces](./9-Object-Oriented-Programming/3-interfaces/index.md)
  - Return Types - #TODO 68
  - Autoload - #TODO 69
  - Reflection - #TODO 70
-7. [Type Hinting](./9-Object-Oriented-Programming/7-type-hinting/index.md) - @DONE 6
+7. [Type Hinting](./9-Object-Oriented-Programming/7-type-hinting/index.md)
  - Class Constants - #TODO 72
-9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md) - @DONE 3
+9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md)
  - Magic (_*) Methods - #TODO 74
  - Instance Methods & Properties - #TODO 75
-12. [SPL](./9-Object-Oriented-Programming/12-SPL/index.md) - @DONE 7
+12. [SPL](./9-Object-Oriented-Programming/12-SPL/index.md)
     - [SPL. Iterators](./9-Object-Oriented-Programming/12-SPL/2-Iterators/readme.md) - @REMOVE @TODO 90
     - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md) - @REMOVE @TODO 91
-    - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) - @REMOVE @DONE 10
+    - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md)
         - [SPL. Interfaces. OuterIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 7
         - [SPL. Interfaces. RecursiveIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 26
     - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md) - @REMOVE @TODO 93
@@ -239,7 +239,7 @@
  - Filter Input - #TODO 86
  - Escape Output - #TODO 87
  - Encryption, Hashing algorithms - #TODO 88
-11. [File uploads](./10-Security/11-file-uploads/index.md) - @DONE 1
+11. [File uploads](./10-Security/11-file-uploads/index.md)
  - PHP Configuration - #TODO 89
  - Password hashing API - #TODO 33
 
