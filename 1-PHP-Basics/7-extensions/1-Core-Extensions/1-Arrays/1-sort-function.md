@@ -350,6 +350,54 @@ http://php.net/manual/en/function.shuffle.php
 
 <p>Shuffle an array</p>
 
+<blockquote class="note">
+    <p>
+        <strong class="note">Note</strong>
+        : 
+        <span class="simpara">
+            This function assigns new keys to the elements in 
+            <code class="parameter">array</code>.
+            It will remove any existing keys that may have been assigned, rather than just reordering the keys.
+        </span>
+    </p>
+</blockquote>
+
+```PHP
+<?php
+/**
+ * Shuffle an array
+ * @link http://php.net/manual/en/function.shuffle.php
+ * @param array $array <p>
+ * The array.
+ * </p>
+ * @return bool true on success or false on failure.
+ * @since 4.0
+ * @since 5.0
+ */
+function shuffle (array &$array) {}
+```
+
+```PHP
+<?php
+
+$array = ['a'=>1,10,123,1000];
+shuffle($array);
+
+/**
+ * array(4) {
+ * [0]=>
+ * int(1)
+ * [1]=>
+ * int(1000)
+ * [2]=>
+ * int(10)
+ * [3]=>
+ * int(123)
+ * }
+ */
+var_dump($array);
+```
+
 ##### sort
 
 ##### uasort
