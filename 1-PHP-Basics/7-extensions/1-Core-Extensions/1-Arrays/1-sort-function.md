@@ -398,6 +398,9 @@ shuffle($array);
 var_dump($array);
 ```
 
+-----------------
+
+
 ##### sort
 
 http://php.net/manual/en/function.sort.php
@@ -449,7 +452,69 @@ foreach ($fruits as $key => $val) {
  * fruits[3] = orange
  */
 ```
+
+------------------------
+
 ##### uasort
+
+http://php.net/manual/en/function.uasort.php
+
+<p>Sort an array with a user-defined comparison function and maintain index association</p>
+
+```PHP
+<?php
+/**
+ * Sort an array with a user-defined comparison function and maintain index association
+ * @link http://php.net/manual/en/function.uasort.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @param callback $cmp_function <p>
+ * See usort and uksort for
+ * examples of user-defined comparison functions.
+ * </p>
+ * @return bool true on success or false on failure.
+ * @since 4.0
+ * @since 5.0
+ */
+function uasort (array &$array, $cmp_function) {}
+```
+
+```PHP
+<?php
+
+$array = [10,1230,12,32,43,54,1,2,54];
+
+function cmp($a, $b){
+    return $a <=> $b;
+}
+uasort($array,'cmp');
+
+/**
+ * array(9) {
+ * [6]=>
+ * int(1)
+ * [7]=>
+ * int(2)
+ * [0]=>
+ * int(10)
+ * [2]=>
+ * int(12)
+ * [3]=>
+ * int(32)
+ * [4]=>
+ * int(43)
+ * [5]=>
+ * int(54)
+ * [8]=>
+ * int(54)
+ * [1]=>
+ * int(1230)
+ * }
+ */
+var_dump($array);
+```
+-----------------
 
 ##### uksort
 
