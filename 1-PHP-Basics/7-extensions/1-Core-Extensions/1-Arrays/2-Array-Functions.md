@@ -1156,12 +1156,296 @@ foreach (range('c', 'a') as $letter) {
 
 #### array_filter — Filters elements of an array using a callback function
 
+http://php.net/manual/en/function.array-filter.php
+
+```PHP
+<?php
+/**
+ * Iterates over each value in the <b>array</b>
+ * passing them to the <b>callback</b> function.
+ * If the <b>callback</b> function returns true, the
+ * current value from <b>array</b> is returned into
+ * the result array. Array keys are preserved.
+ * @link http://php.net/manual/en/function.array-filter.php
+ * @param array $input <p>
+ * The array to iterate over
+ * </p>
+ * @param callback $callback [optional] <p>
+ * The callback function to use
+ * </p>
+ * <p>
+ * If no callback is supplied, all entries of
+ * input equal to false (see
+ * converting to
+ * boolean) will be removed.
+ * </p>
+ * @param int $flag [optional] <p>
+ * Flag determining what arguments are sent to <i>callback</i>:
+ * </p><ul>
+ * <li>
+ * <b>ARRAY_FILTER_USE_KEY</b> - pass key as the only argument
+ * to <i>callback</i> instead of the value</span>
+ * </li>
+ * <li>
+ * <b>ARRAY_FILTER_USE_BOTH</b> - pass both value and key as
+ * arguments to <i>callback</i> instead of the value</span>
+ * </li>
+ * </ul>
+ * @return array the filtered array.
+ * @since 4.0.6
+ * @since 5.0
+ */
+function array_filter(array $input, $callback = null, $flag = 0) { }
+```
+
+----------------------
+#### array_map — Applies the callback to the elements of the given arrays
+
+http://php.net/manual/en/function.array-map.php
+
+```PHP
+<?php
+/**
+ * Applies the callback to the elements of the given arrays
+ * @link http://php.net/manual/en/function.array-map.php
+ * @param callback $callback <p>
+ * Callback function to run for each element in each array.
+ * </p>
+ * @param array $arr1 <p>
+ * An array to run through the callback function.
+ * </p>
+ * @param array $_ [optional]
+ * @return array an array containing all the elements of arr1
+ * after applying the callback function to each one.
+ * @since 4.0.6
+ * @since 5.0
+ */
+function array_map($callback, array $arr1, array $_ = null) { }
+```
+
+--------------------------
+
+#### array_reduce — Iteratively reduce the array to a single value using a callback function
+
+http://php.net/manual/en/function.array-reduce.php
+
+```PHP
+<?php
+/**
+ * Iteratively reduce the array to a single value using a callback function
+ * @link http://php.net/manual/en/function.array-reduce.php
+ * @param array $input <p>
+ * The input array.
+ * </p>
+ * @param callback $function <p>
+ * The callback function.
+ * </p>
+ * @param mixed $initial [optional] <p>
+ * If the optional initial is available, it will
+ * be used at the beginning of the process, or as a final result in case
+ * the array is empty.
+ * </p>
+ * @return mixed the resulting value.
+ * </p>
+ * <p>
+ * If the array is empty and initial is not passed,
+ * array_reduce returns &null;.
+ * @since 4.0.5
+ * @since 5.0
+ */
+function array_reduce(array $input, $function, $initial = null) { }
+```
+-----------------------
+
+#### array_unique — Removes duplicate values from an array
+http://php.net/manual/en/function.array-unique.php
+
+```PHP
+<?php
+/**
+ * Removes duplicate values from an array
+ * @link http://php.net/manual/en/function.array-unique.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @param int $sort_flags [optional] <p>
+ * The optional second parameter sort_flags
+ * may be used to modify the sorting behavior using these values:
+ * </p>
+ * <p>
+ * Sorting type flags:
+ * SORT_REGULAR - compare items normally
+ * (don't change types)
+ * @return array the filtered array.
+ * @since 4.0.1
+ * @since 5.0
+ */
+function array_unique(array $array, $sort_flags = null) { }
+```
+----------------
+
+#### array_flip — Exchanges all keys with their associated values in an array
+
+http://php.net/manual/en/function.array-flip.php
+
+```PHP
+<?php
+/**
+ * Exchanges all keys with their associated values in an array
+ * @link http://php.net/manual/en/function.array-flip.php
+ * @param array $trans <p>
+ * An array of key/value pairs to be flipped.
+ * </p>
+ * @return array|bool the flipped array on success and false on failure.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_flip(array $trans) { }
+```
+-------------
 
 
-array_flip — Exchanges all keys with their associated values in an array
-array_key_exists — Checks if the given key or index exists in the array
-array_keys — Return all the keys or a subset of the keys of an array
-array_map — Applies the callback to the elements of the given arrays
+#### array_values — Return all the values of an array
+http://php.net/manual/en/function.array-values.php
+
+
+```PHP
+<?php
+/**
+ * Return all the values of an array
+ * @link http://php.net/manual/en/function.array-values.php
+ * @param array $input <p>
+ * The array.
+ * </p>
+ * @return array an indexed array of values.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_values(array $input) { }
+```
+--------------------
+
+#### array_keys — Return all the keys or a subset of the keys of an array
+http://php.net/manual/en/function.array-keys.php
+
+```PHP
+<?php
+/**
+ * Return all the keys of an array
+ * @link http://php.net/manual/en/function.array-keys.php
+ * @param array $input <p>
+ * An array containing keys to return.
+ * </p>
+ * @param mixed $search_value [optional] <p>
+ * If specified, then only keys containing these values are returned.
+ * </p>
+ * @param bool $strict [optional] <p>
+ * Determines if strict comparison (===) should be used during the search.
+ * </p>
+ * @return array an array of all the keys in input.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_keys(array $input, $search_value = null, $strict = null) { }
+```
+
+---------------------
+
+#### array_key_exists — Checks if the given key or index exists in the array
+http://php.net/manual/en/function.array-key-exists.php
+
+```PHP
+<?php
+/**
+ * Checks if the given key or index exists in the array
+ * @link http://php.net/manual/en/function.array-key-exists.php
+ * @param mixed $key <p>
+ * Value to check.
+ * </p>
+ * @param array|ArrayObject $search <p>
+ * An array with keys to check.
+ * </p>
+ * @return bool true on success or false on failure.
+ * @since 4.0.7
+ * @since 5.0
+ */
+function array_key_exists($key, array $search) { }
+```
+
+---------------------------
+
+#### in_array — Checks if a value exists in an array
+http://php.net/manual/en/function.in-array.php
+
+```PHP
+<?php
+/**
+ * Checks if a value exists in an array
+ * @link http://php.net/manual/en/function.in-array.php
+ * @param mixed $needle <p>
+ * The searched value.
+ * </p>
+ * <p>
+ * If needle is a string, the comparison is done
+ * in a case-sensitive manner.
+ * </p>
+ * @param array $haystack <p>
+ * The array.
+ * </p>
+ * @param bool $strict [optional] <p>
+ * If the third parameter strict is set to true
+ * then the in_array function will also check the
+ * types of the
+ * needle in the haystack.
+ * </p>
+ * @return bool true if needle is found in the array,
+ * false otherwise.
+ * @since 4.0
+ * @since 5.0
+ */
+function in_array ($needle, array $haystack, $strict = false) {}
+```
+-----------------
+
+#### array_search — Searches the array for a given value and returns the first corresponding key if successful
+http://php.net/manual/en/function.array-search.php
+
+```PHP
+<?php
+/**
+ * Searches the array for a given value and returns the corresponding key if successful
+ * @link http://php.net/manual/en/function.array-search.php
+ * @param mixed $needle <p>
+ * The searched value.
+ * </p>
+ * <p>
+ * If needle is a string, the comparison is done
+ * in a case-sensitive manner.
+ * </p>
+ * @param array $haystack <p>
+ * The array.
+ * </p>
+ * @param bool $strict [optional] <p>
+ * If the third parameter strict is set to true
+ * then the array_search function will also check the
+ * types of the
+ * needle in the haystack.
+ * </p>
+ * @return int|string|false the key for needle if it is found in the
+ * array, false otherwise.
+ * </p>
+ * <p>
+ * If needle is found in haystack
+ * more than once, the first matching key is returned. To return the keys for
+ * all matching values, use array_keys with the optional
+ * search_value parameter instead.
+ * @since 4.0.5
+ * @since 5.0
+ */
+function array_search ($needle, array $haystack, $strict = null) {}
+```
+-----------------------
+
 array_merge_recursive — Merge two or more arrays recursively
 array_merge — Merge one or more arrays
 array_multisort — Sort multiple or multi-dimensional arrays
@@ -1170,18 +1454,14 @@ array_pop — Pop the element off the end of array
 array_product — Calculate the product of values in an array
 array_push — Push one or more elements onto the end of array
 array_rand — Pick one or more random entries out of an array
-array_reduce — Iteratively reduce the array to a single value using a callback function
 array_replace_recursive — Replaces elements from passed arrays into the first array recursively
 array_replace — Replaces elements from passed arrays into the first array
 array_reverse — Return an array with elements in reverse order
-array_search — Searches the array for a given value and returns the first corresponding key if successful
 array_shift — Shift an element off the beginning of array
 array_slice — Extract a slice of the array
 array_splice — Remove a portion of the array and replace it with something else
 array_sum — Calculate the sum of values in an array
-array_unique — Removes duplicate values from an array
 array_unshift — Prepend one or more elements to the beginning of an array
-array_values — Return all the values of an array
 array_walk_recursive — Apply a user function recursively to every member of an array
 array_walk — Apply a user supplied function to every member of an array
 array — Create an array
@@ -1193,7 +1473,6 @@ current — Return the current element in an array
 each — Return the current key and value pair from an array and advance the array cursor
 end — Set the internal pointer of an array to its last element
 extract — Import variables into the current symbol table from an array
-in_array — Checks if a value exists in an array
 key_exists — Alias of array_key_exists
 key — Fetch a key from an array
 krsort — Sort an array by key in reverse order
