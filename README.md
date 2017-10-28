@@ -11,9 +11,6 @@
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
          - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md)
             - [Extensions. Arrays. Sorting Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md)
-                - [Extensions. Arrays. Sorting Functions. uasort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @Skip 
-                - [Extensions. Arrays. Sorting Functions. uksort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @Skip 
-                - [Extensions. Arrays. Sorting Functions. usort](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/1-sort-function.md) - @Skip 
             - [Extensions. Arrays. Array Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/2-Array-Functions.md) - @Skip 
          - [Extensions. Class/Object Information](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Date and Time](./1-PHP-Basics/7-extensions/README.md) - @Skip 
