@@ -400,6 +400,55 @@ var_dump($array);
 
 ##### sort
 
+http://php.net/manual/en/function.sort.php
+
+<p>Sort an array</p>
+
+<strong>sort_flags</strong>
+ - SORT_REGULAR - compare items normally (don't change types)
+ - SORT_NUMERIC - compare items numerically
+ - SORT_STRING - compare items as strings
+ - SORT_LOCALE_STRING - compare items as strings, based on the current locale. It uses the locale, which can be changed using setlocale()
+ - SORT_NATURAL - compare items as strings using "natural ordering" like natsort()
+ - SORT_FLAG_CASE - can be combined (bitwise OR) with SORT_STRING or SORT_NATURAL to sort strings case-insensitively
+
+```PHP
+<?php
+/**
+ * Sort an array
+ * @link http://php.net/manual/en/function.sort.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @param int $sort_flags [optional] <p>
+ * The optional second parameter sort_flags
+ * may be used to modify the sorting behavior using these values:
+ * </p>
+ * <p>
+ * Sorting type flags:
+ * SORT_REGULAR - compare items normally
+ * (don't change types)
+ * @return bool true on success or false on failure.
+ * @since 4.0
+ * @since 5.0
+ */
+function sort (array &$array, $sort_flags = null) {}
+```
+```PHP
+<?php
+
+$fruits = array("lemon", "orange", "banana", "apple");
+sort($fruits);
+foreach ($fruits as $key => $val) {
+    echo "fruits[" . $key . "] = " . $val . "\n";
+}
+/**
+ * fruits[0] = apple
+ * fruits[1] = banana
+ * fruits[2] = lemon
+ * fruits[3] = orange
+ */
+```
 ##### uasort
 
 ##### uksort
