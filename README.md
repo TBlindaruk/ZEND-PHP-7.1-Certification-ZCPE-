@@ -1,12 +1,12 @@
 # PHP-Certification-preparing
 
-### 1. [PHP Basics](./1-PHP-Basics/index.md) - #TODO 1
-1. [Syntax](./1-PHP-Basics/1-syntax/index.md)
-2. [Operators](./1-PHP-Basics/2-operators/index.md)
+### 1. [PHP Basics](1-PHP-Basics/README.md) - #TODO 1
+1. [Syntax](1-PHP-Basics/1-syntax/README.md)
+2. [Operators](1-PHP-Basics/2-operators/README.md)
 3. [Variables](1-PHP-Basics/3-variables/README.md)
-4. [Control Structures](./1-PHP-Basics/4-control-structures/index.md)
-5. [Language Constructs and Functions](./1-PHP-Basics/5-language-constructs-and-functions/index.md)
-6. [Namespaces](./1-PHP-Basics/6-namespaces/index.md)
+4. [Control Structures](1-PHP-Basics/4-control-structures/README.md)
+5. [Language Constructs and Functions](1-PHP-Basics/5-language-constructs-and-functions/README.md)
+6. [Namespaces](1-PHP-Basics/6-namespaces/README.md)
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
          - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md)
