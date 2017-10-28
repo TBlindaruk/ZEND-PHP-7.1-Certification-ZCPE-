@@ -518,4 +518,69 @@ var_dump($array);
 
 ##### uksort
 
+http://php.net/manual/en/function.uksort.php
+
+<p>Sort an array by keys using a user-defined comparison function</p>
+
+`bool uksort ( array &$array , callable $key_compare_func )`
+
+---------------------------------
+
 ##### usort
+
+http://php.net/manual/en/function.usort.php
+
+<p>Sort an array by values using a user-defined comparison function</p>
+
+```PHP
+<?php
+
+/**
+ * Sort an array by values using a user-defined comparison function
+ * @link http://php.net/manual/en/function.usort.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @param callback $cmp_function <p>
+ * The comparison function must return an integer less than, equal to, or
+ * greater than zero if the first argument is considered to be
+ * respectively less than, equal to, or greater than the second.
+ * </p>
+ * @return bool true on success or false on failure.
+ * @since 4.0
+ * @since 5.0
+ */
+function usort (array &$array, $cmp_function) {}
+```
+
+```PHP
+<?php
+
+$array = [0.9,0.8,100,100.8,100.7,100.3,100.4];
+
+function cmp($a,$b){
+    return $a<=>$b;
+}
+
+usort($array,'cmp');
+
+/**
+ * array(7) {
+ * [0]=>
+ * float(0.8)
+ * [1]=>
+ * float(0.9)
+ * [2]=>
+ * int(100)
+ * [3]=>
+ * float(100.3)
+ * [4]=>
+ * float(100.4)
+ * [5]=>
+ * float(100.7)
+ * [6]=>
+ * float(100.8)
+ * }
+ */
+var_dump($array);
+```
