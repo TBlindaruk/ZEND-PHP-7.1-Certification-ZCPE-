@@ -10,8 +10,6 @@
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
          - [Extensions. Date and Time](./1-PHP-Basics/7-extensions/README.md)
-            -  [Extensions. Date and Time. DateTimeInterface](./1-PHP-Basics/7-extensions/1-Core-Extensions/3-Date-and-Time/README.md) IN_PROGRESS
-            -  [Extensions. Date and Time. DateTimeZone](./1-PHP-Basics/7-extensions/1-Core-Extensions/3-Date-and-Time/README.md) @TODO
             -  [Extensions. Date and Time. DateInterval](./1-PHP-Basics/7-extensions/1-Core-Extensions/3-Date-and-Time/README.md) @TODO
             -  [Extensions. Date and Time. DatePeriod](./1-PHP-Basics/7-extensions/1-Core-Extensions/3-Date-and-Time/README.md) @TODO
             -  [Extensions. Date and Time. Date/Time Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/3-Date-and-Time/README.md) @TODO
