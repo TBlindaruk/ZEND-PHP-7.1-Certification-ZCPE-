@@ -4,7 +4,7 @@ http://php.net/manual/en/book.datetime.php
 
 #### [DateTime](./1-DateTime/README.md)
 #### [DateTimeImmutable](./2-DateTimeImmutable/README.md)
-#### [DateTimeInterface](http://php.net/manual/en/class.datetimeinterface.php)
+#### [DateTimeInterface](./3-DateTimeInterface/README.md)
 #### [DateTimeZone](http://php.net/manual/en/class.datetimezone.php)
 #### [DateInterval](http://php.net/manual/en/class.dateinterval.php)
 #### [DatePeriod](http://php.net/manual/en/class.dateperiod.php)
