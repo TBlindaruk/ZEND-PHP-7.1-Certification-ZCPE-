@@ -435,41 +435,14 @@ var_dump($returnData); // string(242) "\000 !"#$%&'()*+,-./0123456789:<=>?.....
 -----------------------------
 
 #### crc32 — Calculates the crc32 polynomial of a string
-
------------------------------
-
 #### crypt — One-way string hashing
-
--------------------------------
-
 #### echo — Output one or more strings
-
--------------------------------
-
 #### explode — Split a string by string
-
---------------------------------
-
 #### fprintf — Write a formatted string to a stream
-
----------------------------------
-
 #### get_html_translation_table — Returns the translation table used by htmlspecialchars and htmlentities
-
----------------------------------
-
 #### hebrev — Convert logical Hebrew text to visual text
-
------------------------------------
-
 #### hebrevc — Convert logical Hebrew text to visual text with newline conversion
-
------------------------------------
-
 #### hex2bin — Decodes a hexadecimally encoded binary string
-
--------------------------------------
-
 #### html_entity_decode — Convert all HTML entities to their applicable characters
 #### htmlentities — Convert all applicable characters to HTML entities
 #### htmlspecialchars_decode — Convert special HTML entities back to characters
