@@ -9,8 +9,6 @@
 6. [Namespaces](1-PHP-Basics/6-namespaces/README.md)
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
-         - [Extensions. Arrays](./1-PHP-Basics/7-extensions/README.md)
-            - [Extensions. Arrays. Array Functions](./1-PHP-Basics/7-extensions/1-Core-Extensions/1-Arrays/2-Array-Functions.md) - @Skip 
          - [Extensions. Class/Object Information](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Date and Time](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Directories](./1-PHP-Basics/7-extensions/README.md) - @Skip 
