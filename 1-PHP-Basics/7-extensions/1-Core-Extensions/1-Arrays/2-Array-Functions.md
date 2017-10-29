@@ -2116,32 +2116,492 @@ print_r($preserved);
 
 -----------------------------
 
-array_slice — Extract a slice of the array
-array_splice — Remove a portion of the array and replace it with something else
-array_sum — Calculate the sum of values in an array
-array_walk_recursive — Apply a user function recursively to every member of an array
-array_walk — Apply a user supplied function to every member of an array
-array — Create an array
-arsort — Sort an array in reverse order and maintain index association
-asort — Sort an array and maintain index association
-compact — Create array containing variables and their values
-count — Count all elements in an array, or something in an object
-current — Return the current element in an array
-each — Return the current key and value pair from an array and advance the array cursor
-end — Set the internal pointer of an array to its last element
-extract — Import variables into the current symbol table from an array
-key_exists — Alias of array_key_exists
-key — Fetch a key from an array
-krsort — Sort an array by key in reverse order
-ksort — Sort an array by key
-list — Assign variables as if they were an array
-natcasesort — Sort an array using a case insensitive "natural order" algorithm
-natsort — Sort an array using a "natural order" algorithm
-next — Advance the internal pointer of an array
-pos — Alias of current
-prev — Rewind the internal array pointer
-reset — Set the internal pointer of an array to its first element
-rsort — Sort an array in reverse order
-sizeof — Alias of count
-sort — Sort an array
-uksort — Sort an array by keys using a user-defined comparison function
+#### array_slice — Extract a slice of the array
+http://ua2.php.net/manual/en/function.array-slice.php
+
+
+```PHP
+<?php
+/**
+ * Extract a slice of the array
+ * @link http://php.net/manual/en/function.array-slice.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @param int $offset <p>
+ * If offset is non-negative, the sequence will
+ * start at that offset in the array. If
+ * offset is negative, the sequence will
+ * start that far from the end of the array.
+ * </p>
+ * @param int $length [optional] <p>
+ * If length is given and is positive, then
+ * the sequence will have that many elements in it. If
+ * length is given and is negative then the
+ * sequence will stop that many elements from the end of the
+ * array. If it is omitted, then the sequence will have everything
+ * from offset up until the end of the
+ * array.
+ * </p>
+ * @param bool $preserve_keys [optional] <p>
+ * Note that array_slice will reorder and reset the
+ * array indices by default. You can change this behaviour by setting
+ * preserve_keys to true.
+ * </p>
+ * @return array the slice.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_slice (array $array, $offset, $length = null, $preserve_keys = false) {}
+```
+
+```PHP
+<?php
+$input = array("a", "b", "c", "d", "e");
+
+$output = array_slice($input, 2);      // returns "c", "d", and "e"
+$output = array_slice($input, -2, 1);  // returns "d"
+$output = array_slice($input, 0, 3);   // returns "a", "b", and "c"
+
+// note the differences in the array keys
+/**
+ * Array
+ * (
+ *     [0] => c
+ *     [1] => d
+ * )
+ */
+print_r(array_slice($input, 2, -1));
+/**
+ * Array
+ * (
+ *     [2] => c
+ *     [3] => d
+ * )
+ */
+print_r(array_slice($input, 2, -1, true));
+```
+--------------------------
+
+#### array_splice — Remove a portion of the array and replace it with something else
+http://ua2.php.net/manual/en/function.array-splice.php
+
+```PHP
+<?php
+/**
+ * Remove a portion of the array and replace it with something else
+ * @link http://php.net/manual/en/function.array-splice.php
+ * @param array $input <p>
+ * The input array.
+ * </p>
+ * @param int $offset <p>
+ * If offset is positive then the start of removed
+ * portion is at that offset from the beginning of the
+ * input array. If offset
+ * is negative then it starts that far from the end of the
+ * input array.
+ * </p>
+ * @param int $length [optional] <p>
+ * If length is omitted, removes everything
+ * from offset to the end of the array. If
+ * length is specified and is positive, then
+ * that many elements will be removed. If
+ * length is specified and is negative then
+ * the end of the removed portion will be that many elements from
+ * the end of the array. Tip: to remove everything from
+ * offset to the end of the array when
+ * replacement is also specified, use
+ * count($input) for
+ * length.
+ * </p>
+ * @param mixed $replacement [optional] <p>
+ * If replacement array is specified, then the
+ * removed elements are replaced with elements from this array.
+ * </p>
+ * <p>
+ * If offset and length
+ * are such that nothing is removed, then the elements from the
+ * replacement array are inserted in the place
+ * specified by the offset. Note that keys in
+ * replacement array are not preserved.
+ * </p>
+ * <p>
+ * If replacement is just one element it is
+ * not necessary to put array()
+ * around it, unless the element is an array itself.
+ * </p>
+ * @return array the array consisting of the extracted elements.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_splice (array &$input, $offset, $length = null, $replacement = null) {}
+```
+
+
+-------------------------------------
+
+#### array_sum — Calculate the sum of values in an array
+http://ua2.php.net/manual/en/function.array-sum.php
+
+```PHP
+<?php
+/**
+ * Calculate the sum of values in an array
+ * @link http://php.net/manual/en/function.array-sum.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @return int|float the sum of values as an integer or float.
+ * @since 4.0.4
+ * @since 5.0
+ */
+function array_sum(array $array) { }
+```
+
+```PHP
+<?php
+
+var_dump(array_sum(['a',10])); // int(10)
+
+var_dump(array_sum(['a',10,10.2])); // float(20.2)
+```
+
+-----------------------------
+
+#### array_walk_recursive — Apply a user function recursively to every member of an array
+http://ua2.php.net/manual/en/function.array-walk-recursive.php
+
+```PHP
+<?php
+/**
+ * Apply a user function recursively to every member of an array
+ * @link http://php.net/manual/en/function.array-walk-recursive.php
+ * @param array|ArrayObject $input <p>
+ * The input array.
+ * </p>
+ * @param callback $funcname <p>
+ * Typically, funcname takes on two parameters.
+ * The input parameter's value being the first, and
+ * the key/index second.
+ * </p>
+ * <p>
+ * If funcname needs to be working with the
+ * actual values of the array, specify the first parameter of
+ * funcname as a
+ * reference. Then,
+ * any changes made to those elements will be made in the
+ * original array itself.
+ * </p>
+ * @param mixed $userdata [optional] <p>
+ * If the optional userdata parameter is supplied,
+ * it will be passed as the third parameter to the callback
+ * funcname.
+ * </p>
+ * @return bool true on success or false on failure.
+ * @since 5.0
+ */
+function array_walk_recursive (array &$input, $funcname, $userdata = null) {}
+```
+
+```PHP
+<?php
+$sweet = array('a' => 'apple', 'b' => 'banana');
+$fruits = array('sweet' => $sweet, 'sour' => 'lemon');
+
+function test_print($item, $key)
+{
+    echo "$key holds $item\n";
+}
+/**
+ * a holds apple
+ * b holds banana
+ * sour holds lemon
+ */
+array_walk_recursive($fruits, 'test_print');
+```
+---------------------------
+
+#### array_walk — Apply a user supplied function to every member of an array
+http://ua2.php.net/manual/en/function.array-walk.php
+
+```PHP
+<?php
+/**
+ * Apply a user function to every member of an array
+ * @link http://php.net/manual/en/function.array-walk.php
+ * @param array|ArrayObject $array <p>
+ * The input array.
+ * </p>
+ * @param callback $funcname <p>
+ * Typically, funcname takes on two parameters.
+ * The array parameter's value being the first, and
+ * the key/index second.
+ * </p>
+ * <p>
+ * If funcname needs to be working with the
+ * actual values of the array, specify the first parameter of
+ * funcname as a
+ * reference. Then,
+ * any changes made to those elements will be made in the
+ * original array itself.
+ * </p>
+ * <p>
+ * Users may not change the array itself from the
+ * callback function. e.g. Add/delete elements, unset elements, etc. If
+ * the array that array_walk is applied to is
+ * changed, the behavior of this function is undefined, and unpredictable.
+ * </p>
+ * @param mixed $userdata [optional] <p>
+ * If the optional userdata parameter is supplied,
+ * it will be passed as the third parameter to the callback
+ * funcname.
+ * </p>
+ * @return bool true on success or false on failure.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_walk (array &$array, $funcname, $userdata = null) {}
+```
+
+------------------
+
+#### list — Assign variables as if they were an array
+
+http://ua2.php.net/manual/en/function.list.php
+
+```PHP
+<?php
+    /**
+     * Assigns a list of variables in one operation.
+     * @link http://php.net/manual/en/function.list.php
+     * @param mixed $var1 <p>A variable.</p>
+     * @param mixed $_ [optional] <p>Another variable ...</p>
+     * @return array the assigned array.
+     */
+    function PS_UNRESERVE_PREFIX_list($var1, ...$_){};
+```
+
+#### each — Return the current key and value pair from an array and advance the array cursor
+http://ua2.php.net/manual/en/function.each.php
+
+------------------------------
+
+#### key — Fetch a key from an array
+http://ua2.php.net/manual/en/function.key.php
+
+
+```PHP
+<?php
+/**
+ * Fetch a key from an array
+ * @link http://php.net/manual/en/function.key.php
+ * @param array|ArrayObject $array <p>
+ * The array.
+ * </p>
+ * @return int|string|null The key function simply returns the
+ * key of the array element that's currently being pointed to by the
+ * internal pointer. It does not move the pointer in any way. If the
+ * internal pointer points beyond the end of the elements list or the array is 
+ * empty, key returns &null;.
+ * @since 4.0
+ * @since 5.0
+ */
+function key (array &$array) {}
+```
+
+```PHP
+<?php
+$array = array(
+    'fruit1' => 'apple',
+    'fruit2' => 'orange',
+    'fruit3' => 'grape',
+    'fruit4' => 'apple',
+    'fruit5' => 'apple');
+
+// this cycle echoes all associative array
+// key where value equals "apple"
+/**
+ * fruit1<br />
+ * fruit4<br />
+ * fruit5<br />
+ * /
+while ($fruit_name = current($array)) {
+    if ($fruit_name == 'apple') {
+        echo key($array).'<br />';
+    }
+    next($array);
+}
+```
+
+---------------------------------------------------
+#### current — Return the current element in an array
+http://ua2.php.net/manual/en/function.current.php
+
+```PHP
+<?php
+$transport = array('foot', 'bike', 'car', 'plane');
+$mode = current($transport); // $mode = 'foot';
+$mode = next($transport);    // $mode = 'bike';
+$mode = current($transport); // $mode = 'bike';
+$mode = prev($transport);    // $mode = 'foot';
+$mode = end($transport);     // $mode = 'plane';
+$mode = current($transport); // $mode = 'plane';
+
+$arr = array();
+var_dump(current($arr)); // bool(false)
+
+$arr = array(array());
+var_dump(current($arr)); // array(0) { }
+```
+-------------------------------------
+
+#### end — Set the internal pointer of an array to its last element
+
+http://ua2.php.net/manual/en/function.end.php
+
+------------------------------------------------------
+
+#### prev — Rewind the internal array pointer
+
+http://ua2.php.net/manual/en/function.prev.php
+
+--------------------------
+
+#### next — Advance the internal pointer of an array
+http://ua2.php.net/manual/en/function.next.php
+
+----------------------------------
+
+#### reset — Set the internal pointer of an array to its first element
+http://ua2.php.net/manual/en/function.reset.php
+
+--------------------------------
+
+#### pos — Alias of current
+http://ua2.php.net/manual/en/function.pos.php
+
+------------
+
+#### array — Create an array
+http://ua2.php.net/manual/en/function.array.php
+
+-------------------
+
+#### compact — Create array containing variables and their values
+http://ua2.php.net/manual/en/function.compact.php
+
+
+```PHP
+<?php
+/**
+ * Create array containing variables and their values
+ * @link http://php.net/manual/en/function.compact.php
+ * @param mixed $varname <p>
+ * compact takes a variable number of parameters.
+ * Each parameter can be either a string containing the name of the
+ * variable, or an array of variable names. The array can contain other
+ * arrays of variable names inside it; compact
+ * handles it recursively.
+ * </p>
+ * @param mixed $_ [optional] 
+ * @return array the output array with all the variables added to it.
+ * @since 4.0
+ * @since 5.0
+ */
+function compact ($varname, $_ = null) {}
+```
+
+```PHP
+<?php
+$city  = "San Francisco";
+$state = "CA";
+$event = "SIGGRAPH";
+
+$location_vars = array("city", "state");
+
+$result = compact("event", "nothing_here", $location_vars);
+/**
+ * Array
+ * (
+ *   [event] => SIGGRAPH
+ *   [city] => San Francisco
+ *   [state] => CA
+ * )
+ */
+print_r($result);
+```
+
+---------------
+
+#### extract — Import variables into the current symbol table from an array
+
+http://ua2.php.net/manual/en/function.extract.php
+
+
+
+```PHP
+<?php
+/**
+ * Import variables into the current symbol table from an array
+ * @link http://php.net/manual/en/function.extract.php
+ * @param array $var_array<p>
+ * Note that prefix is only required if
+ * extract_type is EXTR_PREFIX_SAME,
+ * EXTR_PREFIX_ALL, EXTR_PREFIX_INVALID
+ * or EXTR_PREFIX_IF_EXISTS. If
+ * the prefixed result is not a valid variable name, it is not
+ * imported into the symbol table. Prefixes are automatically separated from
+ * the array key by an underscore character.
+ * </p>
+ * @param int $extract_type [optional] <p>
+ * The way invalid/numeric keys and collisions are treated is determined
+ * by the extract_type. It can be one of the
+ * following values:
+ * EXTR_OVERWRITE
+ * If there is a collision, overwrite the existing variable.
+ * @param string $prefix [optional] Only overwrite the variable if it already exists in the
+ * current symbol table, otherwise do nothing. This is useful
+ * for defining a list of valid variables and then extracting
+ * only those variables you have defined out of
+ * $_REQUEST, for example.
+ * @return int the number of variables successfully imported into the symbol
+ * table.
+ * @since 4.0
+ * @since 5.0
+ */
+function extract (array $var_array, $extract_type = null, $prefix = null) {}
+```
+
+```PHP
+<?php
+
+/* Suppose that $var_array is an array returned from
+   wddx_deserialize */
+
+$size = "large";
+$var_array = array("color" => "blue",
+                   "size"  => "medium",
+                   "shape" => "sphere");
+extract($var_array, EXTR_PREFIX_SAME, "wddx");
+
+echo "$color, $size, $shape, $wddx_size\n"; // blue, large, sphere, medium
+```
+
+--------------------------------------------------------------
+
+#### key_exists — Alias of array_key_exists
+http://ua2.php.net/manual/en/function.key-exists.php
+
+----------------
+
+#### count — Count all elements in an array, or something in an object
+http://ua2.php.net/manual/en/function.count.php
+
+--------------
+
+#### sizeof — Alias of count
+http://ua2.php.net/manual/en/function.sizeof.php
+
+------------------
+
+
