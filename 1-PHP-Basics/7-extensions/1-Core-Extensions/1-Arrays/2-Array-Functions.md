@@ -1446,22 +1446,679 @@ function array_search ($needle, array $haystack, $strict = null) {}
 ```
 -----------------------
 
-array_merge_recursive — Merge two or more arrays recursively
-array_merge — Merge one or more arrays
-array_multisort — Sort multiple or multi-dimensional arrays
-array_pad — Pad array to the specified length with a value
-array_pop — Pop the element off the end of array
-array_product — Calculate the product of values in an array
-array_push — Push one or more elements onto the end of array
-array_rand — Pick one or more random entries out of an array
-array_replace_recursive — Replaces elements from passed arrays into the first array recursively
-array_replace — Replaces elements from passed arrays into the first array
-array_reverse — Return an array with elements in reverse order
-array_shift — Shift an element off the beginning of array
+#### array_merge_recursive — Merge two or more arrays recursively
+
+http://ua2.php.net/manual/en/function.array-merge-recursive.php
+
+<p>If the input arrays have the same string keys, then the values for these keys are merged together into an array, and this is done recursively, so that if one of the values is an array itself, the function will merge it with a corresponding entry in another array too. If, however, the arrays have the same numeric key, the later value will not overwrite the original value, but will be appended.</p>
+
+
+```PHP
+<?php
+/**
+ * Merge two or more arrays recursively
+ * @link http://php.net/manual/en/function.array-merge-recursive.php
+ * @param array $array1 <p>
+ * Initial array to merge.
+ * </p>
+ * @param array $_ [optional]
+ * @return array An array of values resulted from merging the arguments together.
+ * @since 4.0.1
+ * @since 5.0
+ */
+function array_merge_recursive(array $array1, array $_ = null) { }
+```
+
+```PHP
+<?php
+
+$array1 = [1,2,3,4,5];
+$array2 = [6,7,8,9,10];
+
+$result = array_merge_recursive($array1,$array2);
+
+/**
+ * array(10) {
+ * [0]=>
+ * int(1)
+ * [1]=>
+ * int(2)
+ * [2]=>
+ * int(3)
+ * [3]=>
+ * int(4)
+ * [4]=>
+ * int(5)
+ * [5]=>
+ * int(6)
+ * [6]=>
+ * int(7)
+ * [7]=>
+ * int(8)
+ * [8]=>
+ * int(9)
+ * [9]=>
+ * int(10)
+ * }
+ */
+var_dump($result);
+
+######################################
+
+$array1 = ['color'=>1,2];
+$array2 = [1,'color'=>2];
+$result = array_merge_recursive($array1,$array2);
+/**
+ * array(3) {
+ * ["color"]=>
+ * array(2) {
+ * [0]=>
+ * int(1)
+ * [1]=>
+ * int(2)
+ * }
+ * [0]=>
+ * int(2)
+ * [1]=>
+ * int(1)
+ * }
+ */
+var_dump($result);
+
+##############################
+
+$ar1 = array("color" => array("favorite" => "red"), 5);
+$ar2 = array(10, "color" => array("favorite" => "green", "blue"));
+$result = array_merge_recursive($ar1, $ar2);
+/**
+ * Array
+ * (
+ * [color] => Array
+ * (
+ * [favorite] => Array
+ * (
+ * [0] => red
+ * [1] => green
+ * ) 
+ * 
+ * [0] => blue
+ * )
+ * 
+ * [0] => 5
+ * [1] => 10
+ * )
+ */
+print_r($result);
+```
+
+---------------------------------------
+
+#### array_merge — Merge one or more arrays
+
+http://ua2.php.net/manual/en/function.array-merge.php
+
+```PHP
+<?php
+/**
+ * Merge one or more arrays
+ * @link http://php.net/manual/en/function.array-merge.php
+ * @param array $array1 <p>
+ * Initial array to merge.
+ * </p>
+ * @param array $array2 [optional] 
+ * @param array $_ [optional] 
+ * @return array the resulting array.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_merge (array $array1, array $array2 = null, array $_ = null) {}
+```
+
+```PHP
+<?php
+$array1 = array("color" => "red", 2, 4);
+$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
+$result = array_merge($array1, $array2);
+/**
+ * Array
+ * (
+ *     [color] => green
+ *     [0] => 2
+ *     [1] => 4
+ *     [2] => a
+ *     [3] => b
+ *     [shape] => trapezoid
+ *     [4] => 4
+ * )
+ */
+print_r($result);
+```
+
+<p>If you want to append array elements from the second array to the first array while not overwriting the elements from the first array and not re-indexing, use the + array union operator:</p>
+
+```PHP
+<?php
+$array1 = array(0 => 'zero_a', 2 => 'two_a', 3 => 'three_a');
+$array2 = array(1 => 'one_b', 3 => 'three_b', 4 => 'four_b');
+$result = $array1 + $array2;
+/**
+ * array(5) {
+ *   [0]=>
+ *   string(6) "zero_a"
+ *   [2]=>
+ *   string(5) "two_a"
+ *   [3]=>
+ *   string(7) "three_a"
+ *   [1]=>
+ *   string(5) "one_b"
+ *   [4]=>
+ *   string(6) "four_b"
+ * }
+ */
+var_dump($result);
+```
+
+--------------------------
+
+#### array_replace — Replaces elements from passed arrays into the first array
+
+http://ua2.php.net/manual/en/function.array-replace.php
+
+```PHP
+<?php
+/**
+ * array_replace() replaces the values of the first array with the same values from all the following arrays.
+ * If a key from the first array exists in the second array, its value will be replaced by the value from the second array.
+ * If the key exists in the second array, and not the first, it will be created in the first array.
+ * If a key only exists in the first array, it will be left as is. If several arrays are passed for replacement,
+ * they will be processed in order, the later arrays overwriting the previous values.
+ * array_replace() is not recursive : it will replace values in the first array by whatever type is in the second array.
+ * @link http://php.net/manual/en/function.array-replace.php
+ * @param array $array <p>
+ * The array in which elements are replaced.
+ * </p>
+ * @param array $array1 <p>
+ * The array from which elements will be extracted.
+ * </p>
+ * @param array $array2 [optional]
+ * @param array $_ [optional]
+ * @return array or null if an error occurs.
+ * @since 5.3.0
+ */
+function array_replace(array $array, array $array1, array $array2 = null, array $_ = null) { }
+```
+
+```PHP
+<?php
+$base = array("orange", "banana", "apple", "raspberry");
+$replacements = array(0 => "pineapple", 4 => "cherry");
+$replacements2 = array(0 => "grape");
+$basket = array_replace($base, $replacements, $replacements2);
+/**
+ * Array
+ * (
+ *     [0] => grape
+ *     [1] => banana
+ *     [2] => apple
+ *     [3] => raspberry
+ *     [4] => cherry
+ * )
+ */
+print_r($basket);
+```
+
+--------------------------------------
+
+#### array_replace_recursive — Replaces elements from passed arrays into the first array recursively
+
+http://ua2.php.net/manual/en/function.array-replace-recursive.php
+
+```PHP
+<?php
+/**
+ * array_replace() replaces the values of the first array with the same values from all the following arrays.
+ * If a key from the first array exists in the second array, its value will be replaced by the value from the second array.
+ * If the key exists in the second array, and not the first, it will be created in the first array.
+ * If a key only exists in the first array, it will be left as is. If several arrays are passed for replacement,
+ * they will be processed in order, the later arrays overwriting the previous values.
+ * array_replace() is not recursive : it will replace values in the first array by whatever type is in the second array.
+ * @link http://php.net/manual/en/function.array-replace.php
+ * @param array $array <p>
+ * The array in which elements are replaced.
+ * </p>
+ * @param array $array1 <p>
+ * The array from which elements will be extracted.
+ * </p>
+ * @param array $array2 [optional]
+ * @param array $_ [optional]
+ * @return array or null if an error occurs.
+ * @since 5.3.0
+ */
+function array_replace(array $array, array $array1, array $array2 = null, array $_ = null) { }
+```
+
+```PHP
+<?php
+$base = array('citrus' => array( "orange") , 'berries' => array("blackberry", "raspberry"), );
+$replacements = array('citrus' => array('pineapple'), 'berries' => array('blueberry'));
+
+$basket = array_replace_recursive($base, $replacements);
+/**
+ * Array
+ * (
+ *     [citrus] => Array
+ *         (
+ *             [0] => pineapple
+ *         )
+ * 
+ *     [berries] => Array
+ *         (
+ *             [0] => blueberry
+ *             [1] => raspberry
+ *         )
+ * 
+ * )
+ */
+print_r($basket);
+
+$basket = array_replace($base, $replacements);
+/**
+ * Array
+ * (
+ *     [citrus] => Array
+ *         (
+ *             [0] => pineapple
+ *         )
+ * 
+ *    [berries] => Array
+ *         (
+ *             [0] => blueberry
+ *         )
+ * 
+ * )
+ */
+print_r($basket);
+```
+
+-----------------------------------
+#### array_pad — Pad array to the specified length with a value
+
+http://ua2.php.net/manual/en/function.array-pad.php
+
+```PHP
+<?php
+/**
+ * Pad array to the specified length with a value
+ * @link http://php.net/manual/en/function.array-pad.php
+ * @param array $input <p>
+ * Initial array of values to pad.
+ * </p>
+ * @param int $pad_size <p>
+ * New size of the array.
+ * </p>
+ * @param mixed $pad_value <p>
+ * Value to pad if input is less than
+ * pad_size.
+ * </p>
+ * @return array a copy of the input padded to size specified
+ * by pad_size with value
+ * pad_value. If pad_size is
+ * positive then the array is padded on the right, if it's negative then
+ * on the left. If the absolute value of pad_size is less than or equal to
+ * the length of the input then no padding takes place.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_pad(array $input, $pad_size, $pad_value) { }
+```
+
+```PHP
+<?php
+$input = array(12, 10, 9);
+
+$result = array_pad($input, 5, 0);
+var_dump($result); // result is array(12, 10, 9, 0, 0)
+
+$result = array_pad($input, -7, -1);
+var_dump($result); // result is array(-1, -1, -1, -1, 12, 10, 9)
+
+$result = array_pad($input, 2, "noop");
+var_dump($result); // result is array(12, 10, 9)
+```
+--------------------------------
+
+#### array_pop — Pop the element off the end of array
+
+http://ua2.php.net/manual/en/function.array-pop.php
+
+```PHP
+<?php
+/**
+ * Pop the element off the end of array
+ * @link http://php.net/manual/en/function.array-pop.php
+ * @param array $array <p>
+ * The array to get the value from.
+ * </p>
+ * @return mixed the last value of array.
+ * If array is empty (or is not an array),
+ * &null; will be returned.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_pop (array &$array) {}
+```
+
+```PHP
+<?php
+$stack = array("orange", "banana", "apple", "raspberry");
+$fruit = array_pop($stack);
+/**
+ * Array
+ * (
+ *     [0] => orange
+ *     [1] => banana
+ *     [2] => apple
+ * )
+ */
+print_r($stack);
+```
+
+-------------------------------
+#### array_push — Push one or more elements onto the end of array
+
+http://ua2.php.net/manual/en/function.array-push.php
+
+<strong>Has the same effect as:</strong>
+```PHP
+<?php
+$array[] = $var;
+?>
+```
+
+```PHP
+<?php
+/**
+ * Push one or more elements onto the end of array
+ * @link http://php.net/manual/en/function.array-push.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @param mixed $var <p>
+ * The pushed value.
+ * </p>
+ * @param mixed $_ [optional] 
+ * @return int the new number of elements in the array.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_push (array &$array, $var, $_ = null) {}
+```
+
+```PHP
+<?php
+$stack = array("orange", "banana");
+array_push($stack, "apple", "raspberry");
+/**
+ * Array
+ *  (
+ *      [0] => orange
+ *      [1] => banana
+ *      [2] => apple
+ *      [3] => raspberry
+ *  )
+ */
+print_r($stack);
+```
+-------------------------------------
+
+#### array_shift — Shift an element off the beginning of array
+http://ua2.php.net/manual/en/function.array-shift.php
+
+```PHP
+<?php
+/**
+ * Shift an element off the beginning of array
+ * @link http://php.net/manual/en/function.array-shift.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @return mixed the shifted value, or &null; if array is
+ * empty or is not an array.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_shift (array &$array) {}
+```
+
+```PHP
+<?php
+$stack = array("orange", "banana", "apple", "raspberry");
+$fruit = array_shift($stack);
+/**
+ * Array
+ * (
+ *     [0] => banana
+ *     [1] => apple
+ *     [2] => raspberry
+ * )
+ */
+print_r($stack);
+```
+
+------------------------
+
+#### array_unshift — Prepend one or more elements to the beginning of an array
+
+http://ua2.php.net/manual/en/function.array-unshift.php
+
+```PHP
+
+<?php
+/**
+ * Prepend one or more elements to the beginning of an array
+ * @link http://php.net/manual/en/function.array-unshift.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @param mixed $var <p>
+ * The prepended variable.
+ * </p>
+ * @param mixed $_ [optional] 
+ * @return int the new number of elements in the array.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_unshift (array &$array, $var, $_ = null) {}
+```
+
+```PHP
+<?php
+$queue = array("orange", "banana");
+array_unshift($queue, "apple", "raspberry");
+/**
+ * Array
+ * (
+ *     [0] => apple
+ *     [1] => raspberry
+ *     [2] => orange
+ *     [3] => banana
+ * )
+ */
+print_r($queue);
+```
+
+---------------------------------------
+
+#### array_product — Calculate the product of values in an array
+
+http://ua2.php.net/manual/en/function.array-product.php
+
+```PHP
+<?php
+/**
+ * Calculate the product of values in an array
+ * @link http://php.net/manual/en/function.array-product.php
+ * @param array $array <p>
+ * The array.
+ * </p>
+ * @return int|float the product as an integer or float.
+ * @since 5.1.0
+ */
+function array_product(array $array) { }
+```
+
+```PHP
+
+<?php
+var_dump(array_product(['a','b'])); // int (0)
+
+var_dump(array_product(['a',2])); // int (0)
+
+var_dump(array_product([1,2])); // int (2)
+
+var_dump(array_product([])); // int (1)
+
+```
+-------------------
+
+#### array_rand — Pick one or more random entries out of an array
+
+http://ua2.php.net/manual/en/function.array-rand.php
+
+
+```PHP
+<?php
+/**
+ * Pick one or more random entries out of an array
+ * @link http://php.net/manual/en/function.array-rand.php
+ * @param array $input <p>
+ * The input array.
+ * </p>
+ * @param int $num_req [optional] <p>
+ * Specifies how many entries you want to pick.
+ * </p>
+ * @return mixed If you are picking only one entry, array_rand
+ * returns the key for a random entry. Otherwise, it returns an array
+ * of keys for the random entries. This is done so that you can pick
+ * random keys as well as values out of the array.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_rand(array $input, $num_req = null) { }
+```
+<strong>array_rand(): Second argument has to be between 1 and the number of elements in the array </strong>
+
+```PHP
+<?php
+
+$input = array("Neo", "Morpheus", "Trinity", "Cypher", "Tank");
+$rand_keys = array_rand($input, 2);
+echo $input[$rand_keys[0]] . "\n"; // Trinity - random
+echo $input[$rand_keys[1]] . "\n"; // Tank - random
+
+```
+
+-----------------------
+
+#### array_reverse — Return an array with elements in reverse order
+
+http://ua2.php.net/manual/en/function.array-reverse.php
+
+```PHP
+<?php
+/**
+ * Return an array with elements in reverse order
+ * @link http://php.net/manual/en/function.array-reverse.php
+ * @param array $array <p>
+ * The input array.
+ * </p>
+ * @param bool $preserve_keys [optional] <p>
+ * If set to true keys are preserved.
+ * </p>
+ * @return array the reversed array.
+ * @since 4.0
+ * @since 5.0
+ */
+function array_reverse(array $array, $preserve_keys = null) { }
+```
+
+<div class="refsect1 parameters" id="refsect1-function.array-reverse-parameters">
+<h3 class="title">Parameters</h3>
+<p class="para">
+</p><dl>
+ <dt>
+<code class="parameter">array</code></dt>
+ <dd>
+  <p class="para">
+   The input array.
+  </p>
+ </dd>
+ <dt>
+<code class="parameter">preserve_keys</code></dt>
+ <dd>
+  <p class="para">
+   If set to <strong><code>TRUE</code></strong> numeric keys are preserved. 
+   Non-numeric keys are not affected by this setting and will always be preserved.
+  </p>
+ </dd>
+</dl>
+<p></p>
+</div>
+
+```PHP
+<?php
+$input  = array("php", 4.0, array("green", "red"));
+$reversed = array_reverse($input);
+$preserved = array_reverse($input, true);
+/**
+ * Array
+ * (
+ *     [0] => php
+ *     [1] => 4
+ *     [2] => Array
+ *         (
+ *             [0] => green
+ *             [1] => red
+ *         )
+ * 
+ * )
+ */
+print_r($input);
+/**
+ * Array
+ * (
+ *     [0] => Array
+ *         (
+ *             [0] => green
+ *             [1] => red
+ *         )
+ * 
+ *     [1] => 4
+ *     [2] => php
+ * )
+ */
+print_r($reversed);
+/**
+ * Array
+ * (
+ *     [2] => Array
+ *         (
+ *             [0] => green
+ *             [1] => red
+ *         )
+ * 
+ *     [1] => 4
+ *     [0] => php
+ * )
+ */
+print_r($preserved);
+```
+
+-----------------------------
+
 array_slice — Extract a slice of the array
 array_splice — Remove a portion of the array and replace it with something else
 array_sum — Calculate the sum of values in an array
-array_unshift — Prepend one or more elements to the beginning of an array
 array_walk_recursive — Apply a user function recursively to every member of an array
 array_walk — Apply a user supplied function to every member of an array
 array — Create an array
@@ -1487,6 +2144,4 @@ reset — Set the internal pointer of an array to its first element
 rsort — Sort an array in reverse order
 sizeof — Alias of count
 sort — Sort an array
-uasort — Sort an array with a user-defined comparison function and maintain index association
 uksort — Sort an array by keys using a user-defined comparison function
-usort — Sort an array by values using a user-defined comparison function
