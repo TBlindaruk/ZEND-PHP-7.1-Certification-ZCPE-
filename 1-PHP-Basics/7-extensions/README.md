@@ -7,7 +7,7 @@
 1. [Arrays](1-Core-Extensions/1-Arrays/README.md)
 2. [Class/Object Information](./1-Core-Extensions/2-Class-Object-Information/README.md)
 3. [Date and Time](./1-Core-Extensions/3-Date-and-Time/README.md)
-4. [Directories](http://php.net/manual/en/book.dir.php)
+4. [Directories](./1-Core-Extensions/4-Directories/README.md)
 5. [Error Handling and Logging](http://php.net/manual/en/book.errorfunc.php)
 6. [System program execution](http://php.net/manual/en/book.exec.php)
 7. [Filesystem](http://php.net/manual/en/book.filesystem.php)
