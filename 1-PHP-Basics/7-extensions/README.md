@@ -5,7 +5,7 @@
 #### Core Extensions
 
 1. [Arrays](1-Core-Extensions/1-Arrays/README.md)
-2. [Class/Object Information](http://php.net/manual/en/book.classobj.php)
+2. [Class/Object Information](./1-Core-Extensions/2-Class-Object-Information/README.md)
 3. [Date and Time](http://php.net/manual/en/book.datetime.php)
 4. [Directories](http://php.net/manual/en/book.dir.php)
 5. [Error Handling and Logging](http://php.net/manual/en/book.errorfunc.php)
