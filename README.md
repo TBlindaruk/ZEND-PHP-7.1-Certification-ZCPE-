@@ -9,10 +9,7 @@
 6. [Namespaces](1-PHP-Basics/6-namespaces/README.md)
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
-         - [Extensions. System program execution](./1-PHP-Basics/7-extensions/README.md) - @Skip 
-         - [Extensions. Filesystem](./1-PHP-Basics/7-extensions/README.md) - @Skip 
-         - [Extensions. Data Filtering](./1-PHP-Basics/7-extensions/README.md) - @Skip 
-         - [Extensions. Function Handling](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+         - [Extensions. Function Handling](./1-PHP-Basics/7-extensions/README.md) - @IN_PROGRESS
          - [Extensions. HASH Message Digest Framework](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. PHP Options and Information](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Mail](./1-PHP-Basics/7-extensions/README.md) - @Skip 
