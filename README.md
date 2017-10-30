@@ -8,8 +8,7 @@
 5. [Language Constructs and Functions](1-PHP-Basics/5-language-constructs-and-functions/README.md)
 6. [Namespaces](1-PHP-Basics/6-namespaces/README.md)
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
-     - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md) 
-         - [Extensions. Regular Expression (POSIX Extended)](./1-PHP-Basics/7-extensions/README.md) - @Skip 
+     - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
          - [Extensions. Standard PHP Library (SPL)](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Streams](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Strings](./1-PHP-Basics/7-extensions/README.md) - @Skip 
