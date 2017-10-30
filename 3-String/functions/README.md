@@ -2,9 +2,7 @@
 http://php.net/manual/en/ref.strings.php
 
 ---------------------------
-
 #### addcslashes — Quote string with slashes in a C style
-
 http://php.net/manual/en/function.addcslashes.php
 
 ```PHP
@@ -71,10 +69,12 @@ echo addcslashes("I`m",'I') . PHP_EOL;
 // output:  \I\`\m ; PHP Warning
 ```
 
---------------------------
+---------------------
+#### stripcslashes — Un-quote string quoted with addcslashes
+http://php.net/manual/en/function.stripcslashes.php
 
+--------------------
 #### addslashes — Quote string with slashes
-
 http://php.net/manual/en/function.addslashes.php
 
 <p>Quote string with slashes</p>
@@ -102,10 +102,38 @@ $str = "Is your name O'Reilly?";
 echo addslashes($str);
 ```
 
-------------------------------
+---------------------
+#### stripslashes — Un-quotes a quoted string
+http://php.net/manual/en/function.stripslashes.php
 
+```PHP
+<?php
+/**
+ * Un-quotes a quoted string
+ * @link http://php.net/manual/en/function.stripslashes.php
+ * @param string $str <p>
+ * The input string.
+ * </p>
+ * @return string a string with backslashes stripped off.
+ * (\' becomes ' and so on.)
+ * Double backslashes (\\) are made into a single
+ * backslash (\).
+ * @since 4.0
+ * @since 5.0
+ */
+function stripslashes ($str) {}
+```
+
+```PHP
+<?php
+$str = "Is your name O\'re\illy?";
+
+// Outputs: Is your name O'reilly?
+echo stripslashes($str) . PHP_EOL;
+```
+
+----------------
 #### bin2hex — Convert binary data into hexadecimal representation
-
 http://php.net/manual/en/function.bin2hex.php
 
 <p>Convert binary data into hexadecimal representation</p>
@@ -132,9 +160,20 @@ echo bin2hex('0');//30
 ```
 
 -------------------------
+#### hex2bin — Decodes a hexadecimally encoded binary string
+http://php.net/manual/en/function.hex2bin.php
 
+<strong>Caution. This function does NOT convert a hexadecimal number to a binary number. This can be done using the base_convert() function.</strong>
+
+```PHP
+<?php
+
+$hex = hex2bin("6578616d706c65206865782064617461");
+var_dump($hex); //string(16) "example hex data"
+```
+
+------------------
 #### chop — Alias of rtrim
-
 http://php.net/manual/en/function.chop.php
 
 ```PHP
@@ -152,10 +191,124 @@ http://php.net/manual/en/function.chop.php
 function chop ($str, $character_mask) {}
 ```
 
--------------------------
+------------------------
+#### rtrim — Strip whitespace (or other characters) from the end of a string
+http://php.net/manual/en/function.rtrim.php
 
+```PHP
+<?php
+/**
+ * Strip whitespace (or other characters) from the end of a string.
+ * Without the second parameter, rtrim() will strip these characters:
+ * <ul>
+ * <li>" " (ASCII 32 (0x20)), an ordinary space.
+ * <li>"\t" (ASCII 9 (0x09)), a tab.
+ * <li>"\n" (ASCII 10 (0x0A)), a new line (line feed).
+ * <li>"\r" (ASCII 13 (0x0D)), a carriage return.
+ * <li>"\0" (ASCII 0 (0x00)), the NUL-byte.
+ * <li>"\x0B" (ASCII 11 (0x0B)), a vertical tab.
+ * </ul>
+ * @link http://php.net/manual/en/function.rtrim.php
+ * @param string $str <p>
+ * The input string.
+ * </p>
+ * @param string $charlist [optional] <p>
+ * You can also specify the characters you want to strip, by means
+ * of the charlist parameter.
+ * Simply list all characters that you want to be stripped. With
+ * .. you can specify a range of characters.
+ * </p>
+ * @return string the modified string.
+ * @since 4.0
+ * @since 5.0
+ */
+function rtrim ($str, $charlist = " \t\n\r\0\x0B") {}
+```
+
+```PHP
+<?php
+
+$text = "\t\tThese are a few words :) ...  ";
+$binary = "\x09Example string\x0A";
+$hello  = "Hello World";
+
+var_dump(rtrim($text)); //string(30) "            These are a few words :) ..."
+
+var_dump(rtrim($text, " \t.")); //string(26) "            These are a few words :)"
+
+var_dump(rtrim($hello, "Hdler")); //string(8) "Hello Wo"
+
+// trim the ASCII control characters at the end of $binary
+// (from 0 to 31 inclusive)
+var_dump(rtrim($binary, "\x00..\x1F")); // string(15) "    Example string"
+```
+-----------
+#### trim — Strip whitespace (or other characters) from the beginning and end of a string
+http://php.net/manual/en/function.trim.php
+
+```PHP
+<?php
+/**
+ * Strip whitespace (or other characters) from the beginning and end of a string
+ * @link http://php.net/manual/en/function.trim.php
+ * @param string $str <p>
+ * The string that will be trimmed.
+ * </p>
+ * @param string $charlist [optional] <p>
+ * Optionally, the stripped characters can also be specified using
+ * the charlist parameter.
+ * Simply list all characters that you want to be stripped. With
+ * .. you can specify a range of characters.
+ * </p>
+ * @return string The trimmed string.
+ * @since 4.0
+ * @since 5.0
+ */
+function trim ($str, $charlist = " \t\n\r\0\x0B") {}
+```
+
+------------------
+#### ltrim — Strip whitespace (or other characters) from the beginning of a string
+http://php.net/manual/en/function.ltrim.php
+
+```PHP
+<?php
+/**
+ * Strip whitespace (or other characters) from the beginning of a string
+ * @link http://php.net/manual/en/function.ltrim.php
+ * @param string $str <p>
+ * The input string.
+ * </p>
+ * @param string $charlist [optional] <p>
+ * You can also specify the characters you want to strip, by means of the
+ * charlist parameter.
+ * Simply list all characters that you want to be stripped. With
+ * .. you can specify a range of characters.
+ * </p>
+ * @return string This function returns a string with whitespace stripped from the
+ * beginning of str.
+ * Without the second parameter,
+ * ltrim will strip these characters:
+ * " " (ASCII 32
+ * (0x20)), an ordinary space.
+ * "\t" (ASCII 9
+ * (0x09)), a tab.
+ * "\n" (ASCII 10
+ * (0x0A)), a new line (line feed).
+ * "\r" (ASCII 13
+ * (0x0D)), a carriage return.
+ * "\0" (ASCII 0
+ * (0x00)), the NUL-byte.
+ * "\x0B" (ASCII 11
+ * (0x0B)), a vertical tab.
+ * @since 4.0
+ * @since 5.0
+ */
+function ltrim ($str, $charlist = " \t\n\r\0\x0B") {}
+```
+
+---------------
 #### chr — Return a specific character
-
 http://php.net/manual/en/function.chr.php
 
 <p>Return a specific character</p>
@@ -186,10 +339,36 @@ $str = sprintf("The string ends in escape: %c", 100); /* add an `d` character at
 echo $str;
 ```
 
---------------------
+-------------------
+#### ord — Return ASCII value of character
+http://php.net/manual/en/function.ord.php
 
+```PHP
+<?php
+/**
+ * Return ASCII value of character
+ * @link http://php.net/manual/en/function.ord.php
+ * @param string $string <p>
+ * A character.
+ * </p>
+ * @return int the ASCII value as an integer.
+ * @since 4.0
+ * @since 5.0
+ */
+function ord ($string) {}
+```
+
+```PHP
+<?php
+$str = "\n";
+if (ord($str) == 10) {
+    echo "The first character of \$str is a line feed.\n";
+}
+
+echo ord('a'); //97
+```
+-------------
 #### chunk_split — Split a string into smaller chunks
-
 http://php.net/manual/en/function.chunk-split.php
 
 ```PHP
@@ -231,10 +410,141 @@ TEXT;
 var_dump(chunk_split($lorem,10));
 ```
 
-----------------------------
+-------------------
+#### str_split — Convert a string to an array
+http://php.net/manual/en/function.str-split.php
 
+```PHP
+<?php
+/**
+ * Convert a string to an array
+ * @link http://php.net/manual/en/function.str-split.php
+ * @param string $string <p>
+ * The input string.
+ * </p>
+ * @param int $split_length [optional] <p>
+ * Maximum length of the chunk.
+ * </p>
+ * @return array If the optional split_length parameter is
+ * specified, the returned array will be broken down into chunks with each
+ * being split_length in length, otherwise each chunk
+ * will be one character in length.
+ * </p>
+ * <p>
+ * false is returned if split_length is less than 1.
+ * If the split_length length exceeds the length of
+ * string, the entire string is returned as the first
+ * (and only) array element.
+ * @since 5.0
+ */
+function str_split ($string, $split_length = 1) {}
+```
+
+```PHP
+<?php
+
+$str = "Hello Friend";
+
+$arr1 = str_split($str);
+$arr2 = str_split($str, 3);
+
+/**
+ * Array
+ * (
+ * [0] => H
+ * [1] => e
+ * [2] => l
+ * [3] => l
+ * [4] => o
+ * [5] =>
+ * [6] => F
+ * [7] => r
+ * [8] => i
+ * [9] => e
+ * [10] => n
+ * [11] => d
+ * )
+ */
+print_r($arr1);
+/**
+ * Array
+ * (
+ * [0] => Hel
+ * [1] => lo 
+ * [2] => Fri
+ * [3] => end
+ * )
+ */
+print_r($arr2);
+```
+
+----------
+#### explode — Split a string by string
+http://php.net/manual/en/function.explode.php
+
+```PHP
+<?php
+/**
+ * Split a string by string
+ * @link http://php.net/manual/en/function.explode.php
+ * @param string $delimiter <p>
+ * The boundary string.
+ * </p>
+ * @param string $string <p>
+ * The input string.
+ * </p>
+ * @param int $limit [optional] <p>
+ * If limit is set and positive, the returned array will contain
+ * a maximum of limit elements with the last
+ * element containing the rest of string.
+ * </p>
+ * <p>
+ * If the limit parameter is negative, all components
+ * except the last -limit are returned.
+ * </p>
+ * <p>
+ * If the limit parameter is zero, then this is treated as 1.
+ * </p>
+ * @return array If delimiter is an empty string (""),
+ * explode will return false.
+ * If delimiter contains a value that is not
+ * contained in string and a negative
+ * limit is used, then an empty array will be
+ * returned. For any other limit, an array containing
+ * string will be returned.
+ * @since 4.0
+ * @since 5.0
+ */
+function explode ($delimiter, $string, $limit = null) {}
+```
+
+------------
+#### implode — Join array elements with a string
+http://php.net/manual/en/function.implode.php
+
+```PHP
+<?php
+/**
+ * Join array elements with a string
+ * @link http://php.net/manual/en/function.implode.php
+ * @param string $glue [optional]<p>
+ * Defaults to an empty string. This is not the preferred usage of
+ * implode as glue would be
+ * the second parameter and thus, the bad prototype would be used.
+ * </p>
+ * @param array $pieces <p>
+ * The array of strings to implode.
+ * </p>
+ * @return string a string containing a string representation of all the array
+ * elements in the same order, with the glue string between each element.
+ * @since 4.0
+ * @since 5.0
+ */
+function implode ($glue = "", array $pieces) {}
+```
+
+---------------
 #### convert_cyr_string — Convert from one Cyrillic character set to another
-
 http://php.net/manual/en/function.convert-cyr-string.php
 
 <strong>I do not know how it is work ;) </strong>
@@ -261,10 +571,8 @@ http://php.net/manual/en/function.convert-cyr-string.php
 function convert_cyr_string ($str, $from, $to) {}
 ```
 
-------------------
-
+----------------------
 #### convert_uudecode — Decode a uuencoded string
-
 http://php.net/manual/en/function.convert-uudecode.php
 
 ```PHP
@@ -286,10 +594,9 @@ function convert_uudecode ($data) {}
 /* Can you imagine what this will print? :) */
 echo convert_uudecode("+22!L;W9E(%!(4\"$`\n`"); // I love PHP!
 ```
------------------------------
 
+------------------------
 #### convert_uuencode — Uuencode a string
-
 http://php.net/manual/en/function.convert-uuencode.php
 
 ```PHP
@@ -319,10 +626,8 @@ echo "ENCODE: $encodeData" . PHP_EOL; // ENCODE: *22!,;W9E(%!(4```
 echo "DECODE: $decodeData" . PHP_EOL; //DECODE: I Love PHP
 ```
 
------------------------------
-
+--------------
 #### count_chars — Return information about characters used in a string
-
 http://php.net/manual/en/function.count-chars.php
 
 ```PHP
@@ -432,93 +737,246 @@ $returnData = count_chars($string,4);
 var_dump($returnData); // string(242) "\000 !"#$%&'()*+,-./0123456789:<=>?.....
 
 ```
------------------------------
 
-#### crc32 — Calculates the crc32 polynomial of a string
-#### crypt — One-way string hashing
-#### echo — Output one or more strings
-#### explode — Split a string by string
-#### fprintf — Write a formatted string to a stream
-#### get_html_translation_table — Returns the translation table used by htmlspecialchars and htmlentities
-#### hebrev — Convert logical Hebrew text to visual text
-#### hebrevc — Convert logical Hebrew text to visual text with newline conversion
-#### hex2bin — Decodes a hexadecimally encoded binary string
-#### html_entity_decode — Convert all HTML entities to their applicable characters
-#### htmlentities — Convert all applicable characters to HTML entities
-#### htmlspecialchars_decode — Convert special HTML entities back to characters
-#### htmlspecialchars — Convert special characters to HTML entities
-#### implode — Join array elements with a string
-#### join — Alias of implode
-#### lcfirst — Make a string's first character lowercase
-#### levenshtein — Calculate Levenshtein distance between two strings
-#### localeconv — Get numeric formatting information
-#### ltrim — Strip whitespace (or other characters) from the beginning of a string
-#### md5_file — Calculates the md5 hash of a given file
-#### md5 — Calculate the md5 hash of a string
-#### metaphone — Calculate the metaphone key of a string
-#### money_format — Formats a number as a currency string
-#### nl_langinfo — Query language and locale information
-#### nl2br — Inserts HTML line breaks before all newlines in a string
-#### number_format — Format a number with grouped thousands
-#### ord — Return ASCII value of character
-#### parse_str — Parses the string into variables
-#### print — Output a string
-#### printf — Output a formatted string
-#### quoted_printable_decode — Convert a quoted-printable string to an 8 bit string
-#### quoted_printable_encode — Convert a 8 bit string to a quoted-printable string
-#### quotemeta — Quote meta characters
-#### rtrim — Strip whitespace (or other characters) from the end of a string
-#### setlocale — Set locale information
-#### sha1_file — Calculate the sha1 hash of a file
-#### sha1 — Calculate the sha1 hash of a string
-#### similar_text — Calculate the similarity between two strings
-#### soundex — Calculate the soundex key of a string
-#### sprintf — Return a formatted string
-#### sscanf — Parses input from a string according to a format
-#### str_getcsv — Parse a CSV string into an array
-#### str_ireplace — Case-insensitive version of str_replace.
-#### str_pad — Pad a string to a certain length with another string
-#### str_repeat — Repeat a string
-#### str_replace — Replace all occurrences of the search string with the replacement string
-#### str_rot13 — Perform the rot13 transform on a string
-#### str_shuffle — Randomly shuffles a string
-#### str_split — Convert a string to an array
-#### str_word_count — Return information about words used in a string
-#### strcasecmp — Binary safe case-insensitive string comparison
-#### strchr — Alias of strstr
-#### strcmp — Binary safe string comparison
-#### strcoll — Locale based string comparison
-#### strcspn — Find length of initial segment not matching mask
-#### strip_tags — Strip HTML and PHP tags from a string
-#### stripcslashes — Un-quote string quoted with addcslashes
-#### stripos — Find the position of the first occurrence of a case-insensitive substring in a string
-#### stripslashes — Un-quotes a quoted string
-#### stristr — Case-insensitive strstr
-#### strlen — Get string length
-#### strnatcasecmp — Case insensitive string comparisons using a "natural order" algorithm
-#### strnatcmp — String comparisons using a "natural order" algorithm
-#### strncasecmp — Binary safe case-insensitive string comparison of the first n characters
-#### strncmp — Binary safe string comparison of the first n characters
-#### strpbrk — Search a string for any of a set of characters
+--------------
 #### strpos — Find the position of the first occurrence of a substring in a string
-#### strrchr — Find the last occurrence of a character in a string
-#### strrev — Reverse a string
-#### strripos — Find the position of the last occurrence of a case-insensitive substring in a string
+http://php.net/manual/en/function.strpos.php
+
+<strong>7.1.0	Support for negative offsets has been added.</strong>
+
+```PHP
+<?php
+/**
+ * Find the position of the first occurrence of a substring in a string
+ * @link http://php.net/manual/en/function.strpos.php
+ * @param string $haystack <p>
+ * The string to search in
+ * </p>
+ * @param mixed $needle <p>
+ * If <b>needle</b> is not a string, it is converted
+ * to an integer and applied as the ordinal value of a character.
+ * </p>
+ * @param int $offset [optional] <p>
+ * If specified, search will start this number of characters counted from
+ * the beginning of the string. Unlike {@see strrpos()} and {@see strripos()}, the offset cannot be negative.
+ * </p>
+ * @return int|boolean <p>
+ * Returns the position where the needle exists relative to the beginnning of
+ * the <b>haystack</b> string (independent of search direction
+ * or offset).
+ * Also note that string positions start at 0, and not 1.
+ * </p>
+ * <p>
+ * Returns <b>FALSE</b> if the needle was not found.
+ * </p>
+ * @since 4.0
+ * @since 5.0
+ */
+function strpos ($haystack, $needle, $offset = 0) {}
+```
+
+```PHP
+<?php
+// We can search for the character, ignoring anything before the offset
+$newstring = 'abcdef abcdef';
+echo strpos($newstring, 'a') . PHP_EOL; // 0
+echo strpos($newstring, 'a', 1) . PHP_EOL; // $pos = 7, not 0
+echo strpos($newstring, 'f', -8) . PHP_EOL; // 7
+```
+----------------
+#### stripos — Find the position of the first occurrence of a case-insensitive substring in a string
+http://php.net/manual/en/function.stripos.php
+
+```PHP
+<?php
+/**
+ * Find the position of the first occurrence of a substring in a string
+ * @link http://php.net/manual/en/function.strpos.php
+ * @param string $haystack <p>
+ * The string to search in
+ * </p>
+ * @param mixed $needle <p>
+ * If <b>needle</b> is not a string, it is converted
+ * to an integer and applied as the ordinal value of a character.
+ * </p>
+ * @param int $offset [optional] <p>
+ * If specified, search will start this number of characters counted from
+ * the beginning of the string. Unlike {@see strrpos()} and {@see strripos()}, the offset cannot be negative.
+ * </p>
+ * @return int|boolean <p>
+ * Returns the position where the needle exists relative to the beginnning of
+ * the <b>haystack</b> string (independent of search direction
+ * or offset).
+ * Also note that string positions start at 0, and not 1.
+ * </p>
+ * <p>
+ * Returns <b>FALSE</b> if the needle was not found.
+ * </p>
+ * @since 4.0
+ * @since 5.0
+ */
+function strpos ($haystack, $needle, $offset = 0) {}
+```
+
+```PHP
+<?php
+
+// We can search for the character, ignoring anything before the offset
+$newstring = 'abcdef Abcdef';
+echo strpos($newstring, 'a') . PHP_EOL; // 0
+echo strpos($newstring, 'A', 1) . PHP_EOL; // $pos = 7, not 0
+echo strpos($newstring, 'f', -8) . PHP_EOL; // 7
+```
+---------------------
 #### strrpos — Find the position of the last occurrence of a substring in a string
-#### strspn — Finds the length of the initial segment of a string consisting entirely of characters contained within a given mask.
-#### strstr — Find the first occurrence of a string
-#### strtok — Tokenize string
-#### strtolower — Make a string lowercase
-#### strtoupper — Make a string uppercase
-#### strtr — Translate characters or replace substrings
-#### substr_compare — Binary safe comparison of two strings from an offset, up to length characters
-#### substr_count — Count the number of substring occurrences
-#### substr_replace — Replace text within a portion of a string
-#### substr — Return part of a string
-#### trim — Strip whitespace (or other characters) from the beginning and end of a string
-#### ucfirst — Make a string's first character uppercase
-#### ucwords — Uppercase the first character of each word in a string
-#### vfprintf — Write a formatted string to a stream
-#### vprintf — Output a formatted string
-#### vsprintf — Return a formatted string
-#### wordwrap — Wraps a string to a given number of characters
+http://php.net/manual/en/function.strrpos.php
+
+```PHP
+<?php
+/**
+ * Find the position of the last occurrence of a substring in a string
+ * @link http://php.net/manual/en/function.strrpos.php
+ * @param string $haystack <p>
+ * The string to search in.
+ * </p>
+ * @param string $needle <p>
+ * If <b>needle</b> is not a string, it is converted to an integer and applied as the ordinal value of a character.
+ * </p>
+ * @param int $offset [optional] <p>
+ * If specified, search will start this number of characters counted from the beginning of the string. If the value is negative, search will instead start from that many characters from the end of the string, searching backwards.
+ * </p>
+ * @return int|boolean <p>
+ * Returns the position where the needle exists relative to the beginning of
+ * the <b>haystack</b> string (independent of search direction
+ * or offset).
+ * Also note that string positions start at 0, and not 1.
+ * </p>
+ * <p>
+ * Returns <b>FALSE</b> if the needle was not found.
+ * </p>
+ * @since 4.0
+ * @since 5.0
+ */
+function strrpos ($haystack, $needle, $offset = 0) {}
+```
+
+```PHP
+<?php
+
+$string = "0123456789a123456789b123456789c";
+
+var_dump(strrpos($string,'1')); //int(21)
+var_dump(strrpos($string,'1',-11)); //int(11)
+var_dump(strrpos($string,'1',1)); //int(21)
+```
+
+----------
+#### strripos — Find the position of the last occurrence of a case-insensitive substring in a string
+http://php.net/manual/en/function.strripos.php
+
+```PHP
+<?php
+/**
+ * Find position of last occurrence of a case-insensitive string in a string
+ * @link http://php.net/manual/en/function.strripos.php
+ * @param string $haystack <p>
+ * The string to search in
+ * </p>
+ * @param string $needle <p>
+ * Note that the needle may be a string of one or
+ * more characters.
+ * </p>
+ * @param int $offset [optional] <p>
+ * The offset parameter may be specified to begin
+ * searching an arbitrary number of characters into the string.
+ * </p>
+ * <p>
+ * Negative offset values will start the search at
+ * offset characters from the
+ * start of the string.
+ * </p>
+ * @return int the numerical position of the last occurrence of
+ * needle. Also note that string positions start at 0,
+ * and not 1.
+ * </p>
+ * <p>
+ * If needle is not found, false is returned.
+ * @since 5.0
+ */
+function strripos ($haystack, $needle, $offset = null) {}
+```
+
+crc32 — Calculates the crc32 polynomial of a string
+crypt — One-way string hashing
+echo — Output one or more strings
+fprintf — Write a formatted string to a stream
+get_html_translation_table — Returns the translation table used by htmlspecialchars and htmlentities
+hebrev — Convert logical Hebrew text to visual text
+hebrevc — Convert logical Hebrew text to visual text with newline conversion
+html_entity_decode — Convert all HTML entities to their applicable characters
+htmlentities — Convert all applicable characters to HTML entities
+htmlspecialchars_decode — Convert special HTML entities back to characters
+htmlspecialchars — Convert special characters to HTML entities
+join — Alias of implode
+lcfirst — Make a string's first character lowercase
+levenshtein — Calculate Levenshtein distance between two strings
+localeconv — Get numeric formatting information
+md5_file — Calculates the md5 hash of a given file
+md5 — Calculate the md5 hash of a string
+metaphone — Calculate the metaphone key of a string
+money_format — Formats a number as a currency string
+nl_langinfo — Query language and locale information
+nl2br — Inserts HTML line breaks before all newlines in a string
+number_format — Format a number with grouped thousands
+parse_str — Parses the string into variables
+print — Output a string
+printf — Output a formatted string
+quoted_printable_decode — Convert a quoted-printable string to an 8 bit string
+quoted_printable_encode — Convert a 8 bit string to a quoted-printable string
+quotemeta — Quote meta characters
+setlocale — Set locale information
+sha1_file — Calculate the sha1 hash of a file
+sha1 — Calculate the sha1 hash of a string
+similar_text — Calculate the similarity between two strings
+soundex — Calculate the soundex key of a string
+sprintf — Return a formatted string
+sscanf — Parses input from a string according to a format
+str_getcsv — Parse a CSV string into an array
+str_ireplace — Case-insensitive version of str_replace.
+str_pad — Pad a string to a certain length with another string
+str_repeat — Repeat a string
+str_replace — Replace all occurrences of the search string with the replacement string
+str_rot13 — Perform the rot13 transform on a string
+str_shuffle — Randomly shuffles a string
+str_word_count — Return information about words used in a string
+strcasecmp — Binary safe case-insensitive string comparison
+strchr — Alias of strstr
+strcmp — Binary safe string comparison
+strcoll — Locale based string comparison
+strcspn — Find length of initial segment not matching mask
+strip_tags — Strip HTML and PHP tags from a string
+stristr — Case-insensitive strstr
+strlen — Get string length
+strnatcasecmp — Case insensitive string comparisons using a "natural order" algorithm
+strnatcmp — String comparisons using a "natural order" algorithm
+strncasecmp — Binary safe case-insensitive string comparison of the first n characters
+strncmp — Binary safe string comparison of the first n characters
+strpbrk — Search a string for any of a set of characters
+strrchr — Find the last occurrence of a character in a string
+strrev — Reverse a string
+strspn — Finds the length of the initial segment of a string consisting entirely of characters contained within a given mask.
+strstr — Find the first occurrence of a string
+strtok — Tokenize string
+strtolower — Make a string lowercase
+strtoupper — Make a string uppercase
+strtr — Translate characters or replace substrings
+substr_compare — Binary safe comparison of two strings from an offset, up to length characters
+substr_count — Count the number of substring occurrences
+substr_replace — Replace text within a portion of a string
+substr — Return part of a string
+ucfirst — Make a string's first character uppercase
+ucwords — Uppercase the first character of each word in a string
+vfprintf — Write a formatted string to a stream
+vprintf — Output a formatted string
+vsprintf — Return a formatted string
+wordwrap — Wraps a string to a given number of characters
