@@ -25,9 +25,9 @@
 19. [Reflection](http://php.net/manual/en/book.reflection.php)
 20. [Regular Expression (POSIX Extended)](http://php.net/manual/en/book.regex.php)
 21. [Session Handling](http://php.net/manual/en/book.session.php)
-22. [Standard PHP Library (SPL)](http://php.net/manual/en/book.spl.php)
+22. [Standard PHP Library (SPL)](http://php.net/manual/en/book.spl.php)фів
 23. [Streams](http://php.net/manual/en/book.stream.php)
-24. [Strings](http://php.net/manual/en/book.strings.php)
+24. [Strings](http://php.net/manual/en/book.strings.php)фівфів
 25. [Tokenizer](http://php.net/manual/en/book.tokenizer.php)
 26. [URLs](http://php.net/manual/en/book.url.php)
 27. [Variable handling](http://php.net/manual/en/book.var.php)
