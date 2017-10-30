@@ -9,7 +9,7 @@
 6. [Namespaces](1-PHP-Basics/6-namespaces/README.md)
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
 8. Config
-9. Performance/bytecode caching - @Skip
+9. Performance/bytecode caching
 
 ### 2. [Functions](2-Functions/README.md)
 1. Arguments
