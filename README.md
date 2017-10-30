@@ -9,7 +9,6 @@
 6. [Namespaces](1-PHP-Basics/6-namespaces/README.md)
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
-         - [Extensions. Mathematical Functions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Miscellaneous Functions](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Network](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Output Buffering Control](./1-PHP-Basics/7-extensions/README.md) - @Skip 
