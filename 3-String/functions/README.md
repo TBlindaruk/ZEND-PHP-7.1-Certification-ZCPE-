@@ -906,6 +906,49 @@ http://php.net/manual/en/function.strripos.php
 function strripos ($haystack, $needle, $offset = null) {}
 ```
 
+#### strrchr — Find the last occurrence of a character in a string
+http://php.net/manual/en/function.strrchr.php
+
+```PHP
+<?php
+/**
+ * Find the last occurrence of a character in a string
+ * @link http://php.net/manual/en/function.strrchr.php
+ * @param string $haystack <p>
+ * The string to search in
+ * </p>
+ * @param mixed $needle <p>
+ * If <b>needle</b> contains more than one character,
+ * only the first is used. This behavior is different from that of {@see strstr()}.
+ * </p>
+ * <p>
+ * If <b>needle</b> is not a string, it is converted to
+ * an integer and applied as the ordinal value of a character.
+ * </p>
+ * @return string <p>
+ * This function returns the portion of string, or <b>FALSE</b> if
+ * <b>needle</b> is not found.
+ * </p>
+ * @since 4.0
+ * @since 5.0
+ */
+function strrchr ($haystack, $needle) {}
+```
+
+```PHP
+<?php
+
+$string = 'Hello World';
+
+echo strrchr($string, 'o') . PHP_EOL; // orld
+echo strrchr($string, 'l') . PHP_EOL; // ld
+echo strrchr($string, 'lo') . PHP_EOL; // ld
+```
+
+---------------
+#### strstr — Find the first occurrence of a string
+http://php.net/manual/en/function.strstr.php
+
 crc32 — Calculates the crc32 polynomial of a string
 crypt — One-way string hashing
 echo — Output one or more strings
@@ -962,10 +1005,8 @@ strnatcmp — String comparisons using a "natural order" algorithm
 strncasecmp — Binary safe case-insensitive string comparison of the first n characters
 strncmp — Binary safe string comparison of the first n characters
 strpbrk — Search a string for any of a set of characters
-strrchr — Find the last occurrence of a character in a string
 strrev — Reverse a string
 strspn — Finds the length of the initial segment of a string consisting entirely of characters contained within a given mask.
-strstr — Find the first occurrence of a string
 strtok — Tokenize string
 strtolower — Make a string lowercase
 strtoupper — Make a string uppercase
