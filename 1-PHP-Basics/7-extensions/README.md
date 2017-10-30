@@ -20,7 +20,6 @@
 14. [Miscellaneous Functions](http://php.net/manual/en/book.misc.php)
 15. [Network](http://php.net/manual/en/book.network.php)
 16. [Output Buffering Control](http://php.net/manual/en/book.outcontrol.php)
-17. [Password Hashing](http://php.net/manual/en/book.password.php)
 18. [Phar](http://php.net/manual/en/book.phar.php)
 19. [Reflection](http://php.net/manual/en/book.reflection.php)
 20. [Regular Expression (POSIX Extended)](http://php.net/manual/en/book.regex.php)
