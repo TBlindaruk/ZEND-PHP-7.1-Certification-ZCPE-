@@ -9,7 +9,6 @@
 6. [Namespaces](1-PHP-Basics/6-namespaces/README.md)
 7. [Extensions](1-PHP-Basics/7-extensions/README.md)
      - [Extensions. Core Extensions](./1-PHP-Basics/7-extensions/README.md)
-         - [Extensions. Standard PHP Library (SPL)](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Streams](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Strings](./1-PHP-Basics/7-extensions/README.md) - @Skip 
          - [Extensions. Tokenizer](./1-PHP-Basics/7-extensions/README.md) - @Skip 
