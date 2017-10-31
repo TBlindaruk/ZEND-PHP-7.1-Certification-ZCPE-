@@ -949,7 +949,175 @@ echo strrchr($string, 'lo') . PHP_EOL; // ld
 #### strstr — Find the first occurrence of a string
 http://php.net/manual/en/function.strstr.php
 
-crc32 — Calculates the crc32 polynomial of a string
+```PHP
+<?php
+/**
+ * Find first occurrence of a string
+ * @link http://php.net/manual/en/function.strstr.php
+ * @param string $haystack <p>
+ * The input string.
+ * </p>
+ * @param mixed $needle <p>
+ * If needle is not a string, it is converted to
+ * an integer and applied as the ordinal value of a character.
+ * </p>
+ * @param bool $before_needle [optional] <p>
+ * If true, strstr returns
+ * the part of the haystack before the first
+ * occurrence of the needle.
+ * </p>
+ * @return string the portion of string, or false if needle
+ * is not found.
+ * @since 4.0
+ * @since 5.0
+ */
+function strstr ($haystack, $needle, $before_needle = null) {}
+```
+
+```PHP
+<?php
+$email  = 'name@example.com';
+$domain = strstr($email, '@');
+echo $domain . PHP_EOL; //  @example.com
+
+$user = strstr($email, '@', true); // As of PHP 5.3.0
+echo $user . PHP_EOL; // name
+```
+
+-----------------------
+#### stristr — Case-insensitive strstr
+http://php.net/manual/en/function.stristr.php
+
+```PHP
+<?php
+/**
+ * Case-insensitive <function>strstr</function>
+ * @link http://php.net/manual/en/function.stristr.php
+ * @param string $haystack <p>
+ * The string to search in
+ * </p>
+ * @param mixed $needle <p>
+ * If needle is not a string, it is converted to
+ * an integer and applied as the ordinal value of a character.
+ * </p>
+ * @param bool $before_needle [optional] <p>
+ * If true, stristr
+ * returns the part of the haystack before the
+ * first occurrence of the needle.
+ * </p>
+ * @return string the matched substring. If needle is not
+ * found, returns false.
+ * @since 4.0
+ * @since 5.0
+ */
+function stristr ($haystack, $needle, $before_needle = null) {}
+```
+
+```PHP
+<?php
+  $email = 'USER@EXAMPLE.com';
+  echo stristr($email, 'e'); // outputs ER@EXAMPLE.com
+  echo stristr($email, 'e', true); // As of PHP 5.3.0, outputs US
+```
+
+------------------
+#### strpbrk — Search a string for any of a set of characters
+http://php.net/manual/en/function.strpbrk.php
+
+```PHP
+<?php
+/**
+ * Search a string for any of a set of characters
+ * @link http://php.net/manual/en/function.strpbrk.php
+ * @param string $haystack <p>
+ * The string where char_list is looked for.
+ * </p>
+ * @param string $char_list <p>
+ * This parameter is case sensitive.
+ * </p>
+ * @return string a string starting from the character found, or false if it is
+ * not found.
+ * @since 5.0
+ */
+function strpbrk ($haystack, $char_list) {}
+```
+
+```PHP
+<?php
+
+$text = 'This is a Simple text.';
+
+// this echoes "is is a Simple text." because 'i' is matched first
+echo strpbrk($text, 'mi'); 
+
+// this echoes "Simple text." because chars are case sensitive
+echo strpbrk($text, 'S');
+```
+
+-------------
+#### crc32 — Calculates the crc32 polynomial of a string
+http://php.net/manual/en/function.crc32.php
+
+```PHP
+<?php
+/**
+ * Calculates the crc32 polynomial of a string
+ * @link http://php.net/manual/en/function.crc32.php
+ * @param string $str <p>
+ * The data.
+ * </p>
+ * @return int the crc32 checksum of str as an integer.
+ * @since 4.0.1
+ * @since 5.0
+ */
+function crc32 ($str) {}
+```
+
+```PHP
+<?php
+$checksum = crc32("The quick brown fox jumped over the lazy dog.");
+echo $checksum; // 2191738434
+```
+
+-------------
+#### md5 — Calculate the md5 hash of a string
+http://php.net/manual/en/function.md5.php
+
+```PHP
+<?php
+/**
+ * Calculate the md5 hash of a string
+ * @link http://php.net/manual/en/function.md5.php
+ * @param string $str <p>
+ * The string.
+ * </p>
+ * @param bool $raw_output [optional] <p>
+ * If the optional raw_output is set to true,
+ * then the md5 digest is instead returned in raw binary format with a
+ * length of 16.
+ * </p>
+ * @return string the hash as a 32-character hexadecimal number.
+ * @since 4.0
+ * @since 5.0
+ */
+function md5 ($str, $raw_output = null) {}
+```
+
+```PHP
+<?php
+$str = 'apple';
+
+if (md5($str) === '1f3870be274f6c49b3e31a0c6728957f') {
+    echo "Would you like a green or red apple?";
+}
+```
+
+--------------
+#### md5_file — Calculates the md5 hash of a given file
+http://php.net/manual/en/function.md5-file.php
+
+------------------------
+
 crypt — One-way string hashing
 echo — Output one or more strings
 fprintf — Write a formatted string to a stream
@@ -964,8 +1132,6 @@ join — Alias of implode
 lcfirst — Make a string's first character lowercase
 levenshtein — Calculate Levenshtein distance between two strings
 localeconv — Get numeric formatting information
-md5_file — Calculates the md5 hash of a given file
-md5 — Calculate the md5 hash of a string
 metaphone — Calculate the metaphone key of a string
 money_format — Formats a number as a currency string
 nl_langinfo — Query language and locale information
@@ -998,13 +1164,11 @@ strcmp — Binary safe string comparison
 strcoll — Locale based string comparison
 strcspn — Find length of initial segment not matching mask
 strip_tags — Strip HTML and PHP tags from a string
-stristr — Case-insensitive strstr
 strlen — Get string length
 strnatcasecmp — Case insensitive string comparisons using a "natural order" algorithm
 strnatcmp — String comparisons using a "natural order" algorithm
 strncasecmp — Binary safe case-insensitive string comparison of the first n characters
 strncmp — Binary safe string comparison of the first n characters
-strpbrk — Search a string for any of a set of characters
 strrev — Reverse a string
 strspn — Finds the length of the initial segment of a string consisting entirely of characters contained within a given mask.
 strtok — Tokenize string
