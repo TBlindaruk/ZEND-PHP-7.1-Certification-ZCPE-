@@ -1174,7 +1174,72 @@ http://php.net/manual/en/function.print.php
 #### printf — Output a formatted string
 http://php.net/manual/en/function.printf.php
 
-//need to adding someThInK
+```PHP
+<?php
+/**
+ * Output a formatted string
+ * @link http://php.net/manual/en/function.printf.php
+ * @param string $format <p>
+ * See sprintf for a description of
+ * format.
+ * </p>
+ * @param mixed $args [optional] <p>
+ * </p>
+ * @param mixed $_ [optional] 
+ * @return int the length of the outputted string.
+ * @since 4.0
+ * @since 5.0
+ */
+function printf ($format, $args = null, $_ = null) {}
+```
+--------------
+#### sprintf — Return a formatted string
+http://php.net/manual/en/function.sprintf.php
+
+```PHP
+<?php
+/**
+ * Return a formatted string
+ * @link http://php.net/manual/en/function.sprintf.php
+ * @param string $format <p>
+ * The format string is composed of zero or more directives:
+ * ordinary characters (excluding %) that are
+ * copied directly to the result, and conversion
+ * specifications, each of which results in fetching its
+ * own parameter. This applies to both sprintf
+ * and printf.
+ * </p>
+ * <p>
+ * Each conversion specification consists of a percent sign
+ * (%), followed by one or more of these
+ * elements, in order:
+ * An optional sign specifier that forces a sign
+ * (- or +) to be used on a number. By default, only the - sign is used
+ * on a number if it's negative. This specifier forces positive numbers
+ * to have the + sign attached as well, and was added in PHP 4.3.0.
+ * @param mixed $args [optional] <p>
+ * </p>
+ * @param mixed $_ [optional] 
+ * @return string a string produced according to the formatting string
+ * format.
+ * @since 4.0
+ * @since 5.0
+ */
+function sprintf ($format, $args = null, $_ = null) {}
+```
+
+```PHP
+<?php
+$num = 5;
+$location = 'tree';
+
+$format = 'There are %d monkeys in the %s';
+echo sprintf($format, $num, $location); // There are 5 monkeys in the tree
+```
+
+-------------------
+#### sscanf — Parses input from a string according to a format
+http://php.net/manual/en/function.sscanf.php
 
 fprintf — Write a formatted string to a stream
 get_html_translation_table — Returns the translation table used by htmlspecialchars and htmlentities
@@ -1202,8 +1267,6 @@ sha1_file — Calculate the sha1 hash of a file
 sha1 — Calculate the sha1 hash of a string
 similar_text — Calculate the similarity between two strings
 soundex — Calculate the soundex key of a string
-sprintf — Return a formatted string
-sscanf — Parses input from a string according to a format
 str_getcsv — Parse a CSV string into an array
 str_ireplace — Case-insensitive version of str_replace.
 str_pad — Pad a string to a certain length with another string
