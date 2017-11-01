@@ -1176,6 +1176,12 @@ http://php.net/manual/en/function.printf.php
 
 ```PHP
 <?php
+
+printf('string' . PHP_EOL); // string
+```
+
+```PHP
+<?php
 /**
  * Output a formatted string
  * @link http://php.net/manual/en/function.printf.php
@@ -1241,7 +1247,224 @@ echo sprintf($format, $num, $location); // There are 5 monkeys in the tree
 #### sscanf — Parses input from a string according to a format
 http://php.net/manual/en/function.sscanf.php
 
-fprintf — Write a formatted string to a stream
+```PHP
+<?php
+/**
+ * Parses input from a string according to a format
+ * @link http://php.net/manual/en/function.sscanf.php
+ * @param string $str <p>
+ * The input string being parsed.
+ * </p>
+ * @param string $format <p>
+ * The interpreted format for str, which is
+ * described in the documentation for sprintf with
+ * following differences:
+ * Function is not locale-aware.
+ * F, g, G and
+ * b are not supported.
+ * D stands for decimal number.
+ * i stands for integer with base detection.
+ * n stands for number of characters processed so far.
+ * </p>
+ * @param mixed $_ [optional] 
+ * @return mixed If only
+ * two parameters were passed to this function, the values parsed
+ * will be returned as an array. Otherwise, if optional parameters are passed,
+ * the function will return the number of assigned values. The optional
+ * parameters must be passed by reference.
+ * @since 4.0.1
+ * @since 5.0
+ */
+function sscanf ($str, $format, &$_ = null) {}
+```
+
+---------------------
+#### fprintf — Write a formatted string to a stream
+http://php.net/manual/en/function.sscanf.php
+
+```PHP
+<?php
+/**
+ * Write a formatted string to a stream
+ * @link http://php.net/manual/en/function.fprintf.php
+ * @param resource $handle &fs.file.pointer;
+ * @param string $format <p>
+ * See sprintf for a description of 
+ * format.
+ * </p>
+ * @param mixed $args [optional] <p>
+ * </p>
+ * @param mixed $_ [optional] 
+ * @return int the length of the string written.
+ * @since 5.0
+ */
+function fprintf ($handle, $format, $args = null, $_ = null) {}
+```
+
+```PHP
+<?php
+$year = 2017;
+$month = 1;
+$day = 1;
+if (!($fp = fopen('date.txt', 'w'))) {
+    return;
+}
+
+fprintf($fp, "%04d-%02d-%02d", $year, $month, $day); // 2017-01-01 to `date.txt`
+// will write the formatted ISO date to date.txt
+```
+
+------------------
+#### vsprintf — Return a formatted string
+http://php.net/manual/en/function.vsprintf.php
+
+<strong>Operates as sprintf() but accepts an array of arguments, rather than a variable number of arguments.</strong>
+
+```PHP
+<?php
+/**
+ * Return a formatted string
+ * @link http://php.net/manual/en/function.vsprintf.php
+ * @param string $format <p>
+ * See sprintf for a description of
+ * format.
+ * </p>
+ * @param array $args <p>
+ * </p>
+ * @return string Return array values as a formatted string according to
+ * format (which is described in the documentation
+ * for sprintf).
+ * @since 4.1.0
+ * @since 5.0
+ */
+function vsprintf ($format, array $args) {}
+```
+
+```PHP
+<?php
+print vsprintf("%04d-%02d-%02d", explode('-', '1988-8-1')); // 1988-08-01
+```
+
+--------------------
+#### vprintf — Output a formatted string
+http://php.net/manual/en/function.vprintf.php
+
+```PHP
+<?php
+/**
+ * Output a formatted string
+ * @link http://php.net/manual/en/function.vprintf.php
+ * @param string $format <p>
+ * See sprintf for a description of
+ * format.
+ * </p>
+ * @param array $args <p>
+ * </p>
+ * @return int the length of the outputted string.
+ * @since 4.1.0
+ * @since 5.0
+ */
+function vprintf ($format, array $args) {}
+```
+
+```PHP
+<?php
+vprintf("%04d-%02d-%02d", explode('-', '1988-8-1')); // 1988-08-01
+```
+
+------------------------
+#### vfprintf — Write a formatted string to a stream
+http://php.net/manual/en/function.vfprintf.php
+
+<strong>Operates as fprintf() but accepts an array of arguments, rather than a variable number of arguments.</strong>
+
+```PHP
+<?php
+/**
+ * Write a formatted string to a stream
+ * @link http://php.net/manual/en/function.vfprintf.php
+ * @param resource $handle <p>
+ * </p>
+ * @param string $format <p>
+ * See sprintf for a description of
+ * format.
+ * </p>
+ * @param array $args <p>
+ * </p>
+ * @return int the length of the outputted string.
+ * @since 5.0
+ */
+function vfprintf ($handle, $format, array $args) {}
+```
+
+```PHP
+<?php
+$year = 2017;
+$month = 1;
+$day = 1;
+if (!($fp = fopen('date.txt', 'w')))
+    return;
+
+vfprintf($fp, "%04d-%02d-%02d", array($year, $month, $day));
+// will write the formatted ISO date to date.txt
+```
+
+------------
+#### number_format — Format a number with grouped thousands
+http://php.net/manual/en/function.number-format.php
+
+<strong>This function accepts either one, two, or four parameters (not three):</strong>
+ - <strong>If only one parameter is given, number will be formatted without decimals, but with a comma (",") between every group of thousands.</strong>
+ - <strong>If two parameters are given, number will be formatted with decimals decimals with a dot (".") in front, and a comma (",") between every group of thousands.</strong>
+ - <strong>If all four parameters are given, number will be formatted with decimals decimals, dec_point instead of a dot (".") before the decimals and thousands_sep instead of a comma (",") between every group of thousands.</strong>
+
+```PHP
+<?php
+/**
+ * Format a number with grouped thousands
+ * @link http://php.net/manual/en/function.number-format.php
+ * @param float $number <p>
+ * The number being formatted.
+ * </p>
+ * @param int $decimals [optional] <p>
+ * Sets the number of decimal points.
+ * </p>
+ * @param string $dec_point [optional]
+ * @param string $thousands_sep [optional]
+ * @return string A formatted version of number.
+ * @since 4.0
+ * @since 5.0
+ */
+function number_format ($number , $decimals = 0 , $dec_point = '.' , $thousands_sep = ',' ) {}
+```
+
+```PHP
+<?php
+
+$number = 1234.56;
+
+// english notation (default)
+$english_format_number = number_format($number);
+// 1,235
+
+// French notation
+$nombre_format_francais = number_format($number, 2, ',', ' ');
+// 1 234,56
+
+$number = 1234.5678;
+
+// english notation without thousands separator
+$english_format_number = number_format($number, 2, '.', '');
+// 1234.57
+
+```
+
+----------------
+#### money_format — Formats a number as a currency string
+http://php.net/manual/en/function.money-format.php
+
+------------------
+
 get_html_translation_table — Returns the translation table used by htmlspecialchars and htmlentities
 hebrev — Convert logical Hebrew text to visual text
 hebrevc — Convert logical Hebrew text to visual text with newline conversion
@@ -1254,10 +1477,8 @@ lcfirst — Make a string's first character lowercase
 levenshtein — Calculate Levenshtein distance between two strings
 localeconv — Get numeric formatting information
 metaphone — Calculate the metaphone key of a string
-money_format — Formats a number as a currency string
 nl_langinfo — Query language and locale information
 nl2br — Inserts HTML line breaks before all newlines in a string
-number_format — Format a number with grouped thousands
 parse_str — Parses the string into variables
 quoted_printable_decode — Convert a quoted-printable string to an 8 bit string
 quoted_printable_encode — Convert a 8 bit string to a quoted-printable string
@@ -1298,7 +1519,4 @@ substr_replace — Replace text within a portion of a string
 substr — Return part of a string
 ucfirst — Make a string's first character uppercase
 ucwords — Uppercase the first character of each word in a string
-vfprintf — Write a formatted string to a stream
-vprintf — Output a formatted string
-vsprintf — Return a formatted string
 wordwrap — Wraps a string to a given number of characters
