@@ -1464,8 +1464,66 @@ $english_format_number = number_format($number, 2, '.', '');
 http://php.net/manual/en/function.money-format.php
 
 ------------------
+#### setlocale — Set locale information
+http://php.net/manual/en/function.setlocale.php
 
-get_html_translation_table — Returns the translation table used by htmlspecialchars and htmlentities
+-------------
+#### get_html_translation_table — Returns the translation table used by htmlspecialchars and htmlentities
+http://php.net/manual/en/function.get-html-translation-table.php
+
+```PHP
+<?php
+/**
+ * Returns the translation table used by <function>htmlspecialchars</function> and <function>htmlentities</function>
+ * @link http://php.net/manual/en/function.get-html-translation-table.php
+ * @param int $table [optional] <p>
+ * There are two new constants (HTML_ENTITIES,
+ * HTML_SPECIALCHARS) that allow you to specify the
+ * table you want.
+ * </p>
+ * @param int $quote_style [optional] <p>
+ * Like the htmlspecialchars and
+ * htmlentities functions you can optionally specify
+ * the quote_style you are working with.
+ * See the description
+ * of these modes in htmlspecialchars.
+ * </p>
+ * @return array the translation table as an array.
+ * @since 4.0
+ * @since 5.0
+ */
+function get_html_translation_table ($table = null, $quote_style = null) {}
+```
+
+```PHP
+<?php
+/**
+ *  array(1510) {
+ *    ["
+ *  "]=>
+ *    string(9) "&NewLine;"
+ *    ["!"]=>
+ *    string(6) "&excl;"
+ *    ["""]=>
+ *    string(6) "&quot;"
+ *    ["#"]=>
+ *    string(5) "&num;"
+ *    ["$"]=>
+ *    string(8) "&dollar;"
+ *    ["%"]=>
+ *    string(8) "&percnt;"
+ *    ["&"]=>
+ *    string(5) "&amp;"
+ *    ["'"]=>
+ *    string(6) "&apos;"
+ *    // ...
+ *  }
+ */
+var_dump(get_html_translation_table(HTML_ENTITIES, ENT_QUOTES | ENT_HTML5));
+```
+
+----------------
+
 hebrev — Convert logical Hebrew text to visual text
 hebrevc — Convert logical Hebrew text to visual text with newline conversion
 html_entity_decode — Convert all HTML entities to their applicable characters
@@ -1483,7 +1541,6 @@ parse_str — Parses the string into variables
 quoted_printable_decode — Convert a quoted-printable string to an 8 bit string
 quoted_printable_encode — Convert a 8 bit string to a quoted-printable string
 quotemeta — Quote meta characters
-setlocale — Set locale information
 sha1_file — Calculate the sha1 hash of a file
 sha1 — Calculate the sha1 hash of a string
 similar_text — Calculate the similarity between two strings
