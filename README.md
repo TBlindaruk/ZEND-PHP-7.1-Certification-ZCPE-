@@ -38,90 +38,86 @@
 4. [SPL, Objects as arrays](9-Object-Oriented-Programming/12-SPL/README.md)
 5. Casting
  
-### 5. Web Features - #TODO 35
-1. [Sessions](http://php.net/manual/ru/book.session.php) - @TODO
-2. [Forms](http://php.net/manual/ru/tutorial.forms.php) - @TODO
-3. [GET and POST data](http://php.net/manual/ru/reserved.variables.php) - @TODO
-4. [Cookies](http://php.net/manual/ru/features.cookies.php) - @TODO
-5. [HTTP Headers](http://php.net/manual/ru/function.header.php) - @TODO
-6. [HTTP Authentication](http://php.net/manual/ru/features.http-auth.php) - @TODO
-7. [HTTP Status Codes](http://php.net/manual/ru/function.http-response-code.php) - @TODO
+### 5. Web Features
+1. [Sessions](http://php.net/manual/ru/book.session.php)
+2. [Forms](http://php.net/manual/ru/tutorial.forms.php)
+3. [GET and POST data](http://php.net/manual/ru/reserved.variables.php) 
+4. [Cookies](http://php.net/manual/ru/features.cookies.php) 
+5. [HTTP Headers](http://php.net/manual/ru/function.header.php) 
+6. [HTTP Authentication](http://php.net/manual/ru/features.http-auth.php)
+7. [HTTP Status Codes](http://php.net/manual/ru/function.http-response-code.php)
  
-### 6. I/O - #TODO 43
- - Files - #TODO 44
- - Reading - #TODO 45
- - Writing- #TODO 46
- - File System Functions - #TODO 47
- - Streams - #TODO 48
- - Contexts - #TODO 49
+### 6. I/O
+1. Files
+2. Reading
+3. Writing
+4. File System Functions
+5. Streams
+6. Contexts
  
-### 7. Databases & SQL - #TODO 50
- - SQL - #TODO 51
- - Joins - #TODO 52
- - Prepared Statements - #TODO 53
- - Transactions - #TODO 54
- - PDO - #TODO 55
+### 7. Databases & SQL
+1. SQL
+2. Joins
+3. Prepared Statements
+4. Transactions
+5. PDO
  
-### 8. [Data Format & Types](./8-Data-Format-Types/index.md) - #TODO 56
-1. [XML Basics](./8-Data-Format-Types/1-xml-basics/index.md) - #TODO 57
-2. [SimpleXML](./8-Data-Format-Types/2-simple-xml/index.md) - #TODO 58
-3. [XML Extension](http://php.net/manual/en/refs.xml.php) - #TODO 59
-4. [Webservices Basics](http://php.net/manual/ru/refs.webservice.php) - #TODO 60
-5. [SOAP](http://php.net/manual/ru/book.soap.php) - #TODO 61
+### 8. [Data Format & Types](./8-Data-Format-Types/index.md)
+1. [XML Basics](./8-Data-Format-Types/1-xml-basics/index.md)
+2. [SimpleXML](./8-Data-Format-Types/2-simple-xml/index.md)
+3. [XML Extension](http://php.net/manual/en/refs.xml.php)
+4. [Webservices Basics](http://php.net/manual/ru/refs.webservice.php)
+5. [SOAP](http://php.net/manual/ru/book.soap.php)
 6. [JSON](./8-Data-Format-Types/6-JSON/README.md)
-7. [DateTime](http://php.net/manual/ru/class.datetime.php) - #TODO 63
-8. [DOMDocument](http://php.net/manual/ru/class.domdocument.php) - #TODO 64
+7. [DateTime](http://php.net/manual/ru/class.datetime.php)
+8. [DOMDocument](http://php.net/manual/ru/class.domdocument.php)
  
 ### 9. Object Oriented Programming - #TODO 65
- - Instantiation - #TODO 66
- - Modifiers/Inheritance - #TODO 67
+1. Instantiation
+2. Modifiers/Inheritance
 3. [Interfaces](./9-Object-Oriented-Programming/3-interfaces/index.md)
- - Return Types - #TODO 68
- - Autoload - #TODO 69
- - Reflection - #TODO 70
+4. Return Types
+5. Autoload
+6. Reflection
 7. [Type Hinting](./9-Object-Oriented-Programming/7-type-hinting/index.md)
- - Class Constants - #TODO 72
+8. Class Constants
 9. [Late Static Binding](./9-Object-Oriented-Programming/9-late-static-binding/index.md)
- - Magic (_*) Methods - #TODO 74
- - Instance Methods & Properties - #TODO 75
+10. Magic (_*) Methods
+11. Instance Methods & Properties
 12. [SPL](9-Object-Oriented-Programming/12-SPL/README.md)
-    - [SPL. Iterators](./9-Object-Oriented-Programming/12-SPL/2-Iterators/readme.md) - @REMOVE @TODO 90
-    - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md) - @REMOVE @TODO 91
+    - [SPL. Iterators](./9-Object-Oriented-Programming/12-SPL/2-Iterators/readme.md)
+    - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md)
     - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md)
-        - [SPL. Interfaces. OuterIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 7
-        - [SPL. Interfaces. RecursiveIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md) @EXAMPLE @REMOVE @TODO 26
-    - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md) - @REMOVE @TODO 93
-    - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md) - @REMOVE @TODO 8
-    - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md) - @REMOVE @TODO 92
-    - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md) - @REMOVE @TODO 62
-    - [SPL. SPL Types](./9-Object-Oriented-Programming/12-SPL/10-SPL-Type/README.md) - @REMOVE @TODO 30
- - Traits - #TODO 77
+        - [SPL. Interfaces. OuterIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md)
+        - [SPL. Interfaces. RecursiveIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md)
+    - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md)
+    - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md)
+    - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md)
+    - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md)
+    - [SPL. SPL Types](./9-Object-Oriented-Programming/12-SPL/10-SPL-Type/README.md)
+13. Traits
 
-### 10. [Security](./10-Security/index.md) -#TODO 78
- - Configuration - #TODO 79
- - Session Security - #TODO 80
- - Cross-Site Scripting - #TODO 81
- - Cross-Site Request Forgeries - #TODO 82
- - SQL Injection - #TODO 83
- - Remote Code Injection - #TODO 84
- - Email Injection - #TODO 85
- - Filter Input - #TODO 86
- - Escape Output - #TODO 87
- - Encryption, Hashing algorithms - #TODO 88
+### 10. [Security](./10-Security/index.md)
+1. Configuration
+2. Session Security
+3. Cross-Site Scripting
+4. Cross-Site Request Forgeries
+5. SQL Injection
+6. Remote Code Injection
+7. Email Injection
+8. Filter Input
+9. Escape Output
+10. Encryption, Hashing algorithms
 11. [File uploads](./10-Security/11-file-uploads/index.md)
- - PHP Configuration - #TODO 89
- - Password hashing API - #TODO 33
+12. PHP Configuration
+13. Password hashing API
 
-### 11. Error Handling - #TODO 71
- - Handling Exceptions - #TODO 2
- - Errors - #TODO 20
- - Throwables - #TODO 73
+### 11. Error Handling
+1. Handling Exceptions
+2. Errors
+3. Throwables
  
  
 ### PHP 7
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
-
-1. IN_PROGRESS 0
-
-3. TODO 131
