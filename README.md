@@ -27,12 +27,7 @@
 4. [Searching (String Functions)](./3-String/functions/README.md)
 5. [Replacing (String Functions)](./3-String/functions/README.md)
 6. [Formatting (String Functions)](./3-String/functions/README.md)
-6.1. [String Functions](./3-String/functions/README.md) @IN_PROGRESS
 7. [PCRE](./3-String/7-PCRE/README.md)
-    - [PCRE. Predefined Constants](3-String/7-PCRE/README.md) @REMOVE @TODO 6
-    - [PCRE. PCRE Patterns](./3-String/7-PCRE/1-PCRE-Patterns/README.md) @REMOVE @TODO 5
-    - [PCRE. PCRE Functions](./3-String/7-PCRE/2-PCRE-Functions/README.md) @REMOVE @TODO 4
-    - [PCRE. Practice](./3-String/7-PCRE/example/README.md) @PRACTICE @REMOVE @TODO 3
 8. NOWDOC
 9. Encodings
  
