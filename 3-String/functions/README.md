@@ -1661,10 +1661,187 @@ echo $new; // &lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt;
 #### htmlspecialchars_decode — Convert special HTML entities back to characters
 http://php.net/manual/en/function.htmlspecialchars-decode.php
 
+```PHP
+<?php
+
+/**
+ * Convert special HTML entities back to characters
+ * @link http://php.net/manual/en/function.htmlspecialchars-decode.php
+ * @param string $string <p>
+ * The string to decode
+ * </p>
+ * @param int $quote_style [optional] <p>
+ * The quote style. One of the following constants:
+ * <table>
+ * quote_style constants
+ * <tr valign="top">
+ * <td>Constant Name</td>
+ * <td>Description</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_COMPAT</td>
+ * <td>Will convert double-quotes and leave single-quotes alone
+ * (default)</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_QUOTES</td>
+ * <td>Will convert both double and single quotes</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_NOQUOTES</td>
+ * <td>Will leave both double and single quotes unconverted</td>
+ * </tr>
+ * </table>
+ * </p>
+ * @return string the decoded string.
+ * @since 5.1.0
+ */
+function htmlspecialchars_decode ($string, $quote_style = null) {}
+```
+
+```PHP
+<?php
+
+$string = "<a href='test'>Test</a>";
+$new = htmlspecialchars($string, ENT_QUOTES);
+echo $new . PHP_EOL; // &lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt;
+echo htmlspecialchars_decode($new,ENT_QUOTES) . PHP_EOL; // <a href='test'>Test</a>
+```
+
+-----------------------------
+#### html_entity_decode — Convert all HTML entities to their applicable characters
+http://php.net/manual/en/function.html-entity-decode.php
+
+```PHP
+<?php
+/**
+ * Convert all HTML entities to their applicable characters
+ * @link http://php.net/manual/en/function.html-entity-decode.php
+ * @param string $string <p>
+ * The input string.
+ * </p>
+ * @param int $quote_style [optional] <p>
+ * The optional second quote_style parameter lets
+ * you define what will be done with 'single' and "double" quotes. It takes
+ * on one of three constants with the default being
+ * ENT_COMPAT:
+ * <table>
+ * Available quote_style constants
+ * <tr valign="top">
+ * <td>Constant Name</td>
+ * <td>Description</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_COMPAT</td>
+ * <td>Will convert double-quotes and leave single-quotes alone.</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_QUOTES</td>
+ * <td>Will convert both double and single quotes.</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_NOQUOTES</td>
+ * <td>Will leave both double and single quotes unconverted.</td>
+ * </tr>
+ * </table>
+ * </p>
+ * @param string $charset [optional] <p>
+ * The ISO-8859-1 character set is used as default for the optional third
+ * charset. This defines the character set used in
+ * conversion.
+ * </p>
+ * &reference.strings.charsets;
+ * @return string the decoded string.
+ * @since 4.3.0
+ * @since 5.0
+ */
+function html_entity_decode ($string, $quote_style = null, $charset = null) {}
+```
+
+```PHP
+<?php
+$orig = "I'll \"walk\" the <b>dog</b> now";
+
+$a = htmlentities($orig);
+
+$b = html_entity_decode($a);
+
+echo $a; // I'll &quot;walk&quot; the &lt;b&gt;dog&lt;/b&gt; now
+
+echo $b; // I'll "walk" the <b>dog</b> now
+```
+--------------
+
+#### htmlentities — Convert all applicable characters to HTML entities
+http://php.net/manual/en/function.htmlentities.php
+
+```PHP
+<?php
+/**
+ * Convert all applicable characters to HTML entities
+ * @link http://php.net/manual/en/function.htmlentities.php
+ * @param string $string <p>
+ * The input string.
+ * </p>
+ * @param int $quote_style [optional] <p>
+ * Like htmlspecialchars, the optional second
+ * quote_style parameter lets you define what will
+ * be done with 'single' and "double" quotes. It takes on one of three
+ * constants with the default being ENT_COMPAT:
+ * <table>
+ * Available quote_style constants
+ * <tr valign="top">
+ * <td>Constant Name</td>
+ * <td>Description</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_COMPAT</td>
+ * <td>Will convert double-quotes and leave single-quotes alone.</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_QUOTES</td>
+ * <td>Will convert both double and single quotes.</td>
+ * </tr>
+ * <tr valign="top">
+ * <td>ENT_NOQUOTES</td>
+ * <td>Will leave both double and single quotes unconverted.</td>
+ * </tr>
+ * </table>
+ * </p>
+ * @param string $charset [optional] <p>
+ * Like htmlspecialchars, it takes an optional
+ * third argument charset which defines character
+ * set used in conversion.
+ * Presently, the ISO-8859-1 character set is used as the default.
+ * </p>
+ * &reference.strings.charsets;
+ * @param bool $double_encode [optional] <p>
+ * When double_encode is turned off PHP will not
+ * encode existing html entities. The default is to convert everything.
+ * </p>
+ * @return string the encoded string.
+ * @since 4.0
+ * @since 5.0
+ */
+function htmlentities ($string, $quote_style = null, $charset = null, $double_encode = true) {}
+```
+
+```PHP
+<?php
+$str = "A 'quote' is <b>bold</b>";
+
+// Outputs: A 'quote' is &lt;b&gt;bold&lt;/b&gt;
+echo htmlentities($str);
+
+// Outputs: A &#039;quote&#039; is &lt;b&gt;bold&lt;/b&gt;
+echo htmlentities($str, ENT_QUOTES);
+```
+
+---------------------------
+
+
 hebrev — Convert logical Hebrew text to visual text
 hebrevc — Convert logical Hebrew text to visual text with newline conversion
-html_entity_decode — Convert all HTML entities to their applicable characters
-htmlentities — Convert all applicable characters to HTML entities
 join — Alias of implode
 lcfirst — Make a string's first character lowercase
 levenshtein — Calculate Levenshtein distance between two strings
