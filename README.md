@@ -85,16 +85,6 @@
 10. Magic (_*) Methods
 11. Instance Methods & Properties
 12. [SPL](9-Object-Oriented-Programming/12-SPL/README.md)
-    - [SPL. Iterators](./9-Object-Oriented-Programming/12-SPL/2-Iterators/readme.md)
-    - [SPL. Predefined classes](./9-Object-Oriented-Programming/12-SPL/4-predefined-classes/readme.md)
-    - [SPL. Interfaces](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md)
-        - [SPL. Interfaces. OuterIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md)
-        - [SPL. Interfaces. RecursiveIterator](./9-Object-Oriented-Programming/12-SPL/5-Interfaces/readme.md)
-    - [SPL. Exceptions](./9-Object-Oriented-Programming/12-SPL/6-Exceptions/README.md)
-    - [SPL. SPL Functions](./9-Object-Oriented-Programming/12-SPL/7-SPL-Functions/README.md)
-    - [SPL. File Handling](./9-Object-Oriented-Programming/12-SPL/8-File-Handling/README.md)
-    - [SPL. Miscellaneous Classes and Interfaces](./9-Object-Oriented-Programming/12-SPL/9-Miscellaneous-Classes-and-Interfaces/README.md)
-    - [SPL. SPL Types](./9-Object-Oriented-Programming/12-SPL/10-SPL-Type/README.md)
 13. Traits
 
 ### 10. [Security](./10-Security/index.md)
