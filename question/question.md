@@ -12,26 +12,21 @@ The Active Record design pattern is used for which of the following?
 ![alt text](./image/1.jpg)
 
 ------------
-
-http://joxi.ru/Vm6l9zVtxqw6MA
+![alt text](./image/2.jpg)
 
 ----------------
-
-http://joxi.ru/L214XlVH6qPBgm
+![alt text](./image/3.jpg)
 
 -----------------
-http://joxi.ru/n2YvZBjUjpqa8A
+![alt text](./image/4.jpg)
 
 -------------------
-
-http://joxi.ru/L214XlVH6qPpgm
+![alt text](./image/5.jpg)
 
 ------------------
-
-http://joxi.ru/Dr8j41ViklQ152
+![alt text](./image/6.jpg)
 
 -----------------
-
-http://joxi.ru/xAe6vEVHYeo10r
+![alt text](./image/7.jpg)
 
 ----------
