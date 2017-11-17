@@ -1,6 +1,8 @@
 # PHP-Certification-preparing
 
-### 1. [PHP Basics](1-PHP-Basics/README.md) - #TODO 1
+<p>Part of the preparation for the ZCE for PHP 7.1</p>
+
+### 1. [PHP Basics](1-PHP-Basics/README.md)
 1. [Syntax](1-PHP-Basics/1-syntax/README.md)
 2. [Operators](1-PHP-Basics/2-operators/README.md)
 3. [Variables](1-PHP-Basics/3-variables/README.md)
@@ -111,3 +113,7 @@
 ### PHP 7
  - http://php.net/manual/ru/migration70.new-features.php
  - http://blog.teamtreehouse.com/5-new-features-php-7
+
+# Result
+
+http://www.zend.com/en/yellow-pages/ZEND030695
